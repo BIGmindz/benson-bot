@@ -1,0 +1,36 @@
+# Most Volatile Crypto tracker configuration
+universe:
+  source: "coingecko"   # coingecko is default
+  vs_currency: "usd"
+  max_assets: 300       # pull top N by mcap (cap universe)
+  days: 90              # history window to fetch (max of all horizons)
+  horizons: [30, 60, 90]
+  min_mcap: 100_000_000        # filter by market cap (USD)
+  min_vol_24h: 10_000_000      # filter by 24h volume (USD)
+  exclude_stablecoins: true
+  exclude_wrapped: true
+  exclude_leveraged_tokens: true
+
+scoring:
+  # weight annualized vol across horizons (higher = more important)
+  weights: {d30: 0.40, d60: 0.35, d90: 0.25}
+  # require at least this many valid closes within each horizon
+  min_obs_ratio: 0.85
+
+output:
+  top_k: 25
+  csv_path: "exports/volatile_candidates.csv"
+  json_path: "exports/volatile_candidates.json"
+  write_sqlite: false
+  sqlite_path: "data/mvc.sqlite"
+
+benson:
+  enabled: true
+  mode: "file"   # one of: file|webhook
+  webhook_url: ""   # e.g., http://localhost:8000/api/volatility/candidates
+  api_key: ""
+
+runtime:
+  request_timeout_s: 20
+  max_retries: 3
+  retry_backoff_s: 1.5
