@@ -1,0 +1,8 @@
+ccxt
+ta==0.11.0
+fastapi
+uvicorn
+pydantic
+python-dotenv
+pandas
+numpy
