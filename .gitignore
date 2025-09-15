@@ -1,24 +1,9 @@
-# Python
 __pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-env/
-venv/
+*.pyc
 .venv/
 .env
-
-# Benson Bot specific
-*.db
-*.sqlite
-benson_signals.csv
-config/secrets.yaml
-logs/
-
-# macOS
+*.env
+*.secret
+config/*.local.yaml
 .DS_Store
-
-# IDE
-.vscode/settings.json
-.idea/
+.vscode/
