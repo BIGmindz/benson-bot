@@ -1,41 +1,31 @@
-exchange: kraken
+# Exchange and API credentials
+exchange: "binance"
+# Make sure to set API keys as environment variables or in a .env file
+# api_key: ${BINANCE_API_KEY}
+# secret: ${BINANCE_SECRET_KEY}
 
-api:
-  # API credentials loaded from environment variables
-  # Set API_KEY and API_SECRET in your .env file for live trading
-  # Leave these blank - they will be populated from environment variables
-  key: ${API_KEY}
-  secret: ${API_SECRET}
+# Trading parameters
+symbols:
+  - "BTC/USDT"
+  - "ETH/USDT"
+  - "SOL/USDT"
 
-market:
-  base: ETH
-  quote: USD
-  symbol: ETH/USD
+timeframe: "5m"
+poll_seconds: 60
+cooldown_minutes: 10
 
-trading:
-  position_size_usd: 50
-  max_open_trades: 1
-  slippage_bps: 5   # 5 bps = 0.05%
+# RSI Signal Configuration
+rsi:
+  period: 14
+  buy_threshold: 30
+  sell_threshold: 70
 
-risk:
-  stop_loss_pct: 0.03
-  take_profit_pct: 0.06
+# Africa Signals Configuration (Example)
+africa_signals:
+  enabled: false # Set to true to enable
+  api_url: "https://api.example-africa-data.com/v1/market-sentiment"
+  api_key: ${AFRICA_DATA_API_KEY}
+  weight: 0.25
 
-signals:
-  rsi:
-    period: 14
-    buy_threshold: 30
-    sell_threshold: 70
-  ma:
-    fast: 20
-    slow: 50
-
-engine:
-  poll_seconds: 15
-  timeframes:
-    - 5m
-    - 15m
-
-logging:
-  level: INFO
-  file: logs/bot.log
+# Log file path
+csv_log: "benson_signals.csv"
