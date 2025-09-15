@@ -1,0 +1,41 @@
+exchange: kraken
+
+api:
+  # API credentials loaded from environment variables
+  # Set API_KEY and API_SECRET in your .env file for live trading
+  # Leave these blank - they will be populated from environment variables
+  key: ${API_KEY}
+  secret: ${API_SECRET}
+
+market:
+  base: ETH
+  quote: USD
+  symbol: ETH/USD
+
+trading:
+  position_size_usd: 50
+  max_open_trades: 1
+  slippage_bps: 5   # 5 bps = 0.05%
+
+risk:
+  stop_loss_pct: 0.03
+  take_profit_pct: 0.06
+
+signals:
+  rsi:
+    period: 14
+    buy_threshold: 30
+    sell_threshold: 70
+  ma:
+    fast: 20
+    slow: 50
+
+engine:
+  poll_seconds: 15
+  timeframes:
+    - 5m
+    - 15m
+
+logging:
+  level: INFO
+  file: logs/bot.log
