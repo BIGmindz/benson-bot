@@ -1,0 +1,24 @@
+{
+  "session_id": "ultra_rapid_1758051532",
+  "session_type": "ultra_rapid_30min",
+  "settings": {
+    "trades_per_minute": 1.0,
+    "trade_interval_seconds": 60,
+    "session_duration": 1800,
+    "starting_budget": 100.0,
+    "position_size_pct": 0.25,
+    "min_position_pct": 0.08,
+    "max_position_pct": 0.95,
+    "confidence_multiplier": 3.0,
+    "confidence_threshold": 75,
+    "random_trade_pct": 0.05,
+    "rsi_sensitivity": 0.82,
+    "premium_quality_mode": true
+  },
+  "final_balance": 100.0,
+  "total_trades": 0,
+  "profitable_trades": 0,
+  "win_rate": 0,
+  "total_return_pct": 0.0,
+  "trade_history": []
+}
