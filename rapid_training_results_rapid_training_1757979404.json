@@ -1,0 +1,403 @@
+{
+  "session_id": "rapid_training_1757979404",
+  "settings": {
+    "trades_per_minute": 2,
+    "session_duration": 3600,
+    "starting_budget": 100.0,
+    "position_size_pct": 0.1,
+    "min_position_pct": 0.01,
+    "max_position_pct": 0.65,
+    "confidence_multiplier": 2.5,
+    "recent_performance_factor": 0.3,
+    "rsi_sensitivity": 0.8,
+    "random_trades": true,
+    "pattern_variations": true
+  },
+  "final_balance": 112.46192853133162,
+  "total_trades": 25,
+  "profitable_trades": 16,
+  "total_return_pct": 12.461928531331623,
+  "portfolio_history": [
+    {
+      "timestamp": "2025-09-15 19:36:44.323842",
+      "balance": 100.0
+    },
+    {
+      "timestamp": "2025-09-15 19:40:18.501716",
+      "balance": 100.38498524013274
+    },
+    {
+      "timestamp": "2025-09-15 19:45:52.359013",
+      "balance": 101.45072104223031
+    },
+    {
+      "timestamp": "2025-09-15 19:46:53.858216",
+      "balance": 103.34235833322514
+    },
+    {
+      "timestamp": "2025-09-15 19:47:55.172246",
+      "balance": 104.9220039419937
+    },
+    {
+      "timestamp": "2025-09-15 19:50:58.293502",
+      "balance": 106.61412055721365
+    },
+    {
+      "timestamp": "2025-09-15 19:58:03.871755",
+      "balance": 107.41980895326932
+    },
+    {
+      "timestamp": "2025-09-15 19:58:34.710801",
+      "balance": 107.86120152898259
+    },
+    {
+      "timestamp": "2025-09-15 20:00:36.814309",
+      "balance": 109.09215930920202
+    },
+    {
+      "timestamp": "2025-09-15 20:01:07.724832",
+      "balance": 108.7711106069459
+    },
+    {
+      "timestamp": "2025-09-15 20:01:38.894546",
+      "balance": 108.58381965170929
+    },
+    {
+      "timestamp": "2025-09-15 20:02:40.515500",
+      "balance": 108.49946903252652
+    },
+    {
+      "timestamp": "2025-09-15 20:04:12.517080",
+      "balance": 108.86922613470476
+    },
+    {
+      "timestamp": "2025-09-15 20:04:43.643622",
+      "balance": 108.48149255280572
+    },
+    {
+      "timestamp": "2025-09-15 20:05:14.772406",
+      "balance": 109.19600225032202
+    },
+    {
+      "timestamp": "2025-09-15 20:06:46.627713",
+      "balance": 108.35364227577472
+    },
+    {
+      "timestamp": "2025-09-15 20:09:48.998709",
+      "balance": 109.62210385758704
+    },
+    {
+      "timestamp": "2025-09-15 20:13:21.417600",
+      "balance": 110.38678633643782
+    },
+    {
+      "timestamp": "2025-09-15 20:15:53.630066",
+      "balance": 110.70100546923427
+    },
+    {
+      "timestamp": "2025-09-15 20:18:56.151688",
+      "balance": 111.98972415273252
+    },
+    {
+      "timestamp": "2025-09-15 20:19:57.571895",
+      "balance": 112.87450577690721
+    },
+    {
+      "timestamp": "2025-09-15 20:21:59.304610",
+      "balance": 111.83040705273757
+    },
+    {
+      "timestamp": "2025-09-15 20:23:00.506188",
+      "balance": 111.70811770844708
+    },
+    {
+      "timestamp": "2025-09-15 20:27:33.647398",
+      "balance": 113.63661230619564
+    },
+    {
+      "timestamp": "2025-09-15 20:28:34.959676",
+      "balance": 112.88689814627524
+    },
+    {
+      "timestamp": "2025-09-15 20:32:08.374860",
+      "balance": 112.46192853133162
+    }
+  ],
+  "trade_history": [
+    {
+      "timestamp": "2025-09-15 19:40:18.501716",
+      "symbol": "PENGU/USDT",
+      "action": "SELL",
+      "price": 0.033153,
+      "shares": 1837.1995939074739,
+      "position_value": 60.90867813681449,
+      "profit_pct": 0.6320696030670321,
+      "profit_loss": 0.3849852401327395,
+      "new_balance": 100.38498524013274
+    },
+    {
+      "timestamp": "2025-09-15 19:45:52.359013",
+      "symbol": "ETH/USDT",
+      "action": "BUY",
+      "price": 4521.78,
+      "shares": 0.012774363388060143,
+      "position_value": 57.76286088086259,
+      "profit_pct": 1.8450190760040255,
+      "profit_loss": 1.0657358020975816,
+      "new_balance": 101.45072104223031
+    },
+    {
+      "timestamp": "2025-09-15 19:46:53.858216",
+      "symbol": "PENGU/USDT",
+      "action": "SELL",
+      "price": 0.033153,
+      "shares": 1989.0498198488738,
+      "position_value": 65.94296867744971,
+      "profit_pct": 2.8685958926834054,
+      "profit_loss": 1.8916372909948271,
+      "new_balance": 103.34235833322514
+    },
+    {
+      "timestamp": "2025-09-15 19:47:55.172246",
+      "symbol": "LINK/USDT",
+      "action": "BUY",
+      "price": 23.56943,
+      "shares": 2.5494346787621387,
+      "position_value": 60.08872220065671,
+      "profit_pct": 2.628855384032934,
+      "profit_loss": 1.5796456087685569,
+      "new_balance": 104.9220039419937
+    },
+    {
+      "timestamp": "2025-09-15 19:50:58.293502",
+      "symbol": "ETH/USDT",
+      "action": "BUY",
+      "price": 4521.59,
+      "shares": 0.01508303551677527,
+      "position_value": 68.1993025622959,
+      "profit_pct": 2.4811347794566068,
+      "profit_loss": 1.6921166152199643,
+      "new_balance": 106.61412055721365
+    },
+    {
+      "timestamp": "2025-09-15 19:58:03.871755",
+      "symbol": "BNB/USDT",
+      "action": "SELL",
+      "price": 920.0,
+      "shares": 0.07532519387194443,
+      "position_value": 69.29917836218888,
+      "profit_pct": 1.1626233024651236,
+      "profit_loss": 0.8056883960556768,
+      "new_balance": 107.41980895326932
+    },
+    {
+      "timestamp": "2025-09-15 19:58:34.710801",
+      "symbol": "KAS/USDT",
+      "action": "SELL",
+      "price": 0.08329,
+      "shares": 838.3104312597559,
+      "position_value": 69.82287581962507,
+      "profit_pct": 0.6321604066459969,
+      "profit_loss": 0.4413925757132713,
+      "new_balance": 107.86120152898259
+    },
+    {
+      "timestamp": "2025-09-15 20:00:36.814309",
+      "symbol": "LTC/USDT",
+      "action": "BUY",
+      "price": 113.67058,
+      "shares": 0.6167803577129516,
+      "position_value": 70.10978099383868,
+      "profit_pct": 1.7557575601720938,
+      "profit_loss": 1.2309577802194205,
+      "new_balance": 109.09215930920202
+    },
+    {
+      "timestamp": "2025-09-15 20:01:07.724832",
+      "symbol": "BTC/USDT",
+      "action": "SELL",
+      "price": 115362.6,
+      "shares": 0.00022352200776181013,
+      "position_value": 25.7860799726226,
+      "profit_pct": -1.2450465623195817,
+      "profit_loss": -0.3210487022561158,
+      "new_balance": 108.7711106069459
+    },
+    {
+      "timestamp": "2025-09-15 20:01:38.894546",
+      "symbol": "BCH/USDT",
+      "action": "SELL",
+      "price": 593.34,
+      "shares": 0.03275614218301331,
+      "position_value": 19.43552940286912,
+      "profit_pct": -0.9636524498733925,
+      "profit_loss": -0.18729095523661177,
+      "new_balance": 108.58381965170929
+    },
+    {
+      "timestamp": "2025-09-15 20:02:40.515500",
+      "symbol": "ALGO/USDT",
+      "action": "SELL",
+      "price": 0.23254,
+      "shares": 65.73411735294474,
+      "position_value": 15.285811649253768,
+      "profit_pct": -0.5518229657558624,
+      "profit_loss": -0.08435061918276725,
+      "new_balance": 108.49946903252652
+    },
+    {
+      "timestamp": "2025-09-15 20:04:12.517080",
+      "symbol": "AI16Z/USDT",
+      "action": "BUY",
+      "price": 0.1078,
+      "shares": 131.59495500696028,
+      "position_value": 14.185936149750319,
+      "profit_pct": 2.606504768349369,
+      "profit_loss": 0.369757102178239,
+      "new_balance": 108.86922613470476
+    },
+    {
+      "timestamp": "2025-09-15 20:04:43.643622",
+      "symbol": "LTC/USDT",
+      "action": "SELL",
+      "price": 113.67058,
+      "shares": 0.5318360590730161,
+      "position_value": 60.454113299744,
+      "profit_pct": -0.6413684044567531,
+      "profit_loss": -0.3877335818990459,
+      "new_balance": 108.48149255280572
+    },
+    {
+      "timestamp": "2025-09-15 20:05:14.772406",
+      "symbol": "AI16Z/USDT",
+      "action": "SELL",
+      "price": 0.1078,
+      "shares": 642.0598096724237,
+      "position_value": 69.21404748268728,
+      "profit_pct": 1.0323189056311652,
+      "profit_loss": 0.7145096975163124,
+      "new_balance": 109.19600225032202
+    },
+    {
+      "timestamp": "2025-09-15 20:06:46.627713",
+      "symbol": "KAS/USDT",
+      "action": "SELL",
+      "price": 0.08329,
+      "shares": 830.4043663799783,
+      "position_value": 69.1643796757884,
+      "profit_pct": -1.2179101128296321,
+      "profit_loss": -0.8423599745473096,
+      "new_balance": 108.35364227577472
+    },
+    {
+      "timestamp": "2025-09-15 20:09:48.998709",
+      "symbol": "AVAX/USDT",
+      "action": "SELL",
+      "price": 29.85,
+      "shares": 1.9181309175809842,
+      "position_value": 57.25620788979238,
+      "profit_pct": 2.215413190223626,
+      "profit_loss": 1.2684615818123208,
+      "new_balance": 109.62210385758704
+    },
+    {
+      "timestamp": "2025-09-15 20:13:21.417600",
+      "symbol": "XMR/USDT",
+      "action": "BUY",
+      "price": 305.05,
+      "shares": 0.2294261839404861,
+      "position_value": 69.9864574110453,
+      "profit_pct": 1.0926149245698205,
+      "profit_loss": 0.764682478850782,
+      "new_balance": 110.38678633643782
+    },
+    {
+      "timestamp": "2025-09-15 20:15:53.630066",
+      "symbol": "AI16Z/USDT",
+      "action": "SELL",
+      "price": 0.1078,
+      "shares": 556.8494101095508,
+      "position_value": 60.02836640980958,
+      "profit_pct": 0.5234510808628439,
+      "profit_loss": 0.3142191327964566,
+      "new_balance": 110.70100546923427
+    },
+    {
+      "timestamp": "2025-09-15 20:18:56.151688",
+      "symbol": "LTC/USDT",
+      "action": "BUY",
+      "price": 113.52114,
+      "shares": 0.6338524573925375,
+      "position_value": 71.95565355500229,
+      "profit_pct": 1.7909901721803774,
+      "profit_loss": 1.2887186834982514,
+      "new_balance": 111.98972415273252
+    },
+    {
+      "timestamp": "2025-09-15 20:19:57.571895",
+      "symbol": "ALGO/USDT",
+      "action": "SELL",
+      "price": 0.23254,
+      "shares": 313.0356957911591,
+      "position_value": 72.79332069927614,
+      "profit_pct": 1.2154708916631227,
+      "profit_loss": 0.8847816241746882,
+      "new_balance": 112.87450577690721
+    },
+    {
+      "timestamp": "2025-09-15 20:21:59.304610",
+      "symbol": "KAS/USDT",
+      "action": "SELL",
+      "price": 0.08329,
+      "shares": 880.8792022450438,
+      "position_value": 73.3684287549897,
+      "profit_pct": -1.42308993375932,
+      "profit_loss": -1.0440987241696367,
+      "new_balance": 111.83040705273757
+    },
+    {
+      "timestamp": "2025-09-15 20:23:00.506188",
+      "symbol": "ADA/USDT",
+      "action": "SELL",
+      "price": 0.862855,
+      "shares": 24.291764859776144,
+      "position_value": 20.960270768082147,
+      "profit_pct": -0.5834339911138664,
+      "profit_loss": -0.12228934429049472,
+      "new_balance": 111.70811770844708
+    },
+    {
+      "timestamp": "2025-09-15 20:27:33.647398",
+      "symbol": "DOGE/USDT",
+      "action": "SELL",
+      "price": 0.26764,
+      "shares": 256.3556149033031,
+      "position_value": 68.61101677272003,
+      "profit_pct": 2.8107652217673373,
+      "profit_loss": 1.9284945977485692,
+      "new_balance": 113.63661230619564
+    },
+    {
+      "timestamp": "2025-09-15 20:28:34.959676",
+      "symbol": "AI16Z/USDT",
+      "action": "SELL",
+      "price": 0.1078,
+      "shares": 585.0686636736805,
+      "position_value": 63.07040194402276,
+      "profit_pct": -1.1886941208743247,
+      "profit_loss": -0.7497141599204044,
+      "new_balance": 112.88689814627524
+    },
+    {
+      "timestamp": "2025-09-15 20:32:08.374860",
+      "symbol": "AI16Z/USDT",
+      "action": "SELL",
+      "price": 0.1078,
+      "shares": 680.672391420027,
+      "position_value": 73.37648379507891,
+      "profit_pct": -0.5791632318202242,
+      "profit_loss": -0.4249696149436221,
+      "new_balance": 112.46192853133162
+    }
+  ]
+}

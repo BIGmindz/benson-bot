@@ -7,9 +7,11 @@ from datetime import datetime, timezone
 import yaml
 from typing import Dict, Any
 from dataclasses import dataclass
-from signals.africa_signals 
-import AfricaSignals, AfricaSignalsConfigfrom signals.supply_chain_signals 
-import SupplyChainSignals, SupplyChainSignalsConfig
+#from signals.africa_signals 
+#import AfricaSignals, AfricaSignalsConfig
+from signals.supply_chain_signals import SupplyChainSignals, SupplyChainSignalsConfig
+from paper_portfolio import PaperTradingPortfolio
+from learning_engine import BensonLearningEngine, apply_learned_optimizations
 
 
 # ---------- Utilities ----------
@@ -68,18 +70,32 @@ def safe_fetch_ticker(exchange, symbol):
 @dataclass
 class SignalWeight:
     """Configuration for signal combination"""
-    rsi_weight: float = 0.3
-    sentiment_weight: float = 0.25
-    brazil_weight: float = 0.25
-    africa_weight: float = 0.20
+    rsi_weight: float = 0.25
+    sentiment_weight: float = 0.20
+    brazil_weight: float = 0.20
+    africa_weight: float = 0.175
+    supply_chain_weight: float = 0.175
 
 # ---------- Main ----------
 def main():
     # Load config
     config_path = os.getenv("BENSON_CONFIG", "config/config.yaml")
     cfg = load_config(config_path)
+    
+    # Initialize learning engine and apply optimizations
+    learning_engine = BensonLearningEngine()
+    cfg = apply_learned_optimizations(cfg, learning_engine)
+    
+    # Display learning stats
+    stats = learning_engine.get_learning_stats()
+    print(f"🧠 LEARNING ENGINE: {stats['total_sessions']} sessions, {stats['learned_patterns']} patterns learned")
+    if stats['best_session_return'] > 0:
+        print(f"   Best session return: {stats['best_session_return']:.2f}%")
+    
     fut_cfg = (cfg.get("futures") or {})
     futures_enabled = bool(fut_cfg.get("enabled", False))
+    
+    session_start_time = time.time()
 
     exchange_id = cfg.get("exchange", "binance")
     import ccxt
@@ -103,18 +119,43 @@ def main():
     africa_signals = None
     africa_enabled = cfg.get('africa_signals', {}).get('enabled', False)
     if africa_enabled:
-        africa_config_dict = cfg['africa_signals']
-        africa_config = AfricaSignalsConfig(**africa_config_dict)
-        africa_signals = AfricaSignals(africa_config)
-        print("🌍 Africa signals: ENABLED")
+        # africa_config_dict = cfg['africa_signals']
+        # africa_config = AfricaSignalsConfig(**africa_config_dict)
+        # africa_signals = AfricaSignals(africa_config)
+        print("🌍 Africa signals: ENABLED (but not implemented)")
     else:
         print("🌍 Africa signals: DISABLED")
+
+    # --- Supply Chain Signals Initialization ---
+    supply_chain_signals = None
+    supply_chain_enabled = cfg.get('supply_chain_signals', {}).get('enabled', False)
+    if supply_chain_enabled:
+        supply_chain_config_dict = cfg['supply_chain_signals']
+        supply_chain_config = SupplyChainSignalsConfig(**supply_chain_config_dict)
+        supply_chain_signals = SupplyChainSignals(supply_chain_config)
+        print("🚢 Supply Chain signals: ENABLED")
+    else:
+        print("🚢 Supply Chain signals: DISABLED")
 
     # --- Other signals: stubs (replace with real logic where needed) ---
     brazil_signals = None  # TODO: add Brazil signals logic
     sentiment_signals = None  # TODO: add Sentiment signals logic
 
+    # Apply learned signal weights if available
     weights = SignalWeight()
+    if 'optimized_weights' in cfg:
+        opt_weights = cfg['optimized_weights']
+        weights.rsi_weight = opt_weights.get('rsi', weights.rsi_weight)
+        weights.supply_chain_weight = opt_weights.get('supply_chain', weights.supply_chain_weight)
+        weights.africa_weight = opt_weights.get('africa', weights.africa_weight)
+        weights.brazil_weight = opt_weights.get('brazil', weights.brazil_weight)
+        weights.sentiment_weight = opt_weights.get('sentiment', weights.sentiment_weight)
+        print(f"⚖️ Using optimized weights: RSI={weights.rsi_weight:.3f}, SC={weights.supply_chain_weight:.3f}")
+    
+    # Initialize paper trading portfolio if enabled
+    portfolio = None
+    if cfg.get("paper_mode", False):
+        portfolio = PaperTradingPortfolio(cfg)
 
     # Debounce state per symbol
     last_signal: Dict[str, str] = {s: "HOLD" for s in symbols}
@@ -138,6 +179,8 @@ def main():
         active.append("Sentiment")
     if africa_signals:
         active.append("Africa")
+    if supply_chain_signals:
+        active.append("Supply Chain")
     print("Active signals: " + ", ".join(active))
     print("-" * 60)
 
@@ -153,6 +196,9 @@ def main():
 
     while not stop["flag"]:
         try:
+            # Collect all prices for portfolio updates
+            current_prices = {}
+            
             for symbol in symbols:
                 ohlcv = safe_fetch_ohlcv(exchange, symbol, timeframe, limit=200)
                 rsi_val = calculate_rsi_from_ohlcv(ohlcv, rsi_period)
@@ -162,6 +208,7 @@ def main():
                     continue
 
                 price = safe_fetch_ticker(exchange, symbol)
+                current_prices[symbol] = price  # Store for portfolio updates
 
                 # --- Africa signals ---
                 africa_composite = None
@@ -173,6 +220,17 @@ def main():
                         africa_factor = africa_signals.regional_factor(africa_composite)
                     except Exception as e:
                         print(f"Africa error: {e}")
+
+                # --- Supply Chain signals ---
+                supply_chain_composite = None
+                supply_chain_factor = 1.0
+                supply_chain_logs = None
+                if supply_chain_signals:
+                    try:
+                        supply_chain_composite, supply_chain_logs = supply_chain_signals.composite()
+                        supply_chain_factor = supply_chain_signals.get_position_factor(supply_chain_composite)
+                    except Exception as e:
+                        print(f"Supply Chain error: {e}")
 
                 # --- Combine with other signals (add your real logic as needed) ---
                 # Placeholder for sentiment/brazil signals
@@ -186,6 +244,7 @@ def main():
                     + weights.sentiment_weight * sentiment_signal
                     + weights.brazil_weight * brazil_signal
                     + weights.africa_weight * (africa_factor if africa_signals else 0)
+                    + weights.supply_chain_weight * (supply_chain_factor if supply_chain_signals else 0)
                 )
 
                 combined_signal = (
@@ -195,8 +254,12 @@ def main():
                 )
 
                 # Print signals
-                print(f"[{utc_now_str()}] {symbol:>12}: ${price:,.4f} | RSI {rsi_val:5.2f} | Africa factor {africa_factor:.2f} | Africa composite {africa_composite if africa_composite is not None else 'N/A'} | Combo {combined_signal}"
-                )
+                print(f"[{utc_now_str()}] {symbol:>12}: ${price:,.4f} | RSI {rsi_val:5.2f} | SC {supply_chain_factor:.2f} | Africa {africa_factor:.2f} | Combo {combined_signal}")
+                
+                # Optionally, print supply chain logs
+                if supply_chain_logs:
+                    print(f"    🚢 Supply Chain: {supply_chain_composite:.2f} congestion")
+                    
                 # Optionally, print Africa logs
                 if africa_logs and 'signals' in africa_logs:
                     print(f"    Africa logs (top 3):")
@@ -209,8 +272,40 @@ def main():
                 changed = combined_signal != last_signal[symbol]
 
                 if combined_signal in ("BUY", "SELL") and changed and cooldown_ok:
-                    print(f"🚨 SIGNAL: {combined_signal} {symbol} @ ${price:,.4f} (RSI {rsi_val:0.2f}, Africa {africa_factor:.2f})")
-                    last_alert_ts[symbol] = now
+                    
+                    # Check if we should avoid this trade based on learned failure patterns
+                    should_avoid = False
+                    avoid_reason = ""
+                    
+                    if combined_signal == "BUY" and learning_engine:
+                        # Calculate current volatility estimate (using price changes)
+                        volatility_estimate = abs(rsi_val - 50) / 50  # Simple volatility proxy
+                        signal_weights = {"rsi": weights.rsi_weight, "supply_chain": weights.supply_chain_weight}
+                        
+                        should_avoid, avoid_reason = learning_engine.should_avoid_trade(
+                            symbol, rsi_val, supply_chain_factor, volatility_estimate, signal_weights
+                        )
+                    
+                    if should_avoid:
+                        print(f"⚠️ TRADE AVOIDED: {symbol} {avoid_reason}")
+                    else:
+                        print(f"🚨 SIGNAL: {combined_signal} {symbol} @ ${price:,.4f} (RSI {rsi_val:0.2f}, Africa {africa_factor:.2f})")
+                        last_alert_ts[symbol] = now
+                        
+                        # Execute paper trade if portfolio is enabled
+                        if portfolio:
+                            reason = f"RSI {rsi_val:.1f}"
+                            if combined_signal == "BUY" and portfolio.can_open_position(symbol, price):
+                                # Calculate confidence score for this trade
+                                if learning_engine:
+                                    confidence = learning_engine.calculate_trade_confidence(
+                                        symbol, rsi_val, supply_chain_factor, volatility_estimate, signal_weights
+                                    )
+                                    reason += f" (Confidence: {confidence:.1%})"
+                                
+                                portfolio.open_position(symbol, "BUY", price, supply_chain_factor, reason)
+                            elif combined_signal == "SELL" and symbol in portfolio.positions:
+                                portfolio.close_position(symbol, price, reason)
 
                 # Log to CSV (add Africa signals/combined signal if desired)
                 with open(log_path, "a") as f:
@@ -218,8 +313,17 @@ def main():
 
                 last_signal[symbol] = combined_signal
 
+            # Update portfolio positions with current prices and check stop loss/take profit
+            if portfolio and current_prices:
+                portfolio.update_positions(current_prices)
+
             attempt = 0
             print("-" * 60)
+            
+            # Print portfolio status every 5 minutes (5 cycles)
+            if portfolio and (time.time() % 300) < poll_seconds:
+                portfolio.print_portfolio_status()
+            
             time.sleep(poll_seconds)
 
         except Exception as e:
@@ -228,6 +332,29 @@ def main():
             backoff_sleep(attempt)
 
     print("✅ Exit complete. Logs saved to:", log_path)
+    
+    # Learn from this session if portfolio was used
+    if portfolio and learning_engine:
+        session_duration = int(time.time() - session_start_time)
+        print(f"\n🧠 ANALYZING SESSION ({session_duration}s)...")
+        
+        try:
+            # Analyze the completed session
+            session = learning_engine.analyze_session(portfolio, log_path, session_duration)
+            print(f"📊 Session Performance: {session.total_return:.2f}% return, {session.win_rate*100:.1f}% win rate")
+            
+            # Learn from successful sessions
+            updated_config = learning_engine.learn_from_session(session, cfg)
+            
+            # Save updated config if changed
+            if updated_config != cfg:
+                with open(config_path.replace('.yaml', '_optimized.yaml'), 'w') as f:
+                    import yaml
+                    yaml.dump(updated_config, f)
+                print("💾 Saved optimized config to config_optimized.yaml")
+                
+        except Exception as e:
+            print(f"⚠️ Learning analysis failed: {e}")
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,662 @@
+{
+  "available": [
+    {
+      "original_symbol": "BTC/USDT",
+      "kraken_symbol": "BTC/USDT",
+      "status": "available",
+      "volume_24h": 7044509.037030351,
+      "price": 116505.0,
+      "change_24h": 0.9902689433143843
+    },
+    {
+      "original_symbol": "ETH/USDT",
+      "kraken_symbol": "ETH/USDT",
+      "status": "available",
+      "volume_24h": 8580887.316581145,
+      "price": 4493.08,
+      "change_24h": -0.6839050225242151
+    },
+    {
+      "original_symbol": "SOL/USDT",
+      "kraken_symbol": "SOL/USDT",
+      "status": "available",
+      "volume_24h": 3236821.1728171827,
+      "price": 238.55,
+      "change_24h": 1.805223625810857
+    },
+    {
+      "original_symbol": "XMR/USDT",
+      "kraken_symbol": "XMR/USDT",
+      "status": "available",
+      "volume_24h": 1547097.7580799654,
+      "price": 322.35,
+      "change_24h": 5.432720612284948
+    },
+    {
+      "original_symbol": "DOGE/USDT",
+      "kraken_symbol": "DOGE/USDT",
+      "status": "available",
+      "volume_24h": 1069688.1129839323,
+      "price": 0.26744,
+      "change_24h": -0.0747272455537288
+    },
+    {
+      "original_symbol": "XRP/USDT",
+      "kraken_symbol": "XRP/USDT",
+      "status": "available",
+      "volume_24h": 1422924.0578553914,
+      "price": 3.04715,
+      "change_24h": 1.8231698963105536
+    },
+    {
+      "original_symbol": "AVAX/USDT",
+      "kraken_symbol": "AVAX/USDT",
+      "status": "available",
+      "volume_24h": 273910.4065424906,
+      "price": 30.21,
+      "change_24h": 1.751431458403503
+    },
+    {
+      "original_symbol": "LTC/USDT",
+      "kraken_symbol": "LTC/USDT",
+      "status": "available",
+      "volume_24h": 249696.15217909883,
+      "price": 115.16176,
+      "change_24h": 1.4630955656564828
+    },
+    {
+      "original_symbol": "PENGU/USDT",
+      "kraken_symbol": "PENGU/USDT",
+      "status": "available",
+      "volume_24h": 104643.93198911916,
+      "price": 0.0343,
+      "change_24h": 3.992966073431768
+    },
+    {
+      "original_symbol": "ADA/USDT",
+      "kraken_symbol": "ADA/USDT",
+      "status": "available",
+      "volume_24h": 325051.6906283496,
+      "price": 0.876145,
+      "change_24h": 1.5611868636813082
+    },
+    {
+      "original_symbol": "LINK/USDT",
+      "kraken_symbol": "LINK/USDT",
+      "status": "available",
+      "volume_24h": 277004.0088390338,
+      "price": 23.64733,
+      "change_24h": 0.3457119748653348
+    },
+    {
+      "original_symbol": "FARTCOIN/USDT",
+      "kraken_symbol": "FARTCOIN/USDT",
+      "status": "available",
+      "volume_24h": 63439.260830794534,
+      "price": 0.8379,
+      "change_24h": 1.6375545851528384
+    },
+    {
+      "original_symbol": "BNB/USDT",
+      "kraken_symbol": "BNB/USDT",
+      "status": "available",
+      "volume_24h": 37563.7413155564,
+      "price": 949.42,
+      "change_24h": 3.196704383648004
+    },
+    {
+      "original_symbol": "ALGO/USDT",
+      "kraken_symbol": "ALGO/USDT",
+      "status": "available",
+      "volume_24h": 19353.541975074815,
+      "price": 0.23802,
+      "change_24h": 2.625792264907515
+    },
+    {
+      "original_symbol": "DOT/USDT",
+      "kraken_symbol": "DOT/USDT",
+      "status": "available",
+      "volume_24h": 93689.40027981065,
+      "price": 4.2707,
+      "change_24h": 2.967981483267432
+    },
+    {
+      "original_symbol": "AI16Z/USDT",
+      "kraken_symbol": "AI16Z/USDT",
+      "status": "available",
+      "volume_24h": 31322.633463633843,
+      "price": 0.1133,
+      "change_24h": 4.520295202952029
+    },
+    {
+      "original_symbol": "BCH/USDT",
+      "kraken_symbol": "BCH/USDT",
+      "status": "available",
+      "volume_24h": 18634.481987530464,
+      "price": 601.31,
+      "change_24h": 1.729009118746722
+    },
+    {
+      "original_symbol": "KAS/USDT",
+      "kraken_symbol": "KAS/USDT",
+      "status": "available",
+      "volume_24h": 11579.44664578753,
+      "price": 0.08613,
+      "change_24h": 3.6212704523580364
+    },
+    {
+      "original_symbol": "XTZ/USDT",
+      "kraken_symbol": "XTZ/USDT",
+      "status": "available",
+      "volume_24h": 24686.714040829993,
+      "price": 0.7721,
+      "change_24h": 2.0891180748380274
+    },
+    {
+      "original_symbol": "TRUMP/USDT",
+      "kraken_symbol": "TRUMP/USDT",
+      "status": "available",
+      "volume_24h": 21208.813023696417,
+      "price": 8.56,
+      "change_24h": 0.1755412521942656
+    },
+    {
+      "original_symbol": "ATOM/USDT",
+      "kraken_symbol": "ATOM/USDT",
+      "status": "available",
+      "volume_24h": 20688.39259629032,
+      "price": 4.5638,
+      "change_24h": 1.4087636654519597
+    },
+    {
+      "original_symbol": "MANA/USDT",
+      "kraken_symbol": "MANA/USDT",
+      "status": "available",
+      "volume_24h": 793.0036220428709,
+      "price": 0.34341,
+      "change_24h": 2.6974490863961242
+    }
+  ],
+  "converted": [
+    {
+      "original_symbol": "SXT/USDT",
+      "kraken_symbol": "SXT/USD",
+      "status": "converted",
+      "conversion_note": "USDT -> USD",
+      "volume_24h": 11502.83861365555,
+      "price": 0.07908,
+      "change_24h": 2.0255450909560055
+    },
+    {
+      "original_symbol": "UNI/USDT",
+      "kraken_symbol": "UNI/USD",
+      "status": "converted",
+      "conversion_note": "USDT -> USD",
+      "volume_24h": 704392.6819885585,
+      "price": 9.293,
+      "change_24h": 1.341330425299891
+    },
+    {
+      "original_symbol": "AAVE/USDT",
+      "kraken_symbol": "AAVE/USD",
+      "status": "converted",
+      "conversion_note": "USDT -> USD",
+      "volume_24h": 1809552.5095547189,
+      "price": 298.03,
+      "change_24h": -0.3444124924764261
+    },
+    {
+      "original_symbol": "SUSHI/USDT",
+      "kraken_symbol": "SUSHI/USD",
+      "status": "converted",
+      "conversion_note": "USDT -> USD",
+      "volume_24h": 528084.5604514205,
+      "price": 0.7901,
+      "change_24h": 2.703756661900429
+    },
+    {
+      "original_symbol": "CRV/USDT",
+      "kraken_symbol": "CRV/USD",
+      "status": "converted",
+      "conversion_note": "USDT -> USD",
+      "volume_24h": 724184.0396251172,
+      "price": 0.7336,
+      "change_24h": -1.91202032357267
+    },
+    {
+      "original_symbol": "COMP/USDT",
+      "kraken_symbol": "COMP/USD",
+      "status": "converted",
+      "conversion_note": "USDT -> USD",
+      "volume_24h": 28849.718591202767,
+      "price": 44.75,
+      "change_24h": 1.175672620393398
+    },
+    {
+      "original_symbol": "YFI/USDT",
+      "kraken_symbol": "YFI/USD",
+      "status": "converted",
+      "conversion_note": "USDT -> USD",
+      "volume_24h": 21046.754318130246,
+      "price": 5432.0,
+      "change_24h": 1.2111049003167504
+    },
+    {
+      "original_symbol": "SNX/USDT",
+      "kraken_symbol": "SNX/USD",
+      "status": "converted",
+      "conversion_note": "USDT -> USD",
+      "volume_24h": 111403.13384163023,
+      "price": 0.683,
+      "change_24h": 2.39880059970015
+    },
+    {
+      "original_symbol": "BAL/USDT",
+      "kraken_symbol": "BAL/USD",
+      "status": "converted",
+      "conversion_note": "USDT -> USD",
+      "volume_24h": 4099.901704670559,
+      "price": 1.24,
+      "change_24h": -1.2738853503184713
+    },
+    {
+      "original_symbol": "ZRX/USDT",
+      "kraken_symbol": "ZRX/USD",
+      "status": "converted",
+      "conversion_note": "USDT -> USD",
+      "volume_24h": 6537.773915301965,
+      "price": 0.2683,
+      "change_24h": 1.5134317063942488
+    },
+    {
+      "original_symbol": "SAND/USDT",
+      "kraken_symbol": "SAND/USD",
+      "status": "converted",
+      "conversion_note": "USDT -> USD",
+      "volume_24h": 184304.7888656641,
+      "price": 0.3015,
+      "change_24h": 2.2380467955239065
+    },
+    {
+      "original_symbol": "ENJ/USDT",
+      "kraken_symbol": "ENJ/USD",
+      "status": "converted",
+      "conversion_note": "USDT -> USD",
+      "volume_24h": 32462.75003411439,
+      "price": 0.0698,
+      "change_24h": 3.1019202363367797
+    },
+    {
+      "original_symbol": "BAT/USDT",
+      "kraken_symbol": "BAT/USD",
+      "status": "converted",
+      "conversion_note": "USDT -> USD",
+      "volume_24h": 29775.010883103387,
+      "price": 0.15708,
+      "change_24h": 1.7555224460711278
+    },
+    {
+      "original_symbol": "ZEC/USDT",
+      "kraken_symbol": "ZEC/USD",
+      "status": "converted",
+      "conversion_note": "USDT -> USD",
+      "volume_24h": 92188.91836996003,
+      "price": 51.69,
+      "change_24h": 3.4006801360272054
+    }
+  ],
+  "unavailable": [
+    {
+      "original_symbol": "CCCD/USDT",
+      "kraken_symbol": null,
+      "status": "unavailable",
+      "reason": "No matching pair found on Kraken"
+    },
+    {
+      "original_symbol": "MATIC/USDT",
+      "kraken_symbol": null,
+      "status": "unavailable",
+      "reason": "No matching pair found on Kraken"
+    },
+    {
+      "original_symbol": "FTM/USDT",
+      "kraken_symbol": null,
+      "status": "unavailable",
+      "reason": "No matching pair found on Kraken"
+    },
+    {
+      "original_symbol": "MKR/USDT",
+      "kraken_symbol": null,
+      "status": "unavailable",
+      "reason": "No matching pair found on Kraken"
+    }
+  ],
+  "validation_details": [
+    {
+      "original_symbol": "BTC/USDT",
+      "kraken_symbol": "BTC/USDT",
+      "status": "available",
+      "volume_24h": 7044509.037030351,
+      "price": 116505.0,
+      "change_24h": 0.9902689433143843
+    },
+    {
+      "original_symbol": "ETH/USDT",
+      "kraken_symbol": "ETH/USDT",
+      "status": "available",
+      "volume_24h": 8580887.316581145,
+      "price": 4493.08,
+      "change_24h": -0.6839050225242151
+    },
+    {
+      "original_symbol": "SOL/USDT",
+      "kraken_symbol": "SOL/USDT",
+      "status": "available",
+      "volume_24h": 3236821.1728171827,
+      "price": 238.55,
+      "change_24h": 1.805223625810857
+    },
+    {
+      "original_symbol": "XMR/USDT",
+      "kraken_symbol": "XMR/USDT",
+      "status": "available",
+      "volume_24h": 1547097.7580799654,
+      "price": 322.35,
+      "change_24h": 5.432720612284948
+    },
+    {
+      "original_symbol": "DOGE/USDT",
+      "kraken_symbol": "DOGE/USDT",
+      "status": "available",
+      "volume_24h": 1069688.1129839323,
+      "price": 0.26744,
+      "change_24h": -0.0747272455537288
+    },
+    {
+      "original_symbol": "XRP/USDT",
+      "kraken_symbol": "XRP/USDT",
+      "status": "available",
+      "volume_24h": 1422924.0578553914,
+      "price": 3.04715,
+      "change_24h": 1.8231698963105536
+    },
+    {
+      "original_symbol": "AVAX/USDT",
+      "kraken_symbol": "AVAX/USDT",
+      "status": "available",
+      "volume_24h": 273910.4065424906,
+      "price": 30.21,
+      "change_24h": 1.751431458403503
+    },
+    {
+      "original_symbol": "LTC/USDT",
+      "kraken_symbol": "LTC/USDT",
+      "status": "available",
+      "volume_24h": 249696.15217909883,
+      "price": 115.16176,
+      "change_24h": 1.4630955656564828
+    },
+    {
+      "original_symbol": "PENGU/USDT",
+      "kraken_symbol": "PENGU/USDT",
+      "status": "available",
+      "volume_24h": 104643.93198911916,
+      "price": 0.0343,
+      "change_24h": 3.992966073431768
+    },
+    {
+      "original_symbol": "ADA/USDT",
+      "kraken_symbol": "ADA/USDT",
+      "status": "available",
+      "volume_24h": 325051.6906283496,
+      "price": 0.876145,
+      "change_24h": 1.5611868636813082
+    },
+    {
+      "original_symbol": "LINK/USDT",
+      "kraken_symbol": "LINK/USDT",
+      "status": "available",
+      "volume_24h": 277004.0088390338,
+      "price": 23.64733,
+      "change_24h": 0.3457119748653348
+    },
+    {
+      "original_symbol": "FARTCOIN/USDT",
+      "kraken_symbol": "FARTCOIN/USDT",
+      "status": "available",
+      "volume_24h": 63439.260830794534,
+      "price": 0.8379,
+      "change_24h": 1.6375545851528384
+    },
+    {
+      "original_symbol": "BNB/USDT",
+      "kraken_symbol": "BNB/USDT",
+      "status": "available",
+      "volume_24h": 37563.7413155564,
+      "price": 949.42,
+      "change_24h": 3.196704383648004
+    },
+    {
+      "original_symbol": "ALGO/USDT",
+      "kraken_symbol": "ALGO/USDT",
+      "status": "available",
+      "volume_24h": 19353.541975074815,
+      "price": 0.23802,
+      "change_24h": 2.625792264907515
+    },
+    {
+      "original_symbol": "DOT/USDT",
+      "kraken_symbol": "DOT/USDT",
+      "status": "available",
+      "volume_24h": 93689.40027981065,
+      "price": 4.2707,
+      "change_24h": 2.967981483267432
+    },
+    {
+      "original_symbol": "AI16Z/USDT",
+      "kraken_symbol": "AI16Z/USDT",
+      "status": "available",
+      "volume_24h": 31322.633463633843,
+      "price": 0.1133,
+      "change_24h": 4.520295202952029
+    },
+    {
+      "original_symbol": "BCH/USDT",
+      "kraken_symbol": "BCH/USDT",
+      "status": "available",
+      "volume_24h": 18634.481987530464,
+      "price": 601.31,
+      "change_24h": 1.729009118746722
+    },
+    {
+      "original_symbol": "KAS/USDT",
+      "kraken_symbol": "KAS/USDT",
+      "status": "available",
+      "volume_24h": 11579.44664578753,
+      "price": 0.08613,
+      "change_24h": 3.6212704523580364
+    },
+    {
+      "original_symbol": "CCCD/USDT",
+      "kraken_symbol": null,
+      "status": "unavailable",
+      "reason": "No matching pair found on Kraken"
+    },
+    {
+      "original_symbol": "SXT/USDT",
+      "kraken_symbol": "SXT/USD",
+      "status": "converted",
+      "conversion_note": "USDT -> USD",
+      "volume_24h": 11502.83861365555,
+      "price": 0.07908,
+      "change_24h": 2.0255450909560055
+    },
+    {
+      "original_symbol": "XTZ/USDT",
+      "kraken_symbol": "XTZ/USDT",
+      "status": "available",
+      "volume_24h": 24686.714040829993,
+      "price": 0.7721,
+      "change_24h": 2.0891180748380274
+    },
+    {
+      "original_symbol": "TRUMP/USDT",
+      "kraken_symbol": "TRUMP/USDT",
+      "status": "available",
+      "volume_24h": 21208.813023696417,
+      "price": 8.56,
+      "change_24h": 0.1755412521942656
+    },
+    {
+      "original_symbol": "ATOM/USDT",
+      "kraken_symbol": "ATOM/USDT",
+      "status": "available",
+      "volume_24h": 20688.39259629032,
+      "price": 4.5638,
+      "change_24h": 1.4087636654519597
+    },
+    {
+      "original_symbol": "MATIC/USDT",
+      "kraken_symbol": null,
+      "status": "unavailable",
+      "reason": "No matching pair found on Kraken"
+    },
+    {
+      "original_symbol": "FTM/USDT",
+      "kraken_symbol": null,
+      "status": "unavailable",
+      "reason": "No matching pair found on Kraken"
+    },
+    {
+      "original_symbol": "UNI/USDT",
+      "kraken_symbol": "UNI/USD",
+      "status": "converted",
+      "conversion_note": "USDT -> USD",
+      "volume_24h": 704392.6819885585,
+      "price": 9.293,
+      "change_24h": 1.341330425299891
+    },
+    {
+      "original_symbol": "AAVE/USDT",
+      "kraken_symbol": "AAVE/USD",
+      "status": "converted",
+      "conversion_note": "USDT -> USD",
+      "volume_24h": 1809552.5095547189,
+      "price": 298.03,
+      "change_24h": -0.3444124924764261
+    },
+    {
+      "original_symbol": "SUSHI/USDT",
+      "kraken_symbol": "SUSHI/USD",
+      "status": "converted",
+      "conversion_note": "USDT -> USD",
+      "volume_24h": 528084.5604514205,
+      "price": 0.7901,
+      "change_24h": 2.703756661900429
+    },
+    {
+      "original_symbol": "CRV/USDT",
+      "kraken_symbol": "CRV/USD",
+      "status": "converted",
+      "conversion_note": "USDT -> USD",
+      "volume_24h": 724184.0396251172,
+      "price": 0.7336,
+      "change_24h": -1.91202032357267
+    },
+    {
+      "original_symbol": "COMP/USDT",
+      "kraken_symbol": "COMP/USD",
+      "status": "converted",
+      "conversion_note": "USDT -> USD",
+      "volume_24h": 28849.718591202767,
+      "price": 44.75,
+      "change_24h": 1.175672620393398
+    },
+    {
+      "original_symbol": "YFI/USDT",
+      "kraken_symbol": "YFI/USD",
+      "status": "converted",
+      "conversion_note": "USDT -> USD",
+      "volume_24h": 21046.754318130246,
+      "price": 5432.0,
+      "change_24h": 1.2111049003167504
+    },
+    {
+      "original_symbol": "MKR/USDT",
+      "kraken_symbol": null,
+      "status": "unavailable",
+      "reason": "No matching pair found on Kraken"
+    },
+    {
+      "original_symbol": "SNX/USDT",
+      "kraken_symbol": "SNX/USD",
+      "status": "converted",
+      "conversion_note": "USDT -> USD",
+      "volume_24h": 111403.13384163023,
+      "price": 0.683,
+      "change_24h": 2.39880059970015
+    },
+    {
+      "original_symbol": "BAL/USDT",
+      "kraken_symbol": "BAL/USD",
+      "status": "converted",
+      "conversion_note": "USDT -> USD",
+      "volume_24h": 4099.901704670559,
+      "price": 1.24,
+      "change_24h": -1.2738853503184713
+    },
+    {
+      "original_symbol": "ZRX/USDT",
+      "kraken_symbol": "ZRX/USD",
+      "status": "converted",
+      "conversion_note": "USDT -> USD",
+      "volume_24h": 6537.773915301965,
+      "price": 0.2683,
+      "change_24h": 1.5134317063942488
+    },
+    {
+      "original_symbol": "MANA/USDT",
+      "kraken_symbol": "MANA/USDT",
+      "status": "available",
+      "volume_24h": 793.0036220428709,
+      "price": 0.34341,
+      "change_24h": 2.6974490863961242
+    },
+    {
+      "original_symbol": "SAND/USDT",
+      "kraken_symbol": "SAND/USD",
+      "status": "converted",
+      "conversion_note": "USDT -> USD",
+      "volume_24h": 184304.7888656641,
+      "price": 0.3015,
+      "change_24h": 2.2380467955239065
+    },
+    {
+      "original_symbol": "ENJ/USDT",
+      "kraken_symbol": "ENJ/USD",
+      "status": "converted",
+      "conversion_note": "USDT -> USD",
+      "volume_24h": 32462.75003411439,
+      "price": 0.0698,
+      "change_24h": 3.1019202363367797
+    },
+    {
+      "original_symbol": "BAT/USDT",
+      "kraken_symbol": "BAT/USD",
+      "status": "converted",
+      "conversion_note": "USDT -> USD",
+      "volume_24h": 29775.010883103387,
+      "price": 0.15708,
+      "change_24h": 1.7555224460711278
+    },
+    {
+      "original_symbol": "ZEC/USDT",
+      "kraken_symbol": "ZEC/USD",
+      "status": "converted",
+      "conversion_note": "USDT -> USD",
+      "volume_24h": 92188.91836996003,
+      "price": 51.69,
+      "change_24h": 3.4006801360272054
+    }
+  ]
+}

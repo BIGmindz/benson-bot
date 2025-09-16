@@ -1,0 +1,13 @@
+Transaction ID,Customer ID,Amount,Currency,Transaction Type,Date,Fees,Net Amount,Stream Type,Pattern ID
+txn_42097a1769d3,customer_001,49.99,USD,charge,2025-09-16T05:24:52.231880,1.74971,48.24029,subscription,pattern_rsi_oversold
+txn_752f6ff58504,customer_hedge_fund,1999.99,USD,charge,2025-09-16T05:24:52.232735,58.29971,1941.69029,enterprise,
+txn_c8d0de64e5f8,customer_002,999.99,USD,charge,2025-09-16T05:24:52.233864,29.29971,970.69029,custom_pattern,custom_pattern_001
+txn_c591dacff303,customer_api_user,149.5,USD,charge,2025-09-16T05:24:52.234599,4.6355,144.8645,api_usage,
+txn_ca869b486e1e,customer_001,49.99,USD,charge,2025-09-16T05:25:25.237278,1.74971,48.24029,subscription,pattern_rsi_oversold
+txn_114320b3dbdf,customer_hedge_fund,1999.99,USD,charge,2025-09-16T05:25:25.239192,58.29971,1941.69029,enterprise,
+txn_a131d1083eaa,customer_002,999.99,USD,charge,2025-09-16T05:25:25.240009,29.29971,970.69029,custom_pattern,custom_pattern_001
+txn_c020f8a78fc8,customer_api_user,149.5,USD,charge,2025-09-16T05:25:25.241164,4.6355,144.8645,api_usage,
+txn_7d6340c0fa6f,customer_001,49.99,USD,charge,2025-09-16T05:25:43.646409,1.74971,48.24029,subscription,pattern_rsi_oversold
+txn_5e8d74b3d6e4,customer_hedge_fund,1999.99,USD,charge,2025-09-16T05:25:43.647432,58.29971,1941.69029,enterprise,
+txn_34ffeb21716c,customer_002,999.99,USD,charge,2025-09-16T05:25:43.648691,29.29971,970.69029,custom_pattern,custom_pattern_001
+txn_7328f3aa27ce,customer_api_user,149.5,USD,charge,2025-09-16T05:25:43.649804,4.6355,144.8645,api_usage,

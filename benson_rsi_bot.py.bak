@@ -1,0 +1,235 @@
+import pandas as pd
+import time
+import math
+import os
+import signal
+from datetime import datetime, timezone
+import yaml
+from typing import Dict, Any
+from dataclasses import dataclass
+#from signals.africa_signals 
+import AfricaSignals, AfricaSignalsConfigfrom signals.supply_chain_signals 
+import SupplyChainSignals, SupplyChainSignalsConfig
+
+
+# ---------- Utilities ----------
+def load_config(path: str) -> Dict[str, Any]:
+    if not os.path.exists(path):
+        raise FileNotFoundError(f"Config not found at {path}")
+    with open(path, "r") as f:
+        return yaml.safe_load(f)
+
+def utc_now_str() -> str:
+    return datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S %Z")
+
+def wilder_rsi(close: pd.Series, period: int = 14) -> float:
+    """Wilder's RSI using EMA for gains/losses (handles div-by-zero)."""
+    delta = close.diff()
+    gain = delta.clip(lower=0)
+    loss = -delta.clip(upper=0)
+
+    # Wilder's smoothing (EMA with alpha=1/period)
+    avg_gain = gain.ewm(alpha=1/period, adjust=False, min_periods=period).mean()
+    avg_loss = loss.ewm(alpha=1/period, adjust=False, min_periods=period).mean()
+
+    last_gain = avg_gain.iloc[-1]
+    last_loss = avg_loss.iloc[-1]
+
+    if last_loss == 0 and last_gain == 0:
+        return 50.0
+    if last_loss == 0:
+        return 100.0
+
+    rs = last_gain / last_loss
+    rsi = 100 - (100 / (1 + rs))
+    return float(rsi)
+
+def calculate_rsi_from_ohlcv(ohlcv, period: int) -> float:
+    closes = [c[4] for c in ohlcv]
+    series = pd.Series(closes)
+    if len(series) < period + 5:
+        return float("nan")
+    return wilder_rsi(series, period=period)
+
+def backoff_sleep(attempt: int, base: float = 2.0, max_wait: float = 60.0):
+    wait = min(max_wait, base ** attempt)
+    time.sleep(wait)
+
+def safe_fetch_ohlcv(exchange, symbol, timeframe, limit=200):
+    return exchange.fetch_ohlcv(symbol, timeframe=timeframe, limit=limit)
+
+def safe_fetch_ticker(exchange, symbol):
+    t = exchange.fetch_ticker(symbol)
+    price = t.get("last") or t.get("close")
+    if price is None:
+        raise RuntimeError(f"No price in ticker for {symbol}")
+    return price
+
+@dataclass
+class SignalWeight:
+    """Configuration for signal combination"""
+    rsi_weight: float = 0.3
+    sentiment_weight: float = 0.25
+    brazil_weight: float = 0.25
+    africa_weight: float = 0.20
+
+# ---------- Main ----------
+def main():
+    # Load config
+    config_path = os.getenv("BENSON_CONFIG", "config/config.yaml")
+    cfg = load_config(config_path)
+    fut_cfg = (cfg.get("futures") or {})
+    futures_enabled = bool(fut_cfg.get("enabled", False))
+
+    exchange_id = cfg.get("exchange", "binance")
+    import ccxt
+    exchange_cls = getattr(ccxt, exchange_id)
+    exchange = exchange_cls({"enableRateLimit": True})
+
+    exchange.load_markets()
+    symbols = cfg["symbols"]
+    invalid = [s for s in symbols if s not in exchange.markets]
+    if invalid:
+        raise ValueError(f"Invalid symbols for {exchange_id}: {invalid}")
+
+    timeframe = cfg.get("timeframe", "5m")
+    rsi_period = cfg["rsi"]["period"]
+    buy_th = cfg["rsi"]["buy_threshold"]
+    sell_th = cfg["rsi"]["sell_threshold"]
+    cooldown_min = cfg.get("cooldown_minutes", 10)
+    log_path = cfg.get("csv_log", "benson_signals.csv")
+
+    # --- Africa Signals Initialization ---
+    africa_signals = None
+    africa_enabled = cfg.get('africa_signals', {}).get('enabled', False)
+    if africa_enabled:
+        africa_config_dict = cfg['africa_signals']
+        africa_config = AfricaSignalsConfig(**africa_config_dict)
+        africa_signals = AfricaSignals(africa_config)
+        print("🌍 Africa signals: ENABLED")
+    else:
+        print("🌍 Africa signals: DISABLED")
+
+    # --- Other signals: stubs (replace with real logic where needed) ---
+    brazil_signals = None  # TODO: add Brazil signals logic
+    sentiment_signals = None  # TODO: add Sentiment signals logic
+
+    weights = SignalWeight()
+
+    # Debounce state per symbol
+    last_signal: Dict[str, str] = {s: "HOLD" for s in symbols}
+    last_alert_ts: Dict[str, float] = {s: 0.0 for s in symbols}
+    cooldown_sec = cooldown_min * 60
+
+    if not os.path.exists(log_path):
+        with open(log_path, "w") as f:
+            f.write("ts_utc,exchange,symbol,price,rsi,signal,africa_composite,africa_factor,timeframe\n")
+
+    print("🤖 Benson Bot Starting...")
+    print(f"🌐 Exchange: {exchange_id}")
+    print(f"📊 Monitoring: {symbols}")
+    print(f"🕒 Timeframe: {timeframe}")
+    print(f"📈 RSI: period={rsi_period} | Buy<{buy_th} | Sell>{sell_th}")
+    print(f"🧯 Cooldown: {cooldown_min} min between repeated alerts per symbol")
+    active = ["RSI"]
+    if brazil_signals:
+        active.append("Brazil")
+    if sentiment_signals:
+        active.append("Sentiment")
+    if africa_signals:
+        active.append("Africa")
+    print("Active signals: " + ", ".join(active))
+    print("-" * 60)
+
+    # Clean shutdown handling
+    stop = {"flag": False}
+    def handle_sigint(sig, frame):
+        stop["flag"] = True
+        print("\n🛑 Stopping gracefully...")
+    signal.signal(signal.SIGINT, handle_sigint)
+
+    attempt = 0
+    poll_seconds = cfg.get("poll_seconds", 60)
+
+    while not stop["flag"]:
+        try:
+            for symbol in symbols:
+                ohlcv = safe_fetch_ohlcv(exchange, symbol, timeframe, limit=200)
+                rsi_val = calculate_rsi_from_ohlcv(ohlcv, rsi_period)
+
+                if rsi_val is None or (isinstance(rsi_val, float) and math.isnan(rsi_val)):
+                    print(f"[{utc_now_str()}] {symbol}: insufficient data for RSI yet.")
+                    continue
+
+                price = safe_fetch_ticker(exchange, symbol)
+
+                # --- Africa signals ---
+                africa_composite = None
+                africa_factor = 1.0
+                africa_logs = None
+                if africa_signals:
+                    try:
+                        africa_composite, africa_logs = africa_signals.composite()
+                        africa_factor = africa_signals.regional_factor(africa_composite)
+                    except Exception as e:
+                        print(f"Africa error: {e}")
+
+                # --- Combine with other signals (add your real logic as needed) ---
+                # Placeholder for sentiment/brazil signals
+                sentiment_signal = 0
+                brazil_signal = 0
+
+                rsi_signal = 1 if rsi_val < buy_th else -1 if rsi_val > sell_th else 0
+
+                combined_score = (
+                    weights.rsi_weight * rsi_signal
+                    + weights.sentiment_weight * sentiment_signal
+                    + weights.brazil_weight * brazil_signal
+                    + weights.africa_weight * (africa_factor if africa_signals else 0)
+                )
+
+                combined_signal = (
+                    "BUY" if combined_score > 0.3 else
+                    "SELL" if combined_score < -0.3 else
+                    "HOLD"
+                )
+
+                # Print signals
+                print(f"[{utc_now_str()}] {symbol:>12}: ${price:,.4f} | RSI {rsi_val:5.2f} | Africa factor {africa_factor:.2f} | Africa composite {africa_composite if africa_composite is not None else 'N/A'} | Combo {combined_signal}"
+                )
+                # Optionally, print Africa logs
+                if africa_logs and 'signals' in africa_logs:
+                    print(f"    Africa logs (top 3):")
+                    for signal_name, score in list(africa_logs['signals'].items())[:3]:
+                        print(f"      • {signal_name}: {score:.2f}")
+
+                # Only alert on new actionable signals AND respect cooldown
+                now = time.time()
+                cooldown_ok = (now - last_alert_ts[symbol]) >= cooldown_sec
+                changed = combined_signal != last_signal[symbol]
+
+                if combined_signal in ("BUY", "SELL") and changed and cooldown_ok:
+                    print(f"🚨 SIGNAL: {combined_signal} {symbol} @ ${price:,.4f} (RSI {rsi_val:0.2f}, Africa {africa_factor:.2f})")
+                    last_alert_ts[symbol] = now
+
+                # Log to CSV (add Africa signals/combined signal if desired)
+                with open(log_path, "a") as f:
+                    f.write(f"{utc_now_str()},{exchange_id},{symbol},{price},{rsi_val:.4f},{combined_signal},{africa_composite},{africa_factor},{timeframe}\n")
+
+                last_signal[symbol] = combined_signal
+
+            attempt = 0
+            print("-" * 60)
+            time.sleep(poll_seconds)
+
+        except Exception as e:
+            attempt += 1
+            print(f"❌ Error (attempt {attempt}): {type(e).__name__}: {e}")
+            backoff_sleep(attempt)
+
+    print("✅ Exit complete. Logs saved to:", log_path)
+
+if __name__ == "__main__":
+    main()
+
+

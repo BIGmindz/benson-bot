@@ -1,0 +1,43 @@
+symbols:
+- BTC/USDT
+- ETH/USDT
+- SOL/USDT
+- XMR/USDT
+- DOGE/USDT
+- XRP/USDT
+- AVAX/USDT
+- LTC/USDT
+- PENGU/USDT
+- ADA/USDT
+- LINK/USDT
+- FARTCOIN/USDT
+- BNB/USDT
+- ALGO/USDT
+- DOT/USDT
+- AI16Z/USDT
+- BCH/USDT
+- KAS/USDT
+- XTZ/USDT
+- TRUMP/USDT
+- ATOM/USDT
+- MANA/USDT
+- SXT/USD
+- UNI/USD
+- AAVE/USD
+- SUSHI/USD
+- CRV/USD
+- COMP/USD
+- YFI/USD
+- SNX/USD
+- BAL/USD
+- ZRX/USD
+- SAND/USD
+- ENJ/USD
+- BAT/USD
+- ZEC/USD
+validation_summary:
+  available: 22
+  converted: 14
+  total_checked: 40
+  unavailable: 4
+validation_timestamp: '2025-09-16T13:45:48.817449'
