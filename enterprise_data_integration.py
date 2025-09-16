@@ -33,7 +33,7 @@ from pattern_marketplace import PatternMarketplace
 
 # Optional Flask import for webhook server
 try:
-    from flask import Flask, request, jsonify
+    from flask import Flask, request, jsonify  # type: ignore
     HAS_FLASK = True
 except ImportError:
     HAS_FLASK = False
