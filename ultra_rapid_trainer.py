@@ -13,7 +13,12 @@ from datetime import datetime, timedelta
 from typing import Dict, List, Tuple
 import yaml
 import numpy as np
+import os
+from dotenv import load_dotenv
 from signals.supply_chain_signals import SupplyChainSignals, SupplyChainSignalsConfig
+
+# Load environment variables from .env file
+load_dotenv()
 from profit_engine import ProfitEngine
 from benson_config_manager import BensonConfigManager
 
@@ -29,31 +34,67 @@ class UltraRapidTrainer:
         with open(config_path, 'r') as f:
             self.config = yaml.safe_load(f)
         
-        # Initialize exchange
-        self.exchange = ccxt.kraken({
-            'apiKey': '',
-            'secret': '',
-            'sandbox': False,  # Paper trading mode
-            'enableRateLimit': True,
-        })
+        # Check if live trading is enabled
+        self.live_trading_mode = not self.config.get('paper_mode', True)
+        
+        if self.live_trading_mode:
+            # Load live trading credentials from environment
+            api_key = os.getenv('KRAKEN_API_KEY')
+            api_secret = os.getenv('KRAKEN_SECRET')
+            live_enabled = os.getenv('LIVE_TRADING_ENABLED', 'false').lower() == 'true'
+            
+            if not api_key or not api_secret:
+                raise ValueError("🚨 LIVE TRADING REQUIRES KRAKEN_API_KEY and KRAKEN_SECRET environment variables")
+            
+            if not live_enabled:
+                raise ValueError("🚨 Set LIVE_TRADING_ENABLED=true in environment to enable live trading")
+            
+            print("🚨 LIVE TRADING MODE ENABLED - USING REAL MONEY")
+            print(f"   API Key: {api_key[:8]}...{api_key[-4:]}")
+            
+            # Initialize exchange with live credentials
+            self.exchange = ccxt.kraken({
+                'apiKey': api_key,
+                'secret': api_secret,
+                'sandbox': False,  # LIVE TRADING
+                'enableRateLimit': True,
+            })
+            
+            # Import live trading portfolio
+            from live_portfolio import LiveTradingPortfolio
+            self.portfolio_class = LiveTradingPortfolio
+            
+        else:
+            print("📋 PAPER TRADING MODE - Using simulated trades")
+            # Initialize exchange for paper trading (no credentials needed)
+            self.exchange = ccxt.kraken({
+                'apiKey': '',
+                'secret': '',
+                'sandbox': False,  # Paper trading mode
+                'enableRateLimit': True,
+            })
+            
+            # Use standard paper trading portfolio
+            from paper_portfolio import PaperTradingPortfolio
+            self.portfolio_class = PaperTradingPortfolio
         
         # Initialize components
         self._initialize_components()
         
-        # High-frequency training parameters - 30 minutes, 4 trades per minute
+        # Premium quality training parameters - 30 minutes, 1 trade per minute
         self.ultra_settings = {
-            'trades_per_minute': 4.0,        # TARGET: 4 trades per minute
-            'trade_interval_seconds': 15,    # 60/4 = 15 seconds between trades
+            'trades_per_minute': 1.0,        # TARGET: 1 premium trade per minute
+            'trade_interval_seconds': 60,    # 60 seconds between trades for careful selection
             'session_duration': 1800,        # 30 minutes in seconds (1800)
             'starting_budget': 100.0,        # $100 starting budget
-            'position_size_pct': 0.08,       # Smaller positions for higher frequency
-            'min_position_pct': 0.006,       # Minimum 0.6% positions
-            'max_position_pct': 0.25,        # Maximum 25% for high confidence trades
-            'confidence_multiplier': 1.8,    # Lower scaling for frequent trades
-            'confidence_threshold': 58,      # Lower threshold for more trades
-            'random_trade_pct': 0.10,        # 10% random trades for learning
-            'rsi_sensitivity': 0.92,         # High sensitivity for frequent trades
-            'high_frequency_mode': True      # Enable high-frequency 15-second mode
+            'position_size_pct': 0.25,       # Base position size for premium trades
+            'min_position_pct': 0.08,        # Minimum 8% positions for solid trades
+            'max_position_pct': 0.95,        # Maximum 95% for ultra-high conviction trades
+            'confidence_multiplier': 3.0,    # High scaling for premium quality
+            'confidence_threshold': 75,      # HIGH threshold - only excellent trades
+            'random_trade_pct': 0.05,        # Only 5% random trades - focus on quality
+            'rsi_sensitivity': 0.82,         # Balanced sensitivity for quality detection
+            'premium_quality_mode': True     # Enable premium 1-trade-per-minute mode
         }
         
         # Portfolio tracking
@@ -329,18 +370,19 @@ class UltraRapidTrainer:
     def run_ultra_rapid_session(self):
         """Execute 30-minute ultra-rapid trading session"""
         print("\n" + "⚡" * 60)
-        print("🚀 ULTRA-RAPID FIRE TRAINING SESSION")
+        print("🚀 ULTRA-PREMIUM QUALITY TRAINING SESSION")
         print("⚡" * 60)
         print(f"⏱️  Duration: 30 minutes")
         print(f"💰 Starting Budget: ${self.ultra_settings['starting_budget']:.2f}")
-        print(f"⚡ Target Rate: 4 trades/minute (~120 total trades)")
+        print(f"👑 Target Rate: 1 PREMIUM trade/minute (~30 total trades)")
         print(f"📊 Symbols: {len(self.config['symbols'])} cryptocurrencies")
         print(f"🎯 Session ID: {self.session_id}")
-        print(f"📈 Position Range: {self.ultra_settings['min_position_pct']*100:.1f}% - {self.ultra_settings['max_position_pct']*100:.1f}%")
+        print(f"� Position Range: {self.ultra_settings['min_position_pct']*100:.0f}% - {self.ultra_settings['max_position_pct']*100:.0f}% (HIGH CONVICTION)")
+        print(f"🏆 Confidence Threshold: {self.ultra_settings['confidence_threshold']}% (HIGH QUALITY)")
         print()
         
         start_time = time.time()
-        trade_interval = self.ultra_settings['trade_interval_seconds']  # 15 seconds between trades
+        trade_interval = self.ultra_settings['trade_interval_seconds']  # 60 seconds between premium trades
         trades_executed = 0
         profitable_trades = 0
         next_trade_time = start_time

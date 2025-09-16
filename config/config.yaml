@@ -1,7 +1,16 @@
 cooldown_minutes: 5
 csv_log: benson_signals.csv
 exchange: kraken
-paper_mode: true
+paper_mode: false  # 🚨 LIVE TRADING ENABLED
+live_trading:
+  max_position_size: 50.0      # Conservative $50 max per position
+  max_positions: 3             # Maximum 3 simultaneous positions
+  position_size_pct: 2.0       # 2% of balance per position (conservative)
+  min_balance: 200.0           # Minimum balance to maintain
+  daily_loss_limit: 100.0      # Stop trading if daily loss exceeds $100
+  stop_loss_pct: 3.0           # 3% stop loss
+  take_profit_pct: 6.0         # 6% take profit
+  enable_safety_checks: true   # Enable all safety mechanisms
 paper_trading:
   max_position_size: 18.0
   max_positions: 6
