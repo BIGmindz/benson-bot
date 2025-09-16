@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-30-Minute Ultra-Rapid Fire Training - 3 Trades Per Minute
+30-Minute Ultra-Rapid Fire Training - 4 Trades Per Minute
 High-intensity training session to stress-test our 50-symbol portfolio
+15-second intervals for maximum pattern generation
 """
 
 import time
@@ -18,7 +19,7 @@ from benson_config_manager import BensonConfigManager
 
 class UltraRapidTrainer:
     def __init__(self, config_path: str = "config/config.yaml"):
-        """Initialize ultra-rapid trainer for 30-minute 3-trades/min session"""
+        """Initialize ultra-rapid trainer for 30-minute 4-trades/min session"""
         
         # Load user configuration settings
         self.user_config = BensonConfigManager()
@@ -66,10 +67,10 @@ class UltraRapidTrainer:
         self.training_data = []
         
         # Performance metrics
-        self.trade_interval = self.ultra_settings['trade_interval_seconds']  # 35 seconds between trades
+        self.trade_interval = self.ultra_settings['trade_interval_seconds']  # 15 seconds between trades
         
-        print("⚡ OPTIMIZED RAPID FIRE TRAINER INITIALIZED")
-        print(f"🎯 Session: 30 minutes, 1 trade every 35 seconds = ~51 total trades")
+        print("⚡ ULTRA-RAPID FIRE TRAINER INITIALIZED")
+        print(f"🎯 Session: 30 minutes, 1 trade every 15 seconds = ~120 total trades")
         print(f"📊 Portfolio: {len(self.config['symbols'])} symbols")
         
     def _initialize_components(self):
@@ -511,11 +512,11 @@ def main():
     results = trainer.run_ultra_rapid_session()
     
     print(f"\\n🎯 MISSION ACCOMPLISHED!")
-    print(f"Target: 3 trades/min → Achieved: {results['actual_rate']:.1f} trades/min")
+    print(f"Target: 4 trades/min → Achieved: {results['actual_rate']:.1f} trades/min")
     
-    if results['actual_rate'] >= 3.0:
+    if results['actual_rate'] >= 4.0:
         print("🏆 SUCCESS: Target rate achieved!")
-    elif results['actual_rate'] >= 2.5:
+    elif results['actual_rate'] >= 3.5:
         print("⭐ GOOD: Close to target rate!")
     else:
         print("🔄 RETRY: Below target, consider optimization!")
