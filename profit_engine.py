@@ -1,8 +1,124 @@
-#!/usr/bin/env python3
-"""
-Benson Bot - Profit Taking & Reinvestment Engine
-Advanced profit management with dynamic scaling and reinvestment
-"""
+import json
+import logging
+from datetime import datetime, timedelta
+
+# Configure logging
+logging.basicConfig(level=logging.INFO, filename='profit_engine.log',
+                    format='%(asctime)s - %(levelname)s - %(message)s')
+
+class ProfitEngine:
+    def __init__(self, config_path='profit_engine_config.json'):
+        """
+        Initializes the ProfitEngine with dynamic configuration for profit-taking and stop-loss.
+        """
+        self.config = self._load_config(config_path)
+        logging.info("ProfitEngine initialized with dynamic configuration.")
+
+    def _load_config(self, config_path):
+        """Loads configuration from a JSON file."""
+        try:
+            with open(config_path, 'r') as f:
+                return json.load(f)
+        except FileNotFoundError:
+            logging.warning(f"Config file not found at {config_path}. Using default settings.")
+            return {
+                "dynamic_profit_target": {
+                    "enabled": True,
+                    "base_percentage": 1.5,
+                    "volatility_multiplier": 0.5
+                },
+                "trailing_stop_loss": {
+                    "enabled": True,
+                    "percentage": 2.0
+                },
+                "time_based_exit": {
+                    "enabled": True,
+                    "max_hold_minutes": 45
+                }
+            }
+
+    def get_decision(self, position, current_price):
+        """
+        Analyzes a position and determines if it should be sold based on P&L,
+        stop-loss, or time-held criteria.
+
+        Args:
+            position (dict): A dictionary representing the open position.
+                             Expected keys: 'symbol', 'avg_price', 'quantity', 'timestamp'.
+            current_price (float): The current market price of the asset.
+
+        Returns:
+            tuple: A (decision, reason) tuple, e.g., ('sell', 'profit_target_hit').
+                   Returns ('hold', None) if no action is needed.
+        """
+        avg_price = position['avg_price']
+        pnl_percentage = ((current_price - avg_price) / avg_price) * 100
+
+        # 1. Check for profit target
+        if self.config['dynamic_profit_target']['enabled']:
+            profit_target = self._calculate_profit_target(position)
+            if pnl_percentage >= profit_target:
+                logging.info(f"Decision: SELL {position['symbol']} - Reason: Profit target of {profit_target:.2f}% hit.")
+                return 'sell', 'profit_target_hit'
+
+        # 2. Check for stop-loss
+        if self.config['trailing_stop_loss']['enabled']:
+            stop_loss_percentage = -abs(self.config['trailing_stop_loss']['percentage'])
+            if pnl_percentage <= stop_loss_percentage:
+                logging.info(f"Decision: SELL {position['symbol']} - Reason: Stop-loss of {stop_loss_percentage:.2f}% triggered.")
+                return 'sell', 'stop_loss_triggered'
+
+        # 3. Check for time-based exit
+        if self.config['time_based_exit']['enabled']:
+            if self._is_over_max_hold_time(position['timestamp']):
+                logging.info(f"Decision: SELL {position['symbol']} - Reason: Exceeded max hold time.")
+                return 'sell', 'time_based_exit'
+
+        return 'hold', None
+
+    def _calculate_profit_target(self, position):
+        """
+        Calculates a dynamic profit target based on base percentage and volatility.
+        (Volatility is simulated for now).
+        """
+        base_target = self.config['dynamic_profit_target']['base_percentage']
+        # In a real scenario, volatility would be passed in or calculated.
+        # Here, we simulate a medium volatility environment.
+        simulated_volatility_factor = 1.0
+        return base_target * simulated_volatility_factor
+
+    def _is_over_max_hold_time(self, position_timestamp):
+        """
+        Checks if a position has been held longer than the configured max duration.
+        """
+        max_minutes = self.config['time_based_exit']['max_hold_minutes']
+        time_held = datetime.now() - datetime.fromtimestamp(position_timestamp)
+        return time_held > timedelta(minutes=max_minutes)
+
+if __name__ == '__main__':
+    # Example of how to use the ProfitEngine
+    engine = ProfitEngine()
+
+    # Simulate a position
+    fake_position = {
+        'symbol': 'BTC/USD',
+        'avg_price': 60000,
+        'quantity': 0.1,
+        'timestamp': (datetime.now() - timedelta(minutes=10)).timestamp()
+    }
+
+    # Scenario 1: Price increase hits profit target
+    decision, reason = engine.get_decision(fake_position, 61000) # ~1.67% profit
+    print(f"Scenario 1: Price at $61,000 -> Decision: {decision}, Reason: {reason}")
+
+    # Scenario 2: Price drops and hits stop-loss
+    decision, reason = engine.get_decision(fake_position, 58700) # ~2.17% loss
+    print(f"Scenario 2: Price at $58,700 -> Decision: {decision}, Reason: {reason}")
+
+    # Scenario 3: Held for too long
+    fake_position['timestamp'] = (datetime.now() - timedelta(minutes=50)).timestamp()
+    decision, reason = engine.get_decision(fake_position, 60100) # Neutral P&L
+    print(f"Scenario 3: Held for 50 mins -> Decision: {decision}, Reason: {reason}")
 
 import json
 import time

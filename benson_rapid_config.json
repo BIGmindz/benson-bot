@@ -1,0 +1,20 @@
+{
+  "features": {
+    "learning_engine_enabled": true,
+    "advanced_patterns_enabled": true,
+    "supply_chain_signals_enabled": true,
+    "rapid_profit_mode": true,
+    "paper_trading_mode": false
+  },
+  "trading": {
+    "aggressive_mode": true,
+    "profit_taking_mode": "aggressive",
+    "timeframe": "1m",
+    "max_session_duration_minutes": 60
+  },
+  "alerts": {
+    "profit_alerts_enabled": true,
+    "loss_alerts_enabled": true,
+    "position_alerts_enabled": true
+  }
+}

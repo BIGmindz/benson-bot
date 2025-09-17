@@ -12,7 +12,6 @@ from dataclasses import dataclass
 from signals.supply_chain_signals import SupplyChainSignals, SupplyChainSignalsConfig
 from paper_portfolio import PaperTradingPortfolio
 from learning_engine import BensonLearningEngine, apply_learned_optimizations
-from profit_engine import ProfitEngine
 
 # 🚀 ENTERPRISE TRADING MODULES
 from trade_executor import TradeExecutor, TradeRequest, OrderSide, OrderType, create_trade_executor
@@ -266,12 +265,6 @@ def main():
     attempt = 0
     poll_seconds = cfg.get("poll_seconds", 60)
 
-    # Initialize the ProfitEngine
-    profit_engine = ProfitEngine()
-
-    buy_score_threshold = cfg.get("live_trading", {}).get("buy_score_threshold", 0.3)
-    sell_score_threshold = cfg.get("live_trading", {}).get("sell_score_threshold", -0.3)
-
     while not stop["flag"]:
         try:
             # Collect all prices for portfolio updates
@@ -326,8 +319,8 @@ def main():
                 )
 
                 combined_signal = (
-                    "BUY" if combined_score > buy_score_threshold else
-                    "SELL" if combined_score < sell_score_threshold else
+                    "BUY" if combined_score > 0.3 else
+                    "SELL" if combined_score < -0.3 else
                     "HOLD"
                 )
 
@@ -460,19 +453,15 @@ def main():
                     health_metrics = enterprise_portfolio.get_health_metrics()
                     session_metrics = enterprise_portfolio.get_session_metrics()
                     
-                    # Check for stop loss/take profit triggers with ProfitEngine
-                    for position in portfolio_manager.get_open_positions():
-                        if position.symbol in current_prices:
-                            decision, reason = profit_engine.get_decision(
-                                {'symbol': position.symbol, 'avg_price': position.entry_price, 'quantity': position.amount, 'timestamp': position.timestamp},
-                                current_prices[position.symbol]
-                            )
-                            if decision == 'sell':
-                                print(f"💡 PROFIT ENGINE: Closing {position.symbol} due to {reason}")
-                                close_result = trade_executor.close_position(position.id)
-                                if close_result.success:
-                                    portfolio_manager.close_position(position.id, close_result)
-                                    enterprise_portfolio.log_position_close(position.id, close_result, f"profit_engine_{reason}")
+                    # Check for stop loss/take profit triggers with enterprise monitoring
+                    positions_to_close = portfolio_manager.check_stop_loss_take_profit(current_prices)
+                    
+                    for position_id in positions_to_close:
+                        # Close the position with enterprise logging
+                        close_result = trade_executor.close_position(position_id)
+                        if close_result.success:
+                            portfolio_manager.close_position(position_id, close_result)
+                            enterprise_portfolio.log_position_close(position_id, close_result, "stop_loss_take_profit")
                     
                     # Get and log comprehensive portfolio metrics
                     portfolio = trade_executor.get_total_portfolio_value()

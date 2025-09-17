@@ -12,13 +12,10 @@ from dataclasses import dataclass
 from signals.supply_chain_signals import SupplyChainSignals, SupplyChainSignalsConfig
 from paper_portfolio import PaperTradingPortfolio
 from learning_engine import BensonLearningEngine, apply_learned_optimizations
-from profit_engine import ProfitEngine
 
 # 🚀 ENTERPRISE TRADING MODULES
 from trade_executor import TradeExecutor, TradeRequest, OrderSide, OrderType, create_trade_executor
 from portfolio_manager import PortfolioManager
-from enterprise_portfolio_manager import EnterprisePortfolioManager
-from benson_config_manager import BensonConfigManager
 
 
 # ---------- Utilities ----------
@@ -167,45 +164,29 @@ def main():
         weights.sentiment_weight = opt_weights.get('sentiment', weights.sentiment_weight)
         print(f"⚖️ Using optimized weights: RSI={weights.rsi_weight:.3f}, SC={weights.supply_chain_weight:.3f}")
     
-    # Initialize enterprise-grade portfolio management system
+    # Initialize portfolio management system
     portfolio = None
     trade_executor = None
     portfolio_manager = None
-    enterprise_portfolio = None
     
     # Check if live trading is enabled
     is_live_trading = cfg.get("live_trading", {}).get("enabled", False) and not cfg.get("paper_mode", False)
     
     if is_live_trading:
-        print("🏭 ENTERPRISE LIVE TRADING MODE ACTIVATED")
+        print("🚀 LIVE TRADING MODE ACTIVATED")
         try:
-            # Initialize enterprise components with production standards
-            config_manager = BensonConfigManager()
-            enterprise_portfolio = EnterprisePortfolioManager(config_manager)
+            # Initialize enterprise trading components
             trade_executor = create_trade_executor()
             portfolio_manager = PortfolioManager()
             
-            # Generate enterprise readiness report
-            readiness_report = enterprise_portfolio.get_trading_readiness_report()
-            
-            # Enhanced startup diagnostics
+            # Get total portfolio value using enhanced system
             portfolio = trade_executor.get_total_portfolio_value()
             total_value = portfolio['total_usd_value']
             free_usd = portfolio['free_usd']
             allocated_value = total_value - free_usd
             
-            print(f"� ENTERPRISE PORTFOLIO STATUS:")
-            print(f"   Total Value: ${total_value:.2f}")
+            print(f"💰 Total Portfolio Value: ${total_value:.2f}")
             print(f"   Free USD: ${free_usd:.2f}")
-            print(f"   Allocated: ${allocated_value:.2f}")
-            print(f"   Health Score: {readiness_report['health_metrics'].health_score:.2f}/1.00")
-            print(f"   Trading Ready: {'✅ YES' if readiness_report.get('trading_ready') else '❌ NO'}")
-            
-            if not readiness_report.get('trading_ready'):
-                print("⚠️ WARNING: System not optimally ready for trading")
-                for rec in readiness_report.get('recommendations', []):
-                    print(f"   • {rec}")
-                    
             if allocated_value > 0:
                 print(f"   Allocated Positions: ${allocated_value:.2f}")
                 print(f"   🔄 Portfolio liquidation system: ACTIVE")
@@ -266,12 +247,6 @@ def main():
     attempt = 0
     poll_seconds = cfg.get("poll_seconds", 60)
 
-    # Initialize the ProfitEngine
-    profit_engine = ProfitEngine()
-
-    buy_score_threshold = cfg.get("live_trading", {}).get("buy_score_threshold", 0.3)
-    sell_score_threshold = cfg.get("live_trading", {}).get("sell_score_threshold", -0.3)
-
     while not stop["flag"]:
         try:
             # Collect all prices for portfolio updates
@@ -326,8 +301,8 @@ def main():
                 )
 
                 combined_signal = (
-                    "BUY" if combined_score > buy_score_threshold else
-                    "SELL" if combined_score < sell_score_threshold else
+                    "BUY" if combined_score > 0.3 else
+                    "SELL" if combined_score < -0.3 else
                     "HOLD"
                 )
 
@@ -383,16 +358,9 @@ def main():
                             )
                         
                         # 🚀 ENTERPRISE LIVE TRADING EXECUTION
-                        if is_live_trading and trade_executor and portfolio_manager and enterprise_portfolio:
+                        if is_live_trading and trade_executor and portfolio_manager:
                             try:
-                                # Pre-trade health check
-                                health_metrics = enterprise_portfolio.get_health_metrics()
-                                
-                                if health_metrics.health_score < 0.5:
-                                    print(f"⚠️ TRADE DEFERRED: Low health score {health_metrics.health_score:.2f}")
-                                    continue
-                                
-                                # Create trade request with enterprise validation
+                                # Create trade request
                                 trade_request = TradeRequest(
                                     symbol=symbol,
                                     side=OrderSide.BUY if combined_signal == "BUY" else OrderSide.SELL,
@@ -403,31 +371,27 @@ def main():
                                         "rsi": rsi_val,
                                         "supply_chain_factor": supply_chain_factor,
                                         "africa_factor": africa_factor,
-                                        "health_score": health_metrics.health_score,
                                         "reason": f"RSI {rsi_val:.1f}, SC {supply_chain_factor:.2f}"
                                     }
                                 )
                                 
-                                # Enterprise trade execution with comprehensive monitoring
-                                result = enterprise_portfolio.execute_trade_with_monitoring(trade_request)
+                                # Execute the trade
+                                result = trade_executor.execute_trade(trade_request)
                                 
                                 if result.success:
-                                    print(f"✅ ENTERPRISE TRADE EXECUTED: {result.symbol} {result.side.upper()} ${result.amount * result.price:.2f}")
-                                    print(f"   Health Score: {health_metrics.health_score:.2f} | Liquidity: ${health_metrics.available_liquidity:.2f}")
+                                    print(f"✅ LIVE TRADE EXECUTED: {result.symbol} {result.side.upper()} ${result.amount * result.price:.2f}")
                                     
-                                    # Add position to portfolio manager with enterprise monitoring
+                                    # Add position to portfolio manager
                                     portfolio_manager.add_position(
                                         result, confidence, signal_strength,
                                         stop_loss=price * 0.98,  # 2% stop loss
                                         take_profit=price * 1.05  # 5% take profit
                                     )
                                 else:
-                                    print(f"❌ ENTERPRISE TRADE FAILED: {result.error_message}")
-                                    enterprise_portfolio.log_trade_failure(trade_request, result.error_message)
+                                    print(f"❌ TRADE FAILED: {result.error_message}")
                             
                             except Exception as e:
-                                print(f"💥 ENTERPRISE TRADE ERROR: {e}")
-                                enterprise_portfolio.handle_trade_error(e, trade_request)
+                                print(f"💥 TRADE EXECUTION ERROR: {e}")
                         
                         # Execute paper trade for comparison/backup
                         elif portfolio:
@@ -448,64 +412,37 @@ def main():
             if portfolio and current_prices:
                 portfolio.update_positions(current_prices)
             
-            # 🎯 ENTERPRISE PORTFOLIO MANAGEMENT & MONITORING
-            if is_live_trading and portfolio_manager and enterprise_portfolio and current_prices:
+            # 🎯 ENTERPRISE PORTFOLIO MANAGEMENT
+            if is_live_trading and portfolio_manager and current_prices:
                 try:
                     # Update live positions with current prices
                     for position in portfolio_manager.get_open_positions():
                         if position.symbol in current_prices:
                             portfolio_manager.update_position(position.id, current_prices[position.symbol])
                     
-                    # Enterprise health monitoring and automated management
-                    health_metrics = enterprise_portfolio.get_health_metrics()
-                    session_metrics = enterprise_portfolio.get_session_metrics()
+                    # Check for stop loss/take profit triggers
+                    positions_to_close = portfolio_manager.check_stop_loss_take_profit(current_prices)
                     
-                    # Check for stop loss/take profit triggers with ProfitEngine
-                    for position in portfolio_manager.get_open_positions():
-                        if position.symbol in current_prices:
-                            decision, reason = profit_engine.get_decision(
-                                {'symbol': position.symbol, 'avg_price': position.entry_price, 'quantity': position.amount, 'timestamp': position.timestamp},
-                                current_prices[position.symbol]
-                            )
-                            if decision == 'sell':
-                                print(f"💡 PROFIT ENGINE: Closing {position.symbol} due to {reason}")
-                                close_result = trade_executor.close_position(position.id)
-                                if close_result.success:
-                                    portfolio_manager.close_position(position.id, close_result)
-                                    enterprise_portfolio.log_position_close(position.id, close_result, f"profit_engine_{reason}")
+                    for position_id in positions_to_close:
+                        # Close the position
+                        close_result = trade_executor.close_position(position_id)
+                        if close_result.success:
+                            portfolio_manager.close_position(position_id, close_result)
                     
-                    # Get and log comprehensive portfolio metrics
+                    # Get and log portfolio metrics using enhanced system
                     portfolio = trade_executor.get_total_portfolio_value()
                     current_balance = portfolio['total_usd_value']  # Use total portfolio value
-                    portfolio_metrics = portfolio_manager.get_portfolio_metrics(current_balance)
+                    metrics = portfolio_manager.get_portfolio_metrics(current_balance)
                     
-                    # Enterprise-grade status reporting
                     if len(portfolio_manager.get_open_positions()) > 0:
-                        print(f"📊 ENTERPRISE PORTFOLIO STATUS:")
-                        print(f"   Total Value: ${portfolio_metrics.total_value:.2f} | P&L: ${portfolio_metrics.total_pnl:.2f}")
-                        print(f"   Win Rate: {portfolio_metrics.win_rate:.1f}% | Health: {health_metrics.health_score:.2f}")
-                        print(f"   Session Trades: {session_metrics.total_trades} | Success Rate: {session_metrics.success_rate:.1f}%")
-                        
-                        # Risk monitoring alerts
-                        if health_metrics.health_score < 0.6:
-                            print(f"   ⚠️ HEALTH ALERT: Score {health_metrics.health_score:.2f} - Enhanced monitoring active")
-                        if session_metrics.failure_rate > 0.3:
-                            print(f"   🔴 FAILURE ALERT: {session_metrics.failure_rate:.1%} failure rate - Consider reducing exposure")
+                        print(f"📊 Portfolio: ${metrics.total_value:.2f} | P&L: ${metrics.total_pnl:.2f} | Win Rate: {metrics.win_rate:.1f}%")
                     
-                    # Automated portfolio rebalancing check
-                    if enterprise_portfolio.should_rebalance_portfolio():
-                        rebalance_actions = enterprise_portfolio.get_rebalancing_recommendations()
-                        print(f"🔄 REBALANCING RECOMMENDED: {len(rebalance_actions)} actions suggested")
-                        # Note: Actual rebalancing would be implemented based on risk tolerance
-                    
-                    # Save comprehensive portfolio snapshot every hour
+                    # Save portfolio snapshot every hour
                     if int(time.time()) % 3600 < 30:  # Within first 30 seconds of each hour
-                        portfolio_manager.save_portfolio_snapshot(portfolio_metrics)
-                        enterprise_portfolio.save_health_snapshot(health_metrics, session_metrics)
+                        portfolio_manager.save_portfolio_snapshot(metrics)
                 
                 except Exception as e:
-                    print(f"⚠️ Enterprise portfolio management error: {e}")
-                    enterprise_portfolio.handle_monitoring_error(e)
+                    print(f"⚠️ Portfolio management error: {e}")
 
             attempt = 0
             print("-" * 60)

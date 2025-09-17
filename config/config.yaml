@@ -1,16 +1,20 @@
-cooldown_minutes: 5
+cooldown_minutes: 2
 csv_log: benson_signals.csv
 exchange: kraken
-paper_mode: false  # 🚨 LIVE TRADING ENABLED
+paper_mode: false
 live_trading:
-  max_position_size: 50.0      # Conservative $50 max per position
-  max_positions: 3             # Maximum 3 simultaneous positions
-  position_size_pct: 2.0       # 2% of balance per position (conservative)
-  min_balance: 200.0           # Minimum balance to maintain
-  daily_loss_limit: 100.0      # Stop trading if daily loss exceeds $100
-  stop_loss_pct: 3.0           # 3% stop loss
-  take_profit_pct: 6.0         # 6% take profit
-  enable_safety_checks: true   # Enable all safety mechanisms
+  enabled: true
+  max_position_size: 5.0
+  buy_score_threshold: 0.15
+  sell_score_threshold: -0.15
+  max_positions: 3
+  position_size_pct: 50.0
+  min_balance: 5.0
+  daily_loss_limit: 20.0
+  stop_loss_pct: 1.0
+  take_profit_pct: 6.0
+  high_confidence_boost: 1.65
+  enable_safety_checks: true
 paper_trading:
   max_position_size: 18.0
   max_positions: 6
@@ -20,69 +24,42 @@ paper_trading:
   take_profit_pct: 8.0
 poll_seconds: 30
 rsi:
-  buy_threshold: 35
+  buy_threshold: 50
   period: 14
-  sell_threshold: 65
+  sell_threshold: 55
 supply_chain_signals:
   enabled: true
   region: US
   sensitivity: 1.0
 symbols:
-# Validated Kraken symbols (100% success rate - 50/40+ available!)
-# Generated: 2025-09-16 - All symbols validated and optimized
-# Converted symbols from USDT to USD format for Kraken compatibility  
-# Added: CCD (Concordium), XYO (XYO Network), RARE (SuperRare), MERL (Merlin Chain), 
-#        EDGE (Edge Network), JOE (Trader Joe), BADGER (BadgerDAO), PEAQ (DePIN/IoT),
-#        STRD (Stride Liquid Staking), AI3 (AI Protocol), HBAR (Hedera Hashgraph),
-#        BIGTIME (Gaming), USELESS (Meme Token), MINA (Zero-Knowledge Blockchain)
-- BTC/USDT
-- ETH/USDT
-- SOL/USDT
-- XMR/USDT
-- DOGE/USDT
-- XRP/USDT
-- AVAX/USDT
-- LTC/USDT
-- PENGU/USDT
-- ADA/USDT
-- LINK/USDT
-- FARTCOIN/USDT
-- BNB/USDT
-- ALGO/USDT
-- DOT/USDT
-- AI16Z/USDT
-- BCH/USDT
-- KAS/USDT
-- XTZ/USDT
-- TRUMP/USDT
-- ATOM/USDT
-- MANA/USDT
-- CCD/USD         # Concordium - Converted from CCCD/USDT
-- XYO/USD         # XYO Network Layer 1 - Added manually
-- RARE/USD        # SuperRare NFT Marketplace - Strong +17.2% momentum
-- MERL/USD        # Merlin Chain Bitcoin Layer 2 - $1.5M volume +6.9%
-- EDGE/USD        # Edge Network Computing - +7.2% momentum  
-- JOE/USD         # Trader Joe DEX - +9.6% strong performance
-- BADGER/USD      # BadgerDAO Bitcoin DeFi - Stable performance
-- PEAQ/USD        # PEAQ DePIN/IoT Network - $596K volume, entry opportunity -11%
-- STRD/USD        # Stride Liquid Staking (Cosmos) - $55K volume, entry opportunity -3.4%
-- AI3/USD         # AI3 Protocol - $69K volume, AI sector exposure -4.7%
-- HBAR/USD        # Hedera Hashgraph Enterprise - $796K volume, stable +0.8%
-- BIGTIME/USD     # BigTime Gaming Token - Web3 gaming exposure +2.3%
-- USELESS/USD     # Useless Token - High volume meme $1.19M volume -1.7%
-- MINA/USD        # MINA Protocol - Zero-Knowledge blockchain $51K volume +0.8%
-- SXT/USD         # Converted from USDT
-- UNI/USD         # Converted from USDT
-- AAVE/USD        # Converted from USDT
-- SUSHI/USD       # Converted from USDT
-- CRV/USD         # Converted from USDT
-- COMP/USD        # Converted from USDT
-- YFI/USD         # Converted from USDT
-- SNX/USD         # Converted from USDT
-- BAL/USD         # Converted from USDT
-- ZRX/USD         # Converted from USDT
-- SAND/USD        # Converted from USDT
-- ENJ/USD         # Converted from USDT
-- BAT/USD         # Converted from USDT
-- ZEC/USD         # Converted from USDT
+- ADA/USD
+- ANON/USD
+- ATOM/USD
+- AVAX/USD
+- AVNT/USD
+- CCD/USD
+- CLOUD/USD
+- CQT/USD
+- DOGE/USD
+- DOT/USD
+- DYM/USD
+- ESX/USD
+- ETH/USD
+- GHIBLI/USD
+- H/USD
+- LINK/USD
+- MERL/USD
+- METH/USD
+- MOODENG/USD
+- NODL/USD
+- PENGU/USD
+- PSTAKE/USD
+- Q/USD
+- ROOK/USD
+- SOL/USD
+- STBL/USD
+- TOSHI/USD
+- U/USD
+- XRP/USD
+- XRT/USD
 timeframe: 5m
