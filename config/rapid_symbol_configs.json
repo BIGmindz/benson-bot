@@ -1,0 +1,27 @@
+{
+  "BTC/USD": {
+    "profit_target": 0.02,
+    "stop_loss": 0.012,
+    "max_position_pct": 0.15
+  },
+  "ETH/USD": {
+    "profit_target": 0.025,
+    "stop_loss": 0.015,
+    "max_position_pct": 0.12
+  },
+  "SOL/USD": {
+    "profit_target": 0.04,
+    "stop_loss": 0.02,
+    "max_position_pct": 0.1
+  },
+  "DOGE/USD": {
+    "profit_target": 0.05,
+    "stop_loss": 0.025,
+    "max_position_pct": 0.08
+  },
+  "ADA/USD": {
+    "profit_target": 0.035,
+    "stop_loss": 0.018,
+    "max_position_pct": 0.1
+  }
+}

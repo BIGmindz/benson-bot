@@ -1,0 +1,94 @@
+{
+  "signals": {
+    "supply_chain": {
+      "enabled": true,
+      "sensitivity": 1.0,
+      "region": "global",
+      "use_comprehensive": true,
+      "include_disruptions": true,
+      "include_energy_costs": true,
+      "include_trade_policy": true,
+      "include_crypto_logistics": true,
+      "description": "🌍 Comprehensive Supply Chain Signals - ENABLED (7-component system: freight, ports, energy, trade, disruptions, crypto, sentiment)"
+    },
+    "sentiment": {
+      "enabled": true,
+      "weight": 0.25,
+      "sources": [
+        "social",
+        "news",
+        "market"
+      ],
+      "description": "🎭 Market Sentiment Analysis - Social and news sentiment indicators"
+    },
+    "brazil": {
+      "enabled": true,
+      "weight": 0.125,
+      "regions": [
+        "BR",
+        "SA"
+      ],
+      "description": "🇧🇷 Brazil Regional Signals - South American market indicators"
+    },
+    "africa": {
+      "enabled": true,
+      "weight": 0.125,
+      "regions": [
+        "NG",
+        "ZA",
+        "KE"
+      ],
+      "description": "🌍 Africa Regional Signals - African market indicators"
+    },
+    "volatility_dashboard": {
+      "enabled": true,
+      "sensitivity": 1.2,
+      "description": "📊 Volatility Dashboard - Market volatility tracking"
+    },
+    "pattern_recognition": {
+      "enabled": false,
+      "advanced_mode": true,
+      "description": "🔍 Advanced Pattern Recognition - Market pattern analysis"
+    }
+  },
+  "trading": {
+    "ultra_selective": {
+      "enabled": true,
+      "confidence_threshold": 70.0,
+      "signal_threshold": 0.6,
+      "description": "💎 Ultra-Selective Trading - Only highest quality trades"
+    },
+    "maximum_conviction": {
+      "enabled": true,
+      "max_position": 0.85,
+      "scaling_factor": 2.0,
+      "description": "🚀 Maximum Conviction - Up to 85% positions on perfect trades"
+    },
+    "random_learning": {
+      "enabled": true,
+      "frequency": 0.1,
+      "description": "🎲 Random Learning Trades - Edge case exploration"
+    }
+  },
+  "ui": {
+    "show_emojis": true,
+    "verbose_logging": true,
+    "real_time_updates": true,
+    "color_coding": true,
+    "description": "🎨 User Interface Settings - Visual preferences and display options"
+  },
+  "advanced": {
+    "learning_engine": {
+      "enabled": true,
+      "advanced_patterns": false,
+      "memory_retention": 30,
+      "description": "🧠 Learning Engine - Pattern recognition and strategy adaptation"
+    },
+    "break_fix_automate": {
+      "enabled": true,
+      "auto_fix": true,
+      "monitoring_interval": 60,
+      "description": "🔧 Break-Fix-Automate - Automatic issue detection and resolution"
+    }
+  }
+}

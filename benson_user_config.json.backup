@@ -1,0 +1,98 @@
+{
+  "signals": {
+    "supply_chain": {
+      "enabled": true,
+          "maximum_conviction": {
+      "enabled": true,
+      "max_position": 0.85,
+      "scaling_factor": 2.0,
+      "description": "🚀 Maximum Conviction - Up to 85% positions on perfect trades"
+    },tivity": 1.0,
+      "region": "global",
+      "use_comprehensive": true,
+      "include_disruptions": true,
+      "include_energy_costs": true,
+      "include_trade_policy": true,
+      "include_crypto_logistics": true,
+      "description": "🌍 Comprehensive Supply Chain Signals - ENABLED (7-component system: freight, ports, energy, trade, disruptions, crypto, sentiment)"
+    },
+    "sentiment": {
+      "enabled": true,
+      "weight": 0.25,
+      "sources": [
+        "social",
+        "news",
+        "market"
+      ],
+      "description": "\ud83d\ude0a Sentiment Analysis - Social media & news sentiment"
+    },
+    "rsi": {
+      "enabled": true,
+      "period": 14,
+      "oversold": 30,
+      "overbought": 70,
+      "description": "\ud83d\udcca RSI Signals - Relative Strength Index technical analysis"
+    },
+    "brazil_factor": {
+      "enabled": true,
+      "weight": 0.125,
+      "description": "\ud83c\udde7\ud83c\uddf7 Brazil Economic Factor - Regional market conditions"
+    },
+    "africa_factor": {
+      "enabled": true,
+      "weight": 0.125,
+      "description": "\ud83c\udf0d Africa Economic Factor - Regional market conditions"
+    }
+  },
+  "engines": {
+    "learning_engine": {
+      "enabled": true,
+      "auto_train": true,
+      "pattern_threshold": 100,
+      "description": "\ud83e\udde0 Learning Engine - AI pattern recognition & training"
+    },
+    "profit_engine": {
+      "enabled": true,
+      "auto_reinvest": true,
+      "auto_withdraw": true,
+      "scaling_active": true,
+      "description": "\ud83d\udcb0 Profit Engine - Intelligent profit management & scaling"
+    },
+    "pattern_recognition": {
+      "enabled": false,
+      "advanced_mode": true,
+      "description": "\ud83d\udd0d Advanced Pattern Recognition - Market pattern analysis"
+    }
+  },
+  "trading": {
+    "ultra_selective": {
+      "enabled": true,
+      "confidence_threshold": 70.0,
+      "signal_threshold": 0.6,
+      "description": "\ud83d\udc8e Ultra-Selective Trading - Only highest quality trades"
+    },
+    "maximum_conviction": {
+      "enabled": true,
+      "max_position": 0.65,
+      "scaling_factor": 2.0,
+      "description": "\ud83d\ude80 Maximum Conviction - Up to 65% positions on perfect trades"
+    },
+    "random_learning": {
+      "enabled": true,
+      "frequency": 0.1,
+      "description": "\ud83c\udfb2 Random Learning Trades - Edge case exploration"
+    }
+  },
+  "ui": {
+    "show_emojis": true,
+    "verbose_logging": true,
+    "real_time_updates": true,
+    "color_coding": true,
+    "description": "\ud83c\udfa8 User Interface - Display preferences"
+  },
+  "meta": {
+    "created": "2025-09-16T04:55:34.281153",
+    "version": "2.0",
+    "last_modified": "2025-09-16T04:58:47.287588"
+  }
+}

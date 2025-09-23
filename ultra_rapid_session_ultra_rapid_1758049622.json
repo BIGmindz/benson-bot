@@ -1,0 +1,75 @@
+{
+  "session_id": "ultra_rapid_1758049622",
+  "session_type": "ultra_rapid_30min",
+  "settings": {
+    "trades_per_minute": 1.0,
+    "trade_interval_seconds": 60,
+    "session_duration": 1800,
+    "starting_budget": 100.0,
+    "position_size_pct": 0.15,
+    "min_position_pct": 0.01,
+    "max_position_pct": 0.4,
+    "confidence_multiplier": 2.5,
+    "confidence_threshold": 75,
+    "random_trade_pct": 0.05,
+    "rsi_sensitivity": 0.82,
+    "premium_quality_mode": true
+  },
+  "final_balance": 100.54693427312327,
+  "total_trades": 5,
+  "profitable_trades": 3,
+  "win_rate": 60.0,
+  "total_return_pct": 0.54693427312327,
+  "trade_history": [
+    {
+      "timestamp": "2025-09-16 15:09:02.836723",
+      "symbol": "ALGO/USDT",
+      "action": "SELL",
+      "price": 0.23757,
+      "position_pct": 36.75779751204654,
+      "confidence": 98.02079336545742,
+      "profit_pct": 1.207412373663895,
+      "outcome": "profit"
+    },
+    {
+      "timestamp": "2025-09-16 15:11:02.872396",
+      "symbol": "RARE/USD",
+      "action": "SELL",
+      "price": 0.0616,
+      "position_pct": 36.189764026560944,
+      "confidence": 96.07961857481165,
+      "profit_pct": 1.1564894738613962,
+      "outcome": "profit"
+    },
+    {
+      "timestamp": "2025-09-16 15:15:03.110254",
+      "symbol": "UNI/USD",
+      "action": "BUY",
+      "price": 9.245,
+      "position_pct": 35.71042602955231,
+      "confidence": 94.41188904195592,
+      "profit_pct": -1.1778996360793064,
+      "outcome": "loss"
+    },
+    {
+      "timestamp": "2025-09-16 15:24:03.804416",
+      "symbol": "CCD/USD",
+      "action": "BUY",
+      "price": 0.00833,
+      "position_pct": 36.37498728076001,
+      "confidence": 96.57509514683596,
+      "profit_pct": -0.3594311730036459,
+      "outcome": "loss"
+    },
+    {
+      "timestamp": "2025-09-16 15:34:04.323667",
+      "symbol": "SNX/USD",
+      "action": "BUY",
+      "price": 0.68,
+      "position_pct": 33.80652373300886,
+      "confidence": 89.8733626259286,
+      "profit_pct": 0.7027663588444418,
+      "outcome": "profit"
+    }
+  ]
+}

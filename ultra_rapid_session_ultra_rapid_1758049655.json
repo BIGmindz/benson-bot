@@ -1,0 +1,45 @@
+{
+  "session_id": "ultra_rapid_1758049655",
+  "session_type": "ultra_rapid_30min",
+  "settings": {
+    "trades_per_minute": 1.0,
+    "trade_interval_seconds": 60,
+    "session_duration": 1800,
+    "starting_budget": 100.0,
+    "position_size_pct": 0.15,
+    "min_position_pct": 0.01,
+    "max_position_pct": 0.4,
+    "confidence_multiplier": 2.5,
+    "confidence_threshold": 75,
+    "random_trade_pct": 0.05,
+    "rsi_sensitivity": 0.82,
+    "premium_quality_mode": true
+  },
+  "final_balance": 100.32829104922175,
+  "total_trades": 2,
+  "profitable_trades": 1,
+  "win_rate": 50.0,
+  "total_return_pct": 0.3282910492217468,
+  "trade_history": [
+    {
+      "timestamp": "2025-09-16 15:20:35.700172",
+      "symbol": "ETH/USDT",
+      "action": "BUY",
+      "price": 4483.78,
+      "position_pct": 34.125,
+      "confidence": 91.0,
+      "profit_pct": 1.6516555357626912,
+      "outcome": "profit"
+    },
+    {
+      "timestamp": "2025-09-16 15:29:36.054109",
+      "symbol": "RARE/USD",
+      "action": "BUY",
+      "price": 0.0608,
+      "position_pct": 37.711360294342136,
+      "confidence": 100,
+      "profit_pct": -0.6205488588396477,
+      "outcome": "loss"
+    }
+  ]
+}

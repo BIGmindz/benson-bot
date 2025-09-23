@@ -1,0 +1,15 @@
+{
+    "dynamic_profit_target": {
+        "enabled": true,
+        "base_percentage": 1.2,
+        "volatility_multiplier": 0.5
+    },
+    "trailing_stop_loss": {
+        "enabled": true,
+        "percentage": 1.8
+    },
+    "time_based_exit": {
+        "enabled": true,
+        "max_hold_minutes": 25
+    }
+}

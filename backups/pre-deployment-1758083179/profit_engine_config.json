@@ -1,0 +1,58 @@
+{
+  "timestamp": "2025-09-16T04:37:18.546586",
+  "portfolio_summary": {
+    "current_balance": 100.0,
+    "total_profits": 0.0,
+    "withdrawn_profits": 0.0,
+    "open_positions": 0,
+    "total_position_value": 0,
+    "total_portfolio_value": 100.0,
+    "total_return_percentage": 0.0,
+    "profit_scaling_active": false,
+    "next_withdrawal_at": 125.0
+  },
+  "settings": {
+    "profit_targets": {
+      "low_confidence": 0.02,
+      "medium_confidence": 0.035,
+      "high_confidence": 0.05,
+      "ultra_confidence": 0.08
+    },
+    "trailing_stop": {
+      "enabled": true,
+      "initial_stop": 0.015,
+      "step_size": 0.005,
+      "max_trailing": 0.04
+    },
+    "partial_profit_taking": {
+      "enabled": true,
+      "first_target": 0.025,
+      "second_target": 0.045,
+      "final_target": 0.08
+    },
+    "reinvestment": {
+      "compound_threshold": 0.1,
+      "scaling_factor": 1.2,
+      "max_position_scale": 2.0,
+      "profit_retention": 0.8
+    },
+    "portfolio_scaling": {
+      "enabled": true,
+      "base_position_range": [
+        0.01,
+        0.65
+      ],
+      "profit_multiplier": 1.5,
+      "max_scaled_position": 0.85,
+      "rebalance_frequency": 100
+    },
+    "withdrawal": {
+      "auto_withdraw": true,
+      "withdraw_threshold": 0.25,
+      "withdraw_percentage": 0.2,
+      "min_balance_ratio": 1.5
+    }
+  },
+  "profit_history": [],
+  "open_positions": {}
+}

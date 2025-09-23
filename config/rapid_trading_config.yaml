@@ -1,0 +1,39 @@
+position_sizing:
+  base_position_pct: 0.12
+  max_position_usd: 60.0
+  min_position_usd: 8.0
+  risk_per_trade: 0.02
+  volatility_adjustment: true
+profit_taking:
+  aggressive_profit_target: 0.04
+  enabled: true
+  max_hold_minutes: 45
+  profit_scaling: true
+  quick_profit_target: 0.025
+  stop_loss: 0.015
+  trailing_stop: 0.01
+rapid_mode:
+  check_interval_seconds: 30
+  enabled: true
+  force_close_at_session_end: true
+  max_concurrent_trades: 6
+  signal_refresh_seconds: 60
+  target_trades_per_hour: 8
+risk_management:
+  consecutive_loss_limit: 3
+  daily_loss_limit: 0.08
+  emergency_exit_enabled: true
+  max_drawdown: 0.05
+  position_correlation_limit: 0.7
+signal_weights:
+  momentum: 0.3
+  rsi: 0.35
+  sentiment: 0.2
+  supply_chain: 0.15
+trading:
+  max_positions: 8
+  rsi_buy_threshold: 25
+  rsi_period: 9
+  rsi_sell_threshold: 75
+  signal_strength_min: 0.6
+  timeframe: 1m

@@ -1,0 +1,334 @@
+{
+  "session_id": "ultra_rapid_1758045887",
+  "session_type": "ultra_rapid_30min",
+  "settings": {
+    "trades_per_minute": 3,
+    "session_duration": 1800,
+    "starting_budget": 100.0,
+    "position_size_pct": 0.08,
+    "min_position_pct": 0.005,
+    "max_position_pct": 0.25,
+    "confidence_multiplier": 1.8,
+    "confidence_threshold": 60,
+    "random_trade_pct": 0.1,
+    "rsi_sensitivity": 0.9,
+    "ultra_mode": true
+  },
+  "final_balance": 100.56304881522898,
+  "total_trades": 31,
+  "profitable_trades": 16,
+  "win_rate": 51.61290322580645,
+  "total_return_pct": 0.5630488152289814,
+  "trade_history": [
+    {
+      "timestamp": "2025-09-16 14:04:47.408067",
+      "symbol": "ZRX/USD",
+      "action": "SELL",
+      "price": 0.2683,
+      "position_pct": 7.402405273066819,
+      "confidence": 51.405592174075124,
+      "profit_pct": 1.6553251913361866,
+      "outcome": "profit"
+    },
+    {
+      "timestamp": "2025-09-16 14:05:47.477123",
+      "symbol": "BAL/USD",
+      "action": "BUY",
+      "price": 784.6230400672907,
+      "position_pct": 9.615130046576613,
+      "confidence": 66.6900185677363,
+      "profit_pct": 1.9069123892111048,
+      "outcome": "profit"
+    },
+    {
+      "timestamp": "2025-09-16 14:06:27.604713",
+      "symbol": "LTC/USDT",
+      "action": "BUY",
+      "price": 115.34436,
+      "position_pct": 9.507829941264347,
+      "confidence": 65.82509917289632,
+      "profit_pct": 1.0154947846186155,
+      "outcome": "profit"
+    },
+    {
+      "timestamp": "2025-09-16 14:07:27.650972",
+      "symbol": "BTC/USDT",
+      "action": "BUY",
+      "price": 116666.5,
+      "position_pct": 9.843410199446902,
+      "confidence": 68.0826708918788,
+      "profit_pct": -0.9738820424491447,
+      "outcome": "loss"
+    },
+    {
+      "timestamp": "2025-09-16 14:08:27.737797",
+      "symbol": "ZRX/USD",
+      "action": "SELL",
+      "price": 0.2683,
+      "position_pct": 7.896007615814366,
+      "confidence": 54.6657219510939,
+      "profit_pct": -1.1090737911307256,
+      "outcome": "loss"
+    },
+    {
+      "timestamp": "2025-09-16 14:10:07.959801",
+      "symbol": "MANA/USDT",
+      "action": "BUY",
+      "price": 0.34341,
+      "position_pct": 9.540758989929497,
+      "confidence": 66.11057646867299,
+      "profit_pct": 0.5878276505792497,
+      "outcome": "profit"
+    },
+    {
+      "timestamp": "2025-09-16 14:10:27.980772",
+      "symbol": "FARTCOIN/USDT",
+      "action": "BUY",
+      "price": 0.8384,
+      "position_pct": 10.558572491641431,
+      "confidence": 73.12228038892688,
+      "profit_pct": 1.0601361238485718,
+      "outcome": "profit"
+    },
+    {
+      "timestamp": "2025-09-16 14:11:48.164699",
+      "symbol": "XMR/USDT",
+      "action": "BUY",
+      "price": 321.95,
+      "position_pct": 6.52601980692039,
+      "confidence": 45.14472914231969,
+      "profit_pct": -1.3879711948104119,
+      "outcome": "loss"
+    },
+    {
+      "timestamp": "2025-09-16 14:12:08.260627",
+      "symbol": "MERL/USD",
+      "action": "BUY",
+      "price": 0.17917,
+      "position_pct": 13.786906138527444,
+      "confidence": 95.45947512588826,
+      "profit_pct": -0.5757108283109348,
+      "outcome": "loss"
+    },
+    {
+      "timestamp": "2025-09-16 14:12:28.261856",
+      "symbol": "ETH/USDT",
+      "action": "BUY",
+      "price": 4492.93,
+      "position_pct": 7.409383734528617,
+      "confidence": 51.34275384663054,
+      "profit_pct": 1.174459411338026,
+      "outcome": "profit"
+    },
+    {
+      "timestamp": "2025-09-16 14:13:28.460605",
+      "symbol": "BTC/USDT",
+      "action": "SELL",
+      "price": 116719.8,
+      "position_pct": 11.637728414315095,
+      "confidence": 77.47368089587643,
+      "profit_pct": -0.7001520334574639,
+      "outcome": "loss"
+    },
+    {
+      "timestamp": "2025-09-16 14:14:28.564162",
+      "symbol": "SUSHI/USD",
+      "action": "BUY",
+      "price": 0.7889,
+      "position_pct": 8.774218626655498,
+      "confidence": 60.796948021667745,
+      "profit_pct": 0.4736261853342625,
+      "outcome": "profit"
+    },
+    {
+      "timestamp": "2025-09-16 14:16:08.785999",
+      "symbol": "KAS/USDT",
+      "action": "BUY",
+      "price": 0.08637,
+      "position_pct": 8.052476788090253,
+      "confidence": 55.772789479351,
+      "profit_pct": -0.367154115958628,
+      "outcome": "loss"
+    },
+    {
+      "timestamp": "2025-09-16 14:16:28.788571",
+      "symbol": "BNB/USDT",
+      "action": "SELL",
+      "price": 954.78,
+      "position_pct": 9.793265123013843,
+      "confidence": 70.6769145265786,
+      "profit_pct": -0.6911125618362496,
+      "outcome": "loss"
+    },
+    {
+      "timestamp": "2025-09-16 14:17:48.969118",
+      "symbol": "BADGER/USD",
+      "action": "BUY",
+      "price": 1.072,
+      "position_pct": 8.037748128344688,
+      "confidence": 58.0468294871927,
+      "profit_pct": 1.2322928257577128,
+      "outcome": "profit"
+    },
+    {
+      "timestamp": "2025-09-16 14:18:29.043796",
+      "symbol": "RARE/USD",
+      "action": "BUY",
+      "price": 0.061,
+      "position_pct": 10.965295363029984,
+      "confidence": 75.94614399570804,
+      "profit_pct": -0.4837029531292709,
+      "outcome": "loss"
+    },
+    {
+      "timestamp": "2025-09-16 14:19:49.344894",
+      "symbol": "SAND/USD",
+      "action": "SELL",
+      "price": 0.302,
+      "position_pct": 9.03375671470535,
+      "confidence": 65.20981378383476,
+      "profit_pct": -0.7154386824340778,
+      "outcome": "loss"
+    },
+    {
+      "timestamp": "2025-09-16 14:20:09.418259",
+      "symbol": "YFI/USD",
+      "action": "SELL",
+      "price": 5432.0,
+      "position_pct": 7.977978063457458,
+      "confidence": 60.1314383822992,
+      "profit_pct": 1.9851027906698553,
+      "outcome": "profit"
+    },
+    {
+      "timestamp": "2025-09-16 14:20:29.463723",
+      "symbol": "BCH/USDT",
+      "action": "BUY",
+      "price": 598.73,
+      "position_pct": 9.960454811825242,
+      "confidence": 71.8318854262015,
+      "profit_pct": -0.7758782558459176,
+      "outcome": "loss"
+    },
+    {
+      "timestamp": "2025-09-16 14:20:49.536074",
+      "symbol": "RARE/USD",
+      "action": "SELL",
+      "price": 0.061,
+      "position_pct": 8.425845371477156,
+      "confidence": 60.811727119983274,
+      "profit_pct": -1.02489942270665,
+      "outcome": "loss"
+    },
+    {
+      "timestamp": "2025-09-16 14:22:09.735418",
+      "symbol": "BADGER/USD",
+      "action": "SELL",
+      "price": 1.072,
+      "position_pct": 5.36713212283064,
+      "confidence": 40.455236896196524,
+      "profit_pct": 1.6177660223315584,
+      "outcome": "profit"
+    },
+    {
+      "timestamp": "2025-09-16 14:23:09.952169",
+      "symbol": "BIGTIME/USD",
+      "action": "BUY",
+      "price": 0.0532,
+      "position_pct": 9.941067024629536,
+      "confidence": 71.74722930100654,
+      "profit_pct": 0.6352651241199324,
+      "outcome": "profit"
+    },
+    {
+      "timestamp": "2025-09-16 14:24:10.122959",
+      "symbol": "ZRX/USD",
+      "action": "SELL",
+      "price": 0.2683,
+      "position_pct": 9.150524385972941,
+      "confidence": 65.99999999999999,
+      "profit_pct": -1.2340342431582587,
+      "outcome": "loss"
+    },
+    {
+      "timestamp": "2025-09-16 14:26:10.491857",
+      "symbol": "USELESS/USD",
+      "action": "BUY",
+      "price": 0.2345,
+      "position_pct": 5.7997487106964805,
+      "confidence": 41.87914579848496,
+      "profit_pct": -0.46986947599753526,
+      "outcome": "loss"
+    },
+    {
+      "timestamp": "2025-09-16 14:26:50.686575",
+      "symbol": "XRP/USDT",
+      "action": "BUY",
+      "price": 3.04959,
+      "position_pct": 9.137700742185602,
+      "confidence": 65.99999999999999,
+      "profit_pct": -0.671392033822947,
+      "outcome": "loss"
+    },
+    {
+      "timestamp": "2025-09-16 14:28:31.043898",
+      "symbol": "YFI/USD",
+      "action": "BUY",
+      "price": 5437.0,
+      "position_pct": 9.128622947010701,
+      "confidence": 68.84338242589975,
+      "profit_pct": 0.6981197545880651,
+      "outcome": "profit"
+    },
+    {
+      "timestamp": "2025-09-16 14:28:51.050385",
+      "symbol": "TRUMP/USDT",
+      "action": "BUY",
+      "price": 8.56,
+      "position_pct": 5.987713944771914,
+      "confidence": 43.24718930681517,
+      "profit_pct": 1.1315037776984387,
+      "outcome": "profit"
+    },
+    {
+      "timestamp": "2025-09-16 14:29:51.189985",
+      "symbol": "XRP/USDT",
+      "action": "BUY",
+      "price": 3.04552,
+      "position_pct": 13.691599635100559,
+      "confidence": 94.86983103444271,
+      "profit_pct": 1.239897079779131,
+      "outcome": "profit"
+    },
+    {
+      "timestamp": "2025-09-16 14:31:11.342334",
+      "symbol": "TRUMP/USDT",
+      "action": "SELL",
+      "price": 8.56,
+      "position_pct": 8.807519739187907,
+      "confidence": 60.924352231367735,
+      "profit_pct": 1.4371466131900448,
+      "outcome": "profit"
+    },
+    {
+      "timestamp": "2025-09-16 14:32:51.634903",
+      "symbol": "DOT/USDT",
+      "action": "BUY",
+      "price": 4.27,
+      "position_pct": 9.935491334329951,
+      "confidence": 66.0,
+      "profit_pct": -1.4762600131806891,
+      "outcome": "loss"
+    },
+    {
+      "timestamp": "2025-09-16 14:34:31.870349",
+      "symbol": "DOT/USDT",
+      "action": "SELL",
+      "price": 4.27,
+      "position_pct": 9.920918582999294,
+      "confidence": 65.99999999999999,
+      "profit_pct": 1.9196479208535744,
+      "outcome": "profit"
+    }
+  ]
+}

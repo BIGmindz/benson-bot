@@ -1,0 +1,149 @@
+{
+  "deployment_timestamp": 1758082353.025194,
+  "deployment_datetime": "2025-09-17T00:12:33.025197",
+  "deployment_duration_seconds": 58.833722829818726,
+  "overall_readiness": false,
+  "backup_location": "/Users/johnbozza/Library/Mobile Documents/com~apple~CloudDocs/Benson Bot/backups/pre-deployment-1758082294",
+  "validation_results": {
+    "environment": {
+      "passed": false,
+      "checks": [
+        [
+          "Python Version",
+          true,
+          "3.11"
+        ],
+        [
+          "File: benson_rsi_bot.py",
+          true,
+          "/Users/johnbozza/Library/Mobile Documents/com~apple~CloudDocs/Benson Bot/benson_rsi_bot.py"
+        ],
+        [
+          "File: enterprise_portfolio_manager.py",
+          true,
+          "/Users/johnbozza/Library/Mobile Documents/com~apple~CloudDocs/Benson Bot/enterprise_portfolio_manager.py"
+        ],
+        [
+          "File: trade_executor.py",
+          true,
+          "/Users/johnbozza/Library/Mobile Documents/com~apple~CloudDocs/Benson Bot/trade_executor.py"
+        ],
+        [
+          "File: benson_config_manager.py",
+          true,
+          "/Users/johnbozza/Library/Mobile Documents/com~apple~CloudDocs/Benson Bot/benson_config_manager.py"
+        ],
+        [
+          "Env Var: KRAKEN_API_KEY",
+          false,
+          "Missing"
+        ],
+        [
+          "Env Var: KRAKEN_SECRET",
+          false,
+          "Missing"
+        ],
+        [
+          "Env Var: BENSON_CONFIG",
+          false,
+          "Missing"
+        ],
+        [
+          "Database: benson_memory.db",
+          true,
+          "Accessible"
+        ],
+        [
+          "Database: benson_patterns.db",
+          true,
+          "Accessible"
+        ]
+      ]
+    },
+    "dependencies": {
+      "passed": false,
+      "checks": [
+        [
+          "ccxt",
+          true,
+          "Available"
+        ],
+        [
+          "pandas",
+          true,
+          "Available"
+        ],
+        [
+          "numpy",
+          true,
+          "Available"
+        ],
+        [
+          "pyyaml",
+          false,
+          "Missing"
+        ],
+        [
+          "fastapi",
+          false,
+          "Missing"
+        ],
+        [
+          "uvicorn",
+          false,
+          "Missing"
+        ],
+        [
+          "sqlite3",
+          true,
+          "Built-in"
+        ]
+      ]
+    },
+    "configuration": {
+      "passed": true,
+      "checks": [
+        [
+          "Main Config",
+          true,
+          "config/config.yaml"
+        ],
+        [
+          "User Config",
+          true,
+          "Valid JSON"
+        ]
+      ]
+    },
+    "integration_tests": {
+      "passed": false,
+      "output": "test_comprehensive_system_integration (__main__.TestEnterpriseIntegration.test_comprehensive_system_integration)\nTest full system integration with all components ... ok\ntest_error_handling_resilience (__main__.TestEnterpriseIntegration.test_error_handling_resilience)\nTest enterprise-grade error handling and resilience ... FAIL\ntest_health_metrics_calculation (__main__.TestEnterpriseIntegration.test_health_metrics_calculation)\nTest comprehensive health metrics calculation ... ERROR\ntest_performance_benchmarks (__main__.TestEnterpriseIntegration.test_performance_benchmarks)\nTest system performance under load ... ERROR\ntest_session_metrics_tracking (__main__.TestEnterpriseIntegration.test_session_metrics_tracking)\nTest comprehensive session metrics tracking ... ERROR\ntest_trade_execution_with_monitoring (__main__.TestEnterpriseIntegration.test_trade_execution_with_monitoring)\nTest enterprise trade execution with comprehensive monitoring ... ERROR\ntest_trading_readiness_assessment (__main__.TestEnterpriseIntegration.test_trading_readiness_assessment)\nTest comprehensive trading readiness evaluation ... ERROR\n\n======================================================================\nERROR: test_health_metrics_calculation (__main__.TestEnterpriseIntegration.test_health_metrics_calculation)\nTest comprehensive health metrics calculation\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/Users/johnbozza/Library/Mobile Documents/com~apple~CloudDocs/Benson Bot/enterprise_integration_tests.py\", line 47, in test_health_metrics_calculation\n    with patch.object(self.enterprise_portfolio, '_get_current_portfolio_balance', return_value=500.0), \\\n  File \"/opt/homebrew/Cellar/python@3.11/3.11.13/Frameworks/Python.framework/Versions/3.11/lib/python3.11/unittest/mock.py\", line 1446, in __enter__\n    original, local = self.get_original()\n                      ^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.11/3.11.13/Frameworks/Python.framework/Versions/3.11/lib/python3.11/unittest/mock.py\", line 1419, in get_original\n    raise AttributeError(\nAttributeError: <enterprise_portfolio_manager.EnterprisePortfolioManager object at 0x104709a90> does not have the attribute '_get_current_portfolio_balance'\n\n======================================================================\nERROR: test_performance_benchmarks (__main__.TestEnterpriseIntegration.test_performance_benchmarks)\nTest system performance under load\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/Users/johnbozza/Library/Mobile Documents/com~apple~CloudDocs/Benson Bot/enterprise_integration_tests.py\", line 261, in test_performance_benchmarks\n    with patch.object(self.enterprise_portfolio, '_get_current_portfolio_balance', return_value=500.0), \\\n  File \"/opt/homebrew/Cellar/python@3.11/3.11.13/Frameworks/Python.framework/Versions/3.11/lib/python3.11/unittest/mock.py\", line 1446, in __enter__\n    original, local = self.get_original()\n                      ^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.11/3.11.13/Frameworks/Python.framework/Versions/3.11/lib/python3.11/unittest/mock.py\", line 1419, in get_original\n    raise AttributeError(\nAttributeError: <enterprise_portfolio_manager.EnterprisePortfolioManager object at 0x1073d6450> does not have the attribute '_get_current_portfolio_balance'\n\n======================================================================\nERROR: test_session_metrics_tracking (__main__.TestEnterpriseIntegration.test_session_metrics_tracking)\nTest comprehensive session metrics tracking\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/Users/johnbozza/Library/Mobile Documents/com~apple~CloudDocs/Benson Bot/enterprise_integration_tests.py\", line 161, in test_session_metrics_tracking\n    with patch.object(self.enterprise_portfolio, '_load_session_data') as mock_load:\n  File \"/opt/homebrew/Cellar/python@3.11/3.11.13/Frameworks/Python.framework/Versions/3.11/lib/python3.11/unittest/mock.py\", line 1446, in __enter__\n    original, local = self.get_original()\n                      ^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.11/3.11.13/Frameworks/Python.framework/Versions/3.11/lib/python3.11/unittest/mock.py\", line 1419, in get_original\n    raise AttributeError(\nAttributeError: <enterprise_portfolio_manager.EnterprisePortfolioManager object at 0x1073251d0> does not have the attribute '_load_session_data'\n\n======================================================================\nERROR: test_trade_execution_with_monitoring (__main__.TestEnterpriseIntegration.test_trade_execution_with_monitoring)\nTest enterprise trade execution with comprehensive monitoring\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/Users/johnbozza/Library/Mobile Documents/com~apple~CloudDocs/Benson Bot/enterprise_integration_tests.py\", line 126, in test_trade_execution_with_monitoring\n    with patch.object(self.enterprise_portfolio, 'get_health_metrics') as mock_health:\n  File \"/opt/homebrew/Cellar/python@3.11/3.11.13/Frameworks/Python.framework/Versions/3.11/lib/python3.11/unittest/mock.py\", line 1446, in __enter__\n    original, local = self.get_original()\n                      ^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.11/3.11.13/Frameworks/Python.framework/Versions/3.11/lib/python3.11/unittest/mock.py\", line 1419, in get_original\n    raise AttributeError(\nAttributeError: <enterprise_portfolio_manager.EnterprisePortfolioManager object at 0x1118be850> does not have the attribute 'get_health_metrics'\n\n======================================================================\nERROR: test_trading_readiness_assessment (__main__.TestEnterpriseIntegration.test_trading_readiness_assessment)\nTest comprehensive trading readiness evaluation\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/Users/johnbozza/Library/Mobile Documents/com~apple~CloudDocs/Benson Bot/enterprise_integration_tests.py\", line 69, in test_trading_readiness_assessment\n    with patch.object(self.enterprise_portfolio, 'get_health_metrics') as mock_health:\n  File \"/opt/homebrew/Cellar/python@3.11/3.11.13/Frameworks/Python.framework/Versions/3.11/lib/python3.11/unittest/mock.py\", line 1446, in __enter__\n    original, local = self.get_original()\n                      ^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.11/3.11.13/Frameworks/Python.framework/Versions/3.11/lib/python3.11/unittest/mock.py\", line 1419, in get_original\n    raise AttributeError(\nAttributeError: <enterprise_portfolio_manager.EnterprisePortfolioManager object at 0x1046fe1d0> does not have the attribute 'get_health_metrics'\n\n======================================================================\nFAIL: test_error_handling_resilience (__main__.TestEnterpriseIntegration.test_error_handling_resilience)\nTest enterprise-grade error handling and resilience\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/Users/johnbozza/Library/Mobile Documents/com~apple~CloudDocs/Benson Bot/enterprise_integration_tests.py\", line 208, in test_error_handling_resilience\n    self.enterprise_portfolio.handle_trade_error(error, trade_request)\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'EnterprisePortfolioManager' object has no attribute 'handle_trade_error'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/Users/johnbozza/Library/Mobile Documents/com~apple~CloudDocs/Benson Bot/enterprise_integration_tests.py\", line 211, in test_error_handling_resilience\n    self.fail(f\"Error handling failed for {type(error).__name__}: {e}\")\nAssertionError: Error handling failed for Exception: 'EnterprisePortfolioManager' object has no attribute 'handle_trade_error'\n\n----------------------------------------------------------------------\nRan 7 tests in 53.649s\n\nFAILED (failures=1, errors=5)\n"
+    },
+    "system_health": {
+      "passed": false,
+      "checks": [
+        [
+          "Enterprise Portfolio Manager",
+          true,
+          "Initialized successfully"
+        ],
+        [
+          "Health Metrics Method",
+          false,
+          "Missing"
+        ],
+        [
+          "Trading Readiness Method",
+          true,
+          "Available"
+        ]
+      ]
+    }
+  },
+  "recommendations": [
+    "Fix environment validation failures before deployment",
+    "Fix dependencies validation failures before deployment",
+    "Fix integration_tests validation failures before deployment",
+    "Fix system_health validation failures before deployment"
+  ]
+}

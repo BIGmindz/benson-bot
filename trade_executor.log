@@ -1,0 +1,689 @@
+2025-09-16 21:46:00,785 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 21:46:00,786 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 21:46:39,999 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 21:46:39,999 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 21:47:02,156 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 21:47:13,202 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 21:47:16,181 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 21:47:22,021 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 21:47:28,774 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 21:47:31,641 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 21:47:57,633 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 21:48:21,641 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 21:48:24,683 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 21:48:30,582 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 21:52:33,065 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 21:52:33,066 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 21:52:55,008 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 21:53:06,136 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 21:53:09,051 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 21:53:15,032 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 21:53:21,527 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 21:53:24,523 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 21:53:50,235 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 21:54:14,432 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 21:54:17,433 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 21:54:23,343 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 21:55:59,487 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 22:04:04,733 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 22:04:04,734 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 22:04:07,639 - TradeExecutor - INFO - 💰 Position sizing: Base=$50.97, Scaled=$50.97, Final=$50.00
+2025-09-16 22:06:28,384 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 22:06:28,385 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 22:06:50,170 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 22:06:56,898 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 22:07:01,260 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 22:07:04,250 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 22:07:10,101 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 22:07:18,905 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 22:07:34,354 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 22:07:45,394 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 22:08:09,747 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 22:08:12,740 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 22:08:18,703 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 22:17:38,743 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 22:17:38,743 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 22:18:20,687 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 22:18:20,687 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 22:18:42,836 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 22:18:49,481 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 22:18:53,875 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 22:18:56,886 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 22:19:02,694 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 22:19:11,550 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 22:19:27,136 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 22:19:38,032 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 22:19:44,736 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 22:19:55,714 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 22:20:02,329 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 22:20:05,422 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 22:20:11,376 - TradeExecutor - WARNING - 🚫 Trade rejected: Invalid amount: 0.0
+2025-09-16 22:26:08,782 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 22:26:08,783 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 22:26:11,774 - TradeExecutor - INFO - 💰 Position sizing: Base=$50.97, Scaled=$50.97, Final=$50.00
+2025-09-16 22:26:12,677 - TradeExecutor - INFO - 💰 Position sizing: Base=$50.97, Scaled=$50.97, Final=$50.00
+2025-09-16 22:28:36,889 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 22:28:36,890 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 22:28:43,031 - TradeExecutor - INFO - 💰 Position sizing: Base=$50.97, Scaled=$50.97, Final=$50.00
+2025-09-16 22:28:43,741 - TradeExecutor - INFO - 💰 Auto-calculated amount: 0.000428 BTC ($50.00 @ $116761.4000)
+2025-09-16 22:28:43,741 - TradeExecutor - INFO - 🎯 Executing BUY order: BTC/USD | Amount: 0.000428 | Type: market
+2025-09-16 22:28:43,876 - TradeExecutor - INFO - ✅ Trade executed successfully: Order ID OIA5ZI-3HWYB-FG4H6I
+2025-09-16 22:30:29,369 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 22:30:29,369 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 22:30:55,574 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 22:30:55,575 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 22:31:29,540 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 22:31:29,541 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 22:31:35,577 - TradeExecutor - INFO - 💰 Position sizing: Base=$0.77, Scaled=$0.77, Final=$0.77
+2025-09-16 22:31:36,461 - TradeExecutor - INFO - 💰 Auto-calculated amount: 0.000007 BTC ($0.77 @ $116831.0000)
+2025-09-16 22:31:36,461 - TradeExecutor - WARNING - 🚫 Trade rejected: Amount 0.000007 below minimum 0.000050 for BTC/USD
+2025-09-16 22:32:22,195 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 22:32:22,196 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 22:32:44,155 - TradeExecutor - INFO - 💰 Position sizing: Base=$0.77, Scaled=$0.77, Final=$0.77
+2025-09-16 22:32:45,062 - TradeExecutor - INFO - 💰 Auto-calculated amount: 22.914932 PENGU ($0.77 @ $0.0336)
+2025-09-16 22:32:45,062 - TradeExecutor - WARNING - 🚫 Trade rejected: Amount 22.914932 below minimum 100.000000 for PENGU/USDT
+2025-09-16 22:32:57,501 - TradeExecutor - INFO - 💰 Position sizing: Base=$0.77, Scaled=$0.77, Final=$0.77
+2025-09-16 22:32:58,483 - TradeExecutor - INFO - 💰 Auto-calculated amount: 0.181973 DOT ($0.77 @ $4.2336)
+2025-09-16 22:32:58,483 - TradeExecutor - WARNING - 🚫 Trade rejected: Amount 0.181973 below minimum 0.600000 for DOT/USDT
+2025-09-16 22:33:04,260 - TradeExecutor - INFO - 💰 Position sizing: Base=$0.77, Scaled=$0.77, Final=$0.77
+2025-09-16 22:33:05,107 - TradeExecutor - INFO - 💰 Auto-calculated amount: 8.987401 KAS ($0.77 @ $0.0857)
+2025-09-16 22:33:05,107 - TradeExecutor - WARNING - 🚫 Trade rejected: Amount 8.987401 below minimum 30.000000 for KAS/USDT
+2025-09-16 22:33:13,014 - TradeExecutor - INFO - 💰 Position sizing: Base=$0.77, Scaled=$0.77, Final=$0.77
+2025-09-16 22:33:13,984 - TradeExecutor - INFO - 💰 Auto-calculated amount: 2.235895 MANA ($0.77 @ $0.3446)
+2025-09-16 22:33:13,984 - TradeExecutor - WARNING - 🚫 Trade rejected: Amount 2.235895 below minimum 8.000000 for MANA/USDT
+2025-09-16 22:33:28,513 - TradeExecutor - INFO - 💰 Position sizing: Base=$0.77, Scaled=$0.77, Final=$0.77
+2025-09-16 22:33:29,519 - TradeExecutor - INFO - 💰 Auto-calculated amount: 0.723380 BADGER ($0.77 @ $1.0650)
+2025-09-16 22:33:29,519 - TradeExecutor - WARNING - 🚫 Trade rejected: Amount 0.723380 below minimum 1.100000 for BADGER/USD
+2025-09-16 22:33:57,280 - TradeExecutor - INFO - 💰 Position sizing: Base=$0.77, Scaled=$0.77, Final=$0.77
+2025-09-16 22:33:58,206 - TradeExecutor - INFO - 💰 Auto-calculated amount: 0.017274 COMP ($0.77 @ $44.6000)
+2025-09-16 22:33:58,207 - TradeExecutor - WARNING - 🚫 Trade rejected: Amount 0.017274 below minimum 0.060000 for COMP/USD
+2025-09-16 22:34:06,084 - TradeExecutor - INFO - 💰 Position sizing: Base=$0.77, Scaled=$0.77, Final=$0.77
+2025-09-16 22:34:06,964 - TradeExecutor - INFO - 💰 Auto-calculated amount: 2.875700 ZRX ($0.77 @ $0.2679)
+2025-09-16 22:34:06,964 - TradeExecutor - WARNING - 🚫 Trade rejected: Amount 2.875700 below minimum 9.000000 for ZRX/USD
+2025-09-16 22:36:51,049 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 22:36:51,050 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 22:36:58,218 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 22:36:58,218 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 22:37:35,724 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 22:37:35,725 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 22:38:36,244 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 22:38:36,244 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 22:38:47,520 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 22:38:47,520 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 22:39:04,659 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 22:39:04,660 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 22:39:26,819 - TradeExecutor - INFO - 💰 Position sizing: Base=$50.59, Scaled=$50.59, Final=$50.00
+2025-09-16 22:39:27,741 - TradeExecutor - INFO - 💰 Auto-calculated amount: 1487.209994 PENGU ($50.00 @ $0.0336)
+2025-09-16 22:39:27,741 - TradeExecutor - INFO - 🎯 Executing BUY order: PENGU/USDT | Amount: 1487.209994 | Type: market
+2025-09-16 22:39:27,934 - TradeExecutor - ERROR - 💸 Insufficient funds for PENGU/USDT: kraken {"error":["EOrder:Insufficient funds"]}
+2025-09-16 22:39:47,104 - TradeExecutor - INFO - 💰 Position sizing: Base=$50.59, Scaled=$50.59, Final=$50.00
+2025-09-16 22:39:47,970 - TradeExecutor - INFO - 💰 Auto-calculated amount: 583.294447 KAS ($50.00 @ $0.0857)
+2025-09-16 22:39:47,970 - TradeExecutor - INFO - 🎯 Executing BUY order: KAS/USDT | Amount: 583.294447 | Type: market
+2025-09-16 22:39:48,171 - TradeExecutor - ERROR - 💸 Insufficient funds for KAS/USDT: kraken {"error":["EOrder:Insufficient funds"]}
+2025-09-16 22:39:56,000 - TradeExecutor - INFO - 💰 Position sizing: Base=$50.59, Scaled=$50.59, Final=$50.00
+2025-09-16 22:39:57,004 - TradeExecutor - INFO - 💰 Auto-calculated amount: 145.112607 MANA ($50.00 @ $0.3446)
+2025-09-16 22:39:57,004 - TradeExecutor - INFO - 🎯 Executing BUY order: MANA/USDT | Amount: 145.112607 | Type: market
+2025-09-16 22:39:57,151 - TradeExecutor - ERROR - 💸 Insufficient funds for MANA/USDT: kraken {"error":["EOrder:Insufficient funds"]}
+2025-09-16 22:40:11,702 - TradeExecutor - INFO - 💰 Position sizing: Base=$50.59, Scaled=$50.59, Final=$50.00
+2025-09-16 22:40:12,576 - TradeExecutor - INFO - 💰 Auto-calculated amount: 46.948357 BADGER ($50.00 @ $1.0650)
+2025-09-16 22:40:12,576 - TradeExecutor - INFO - 🎯 Executing BUY order: BADGER/USD | Amount: 46.948357 | Type: market
+2025-09-16 22:40:12,775 - TradeExecutor - INFO - ✅ Trade executed successfully: Order ID OMALBW-ONZKU-PBDAMH
+2025-09-16 22:40:49,401 - TradeExecutor - INFO - 💰 Position sizing: Base=$0.20, Scaled=$0.20, Final=$0.20
+2025-09-16 22:40:50,299 - TradeExecutor - INFO - 💰 Auto-calculated amount: 0.749907 ZRX ($0.20 @ $0.2679)
+2025-09-16 22:40:50,300 - TradeExecutor - WARNING - 🚫 Trade rejected: Amount 0.749907 below minimum 9.000000 for ZRX/USD
+2025-09-16 22:43:41,913 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 22:43:41,914 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 22:43:44,914 - TradeExecutor - INFO - 💰 Position sizing: Base=$0.20, Scaled=$0.20, Final=$0.20
+2025-09-16 22:44:30,145 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 22:44:30,146 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 22:45:01,004 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 22:45:01,004 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 22:45:13,868 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 22:45:13,869 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 22:45:16,881 - TradeExecutor - INFO - 💰 Position sizing: Base=$25.10, Scaled=$25.10, Final=$25.10
+2025-09-16 22:45:42,858 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 22:45:42,859 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 22:45:45,613 - TradeExecutor - INFO - 💰 Position sizing: Base=$5.02, Scaled=$5.02, Final=$5.02
+2025-09-16 22:45:59,102 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 22:45:59,102 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 22:46:14,576 - TradeExecutor - INFO - 💰 Position sizing: Base=$5.02, Scaled=$5.02, Final=$5.02
+2025-09-16 22:46:15,442 - TradeExecutor - INFO - 💰 Auto-calculated amount: 149.320642 PENGU ($5.02 @ $0.0336)
+2025-09-16 22:46:15,443 - TradeExecutor - INFO - 🎯 Executing BUY order: PENGU/USDT | Amount: 149.320642 | Type: market
+2025-09-16 22:46:15,663 - TradeExecutor - ERROR - 💸 Insufficient funds for PENGU/USDT: kraken {"error":["EOrder:Insufficient funds"]}
+2025-09-16 22:46:21,586 - TradeExecutor - INFO - 💰 Position sizing: Base=$5.02, Scaled=$5.02, Final=$5.02
+2025-09-16 22:46:22,424 - TradeExecutor - INFO - 💰 Auto-calculated amount: 58.564629 KAS ($5.02 @ $0.0857)
+2025-09-16 22:46:22,424 - TradeExecutor - INFO - 🎯 Executing BUY order: KAS/USDT | Amount: 58.564629 | Type: market
+2025-09-16 22:46:22,620 - TradeExecutor - ERROR - 💸 Insufficient funds for KAS/USDT: kraken {"error":["EOrder:Insufficient funds"]}
+2025-09-16 22:47:07,744 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 22:47:07,744 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 22:47:50,038 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 22:47:50,038 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 22:47:53,056 - TradeExecutor - INFO - 💰 Position sizing: Base=$5.02, Scaled=$5.02, Final=$5.02
+2025-09-16 22:48:30,203 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 22:48:30,204 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 22:48:33,247 - TradeExecutor - INFO - 💰 Position sizing: Base=$5.02, Scaled=$5.02, Final=$5.02
+2025-09-16 22:48:34,159 - TradeExecutor - INFO - 💰 Auto-calculated amount: 149.320642 PENGU ($5.02 @ $0.0336)
+2025-09-16 22:48:34,159 - TradeExecutor - INFO - 🎯 Executing BUY order: PENGU/USDT | Amount: 149.320642 | Type: market
+2025-09-16 22:48:34,290 - TradeExecutor - ERROR - 💸 Insufficient funds for PENGU/USDT: kraken {"error":["EOrder:Insufficient funds"]}
+2025-09-16 22:49:02,533 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 22:49:02,534 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 22:49:05,621 - TradeExecutor - INFO - 💰 Position sizing: Base=$5.02, Scaled=$5.02, Final=$5.02
+2025-09-16 22:49:06,457 - TradeExecutor - INFO - 💰 Auto-calculated amount: 0.000043 BTC ($5.02 @ $116900.0000)
+2025-09-16 22:49:06,458 - TradeExecutor - WARNING - 🚫 Trade rejected: Amount 0.000043 below minimum 0.000050 for BTC/USD
+2025-09-16 22:49:34,099 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 22:49:34,100 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 22:49:37,117 - TradeExecutor - INFO - 💰 Position sizing: Base=$12.55, Scaled=$12.55, Final=$12.55
+2025-09-16 22:49:46,943 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 22:49:46,943 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 22:49:49,942 - TradeExecutor - INFO - 💰 Position sizing: Base=$12.55, Scaled=$12.55, Final=$12.55
+2025-09-16 22:49:50,868 - TradeExecutor - INFO - 💰 Auto-calculated amount: 0.000107 BTC ($12.55 @ $116900.0000)
+2025-09-16 22:49:50,868 - TradeExecutor - INFO - 🎯 Executing BUY order: BTC/USD | Amount: 0.000107 | Type: market
+2025-09-16 22:49:51,013 - TradeExecutor - INFO - ✅ Trade executed successfully: Order ID ORHODJ-MM235-HFO7EA
+2025-09-16 22:50:21,278 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 22:50:21,278 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 22:51:20,054 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 22:51:20,054 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 22:51:38,314 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 22:51:38,314 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 22:57:39,386 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 22:57:39,387 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 22:58:18,651 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 22:58:18,652 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 22:59:22,091 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 22:59:22,092 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 23:01:29,626 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 23:01:29,628 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 23:01:45,690 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 23:01:45,691 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 23:19:23,544 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 23:19:23,544 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 23:19:29,721 - TradeExecutor - INFO - 💰 Current balance: $12.50
+2025-09-16 23:19:33,707 - TradeExecutor - INFO - [order-error] BTC/USD buy -> kraken {"error":["EGeneral:Invalid arguments:volume minimum not met"]}
+2025-09-16 23:19:33,707 - TradeExecutor - ERROR - ❌ Safe order placement failed: kraken {"error":["EGeneral:Invalid arguments:volume minimum not met"]}
+2025-09-16 23:19:37,225 - TradeExecutor - INFO - 💰 Current balance: $12.50
+2025-09-16 23:19:41,379 - TradeExecutor - INFO - [order-error] SOL/USD buy -> kraken {"error":["EGeneral:Invalid arguments:volume minimum not met"]}
+2025-09-16 23:19:41,379 - TradeExecutor - ERROR - ❌ Safe order placement failed: kraken {"error":["EGeneral:Invalid arguments:volume minimum not met"]}
+2025-09-16 23:19:49,350 - TradeExecutor - INFO - 💰 Current balance: $12.50
+2025-09-16 23:19:53,438 - TradeExecutor - INFO - [order-error] XRP/USD buy -> kraken {"error":["EGeneral:Invalid arguments:volume minimum not met"]}
+2025-09-16 23:19:53,439 - TradeExecutor - ERROR - ❌ Safe order placement failed: kraken {"error":["EGeneral:Invalid arguments:volume minimum not met"]}
+2025-09-16 23:24:56,633 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 23:24:56,633 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 23:25:03,043 - TradeExecutor - INFO - 💰 Current balance: $12.50
+2025-09-16 23:25:07,087 - TradeExecutor - INFO - ✅ Safe trade executed: SOL/USD | Amount: 0.031605 | Price: $237.3106 | Notional: $7.50
+2025-09-16 23:25:14,992 - TradeExecutor - INFO - 💰 Current balance: $5.01
+2025-09-16 23:25:19,173 - TradeExecutor - INFO - [order-error] XRP/USD buy -> kraken {"error":["EGeneral:Invalid arguments:volume minimum not met"]}
+2025-09-16 23:25:19,173 - TradeExecutor - ERROR - ❌ Safe order placement failed: kraken {"error":["EGeneral:Invalid arguments:volume minimum not met"]}
+2025-09-16 23:26:05,695 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 23:26:05,695 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 23:29:39,249 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 23:29:39,251 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 23:36:50,940 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 23:36:50,940 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 23:37:08,937 - TradeExecutor - INFO - 💰 Need $50.00, have $5.01, liquidating $44.99
+2025-09-16 23:37:16,187 - TradeExecutor - INFO - ✅ Liquidated 132.756761 XRP → $8.00
+2025-09-16 23:37:16,187 - TradeExecutor - INFO - ✅ Liquidated XRP ($401.59)
+2025-09-16 23:38:30,941 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 23:38:30,941 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 23:39:03,431 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 23:39:03,431 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 23:43:37,789 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 23:43:37,789 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 23:43:43,847 - TradeExecutor - INFO - 💰 Current balance: $13.02
+2025-09-16 23:43:47,915 - TradeExecutor - INFO - [order-error] ETH/USD buy -> kraken {"error":["EGeneral:Invalid arguments:volume minimum not met"]}
+2025-09-16 23:43:47,915 - TradeExecutor - ERROR - ❌ Safe order placement failed: kraken {"error":["EGeneral:Invalid arguments:volume minimum not met"]}
+2025-09-16 23:43:55,828 - TradeExecutor - INFO - 💰 Current balance: $13.02
+2025-09-16 23:43:59,957 - TradeExecutor - INFO - ✅ Safe trade executed: PENGU/USD | Amount: 231.342800 | Price: $0.0338 | Notional: $7.81
+2025-09-16 23:44:03,353 - TradeExecutor - INFO - 💰 Current balance: $5.22
+2025-09-16 23:44:07,406 - TradeExecutor - INFO - [order-error] ADA/USD buy -> kraken {"error":["EGeneral:Invalid arguments:volume minimum not met"]}
+2025-09-16 23:44:07,406 - TradeExecutor - ERROR - ❌ Safe order placement failed: kraken {"error":["EGeneral:Invalid arguments:volume minimum not met"]}
+2025-09-16 23:44:10,430 - TradeExecutor - INFO - 💰 Current balance: $5.22
+2025-09-16 23:44:14,587 - TradeExecutor - INFO - ✅ Safe trade executed: DOT/USD | Amount: 0.735841 | Price: $4.2524 | Notional: $3.13
+2025-09-16 23:44:17,547 - TradeExecutor - INFO - 💰 Current balance: $2.09
+2025-09-16 23:44:21,490 - TradeExecutor - WARNING - 🚫 Trade skipped: below Kraken min notional (0.5), insufficient cash to meet it
+2025-09-16 23:44:24,568 - TradeExecutor - INFO - 💰 Current balance: $2.09
+2025-09-16 23:44:28,561 - TradeExecutor - WARNING - 🚫 Trade skipped: below Kraken min notional (0.5), insufficient cash to meet it
+2025-09-16 23:46:25,733 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 23:46:25,734 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 23:46:31,920 - TradeExecutor - INFO - 💰 Current balance: $2.09
+2025-09-16 23:46:35,714 - TradeExecutor - WARNING - 🚫 Trade skipped: below Kraken min notional (0.5), insufficient cash to meet it
+2025-09-16 23:46:39,193 - TradeExecutor - INFO - 💰 Current balance: $2.09
+2025-09-16 23:46:43,123 - TradeExecutor - WARNING - 🚫 Trade skipped: below Kraken min notional (0.5), insufficient cash to meet it
+2025-09-16 23:46:46,759 - TradeExecutor - INFO - 💰 Current balance: $2.09
+2025-09-16 23:46:50,757 - TradeExecutor - WARNING - 🚫 Trade skipped: below Kraken min notional (0.5), insufficient cash to meet it
+2025-09-16 23:46:54,223 - TradeExecutor - INFO - 💰 Current balance: $2.09
+2025-09-16 23:46:58,322 - TradeExecutor - WARNING - 🚫 Trade skipped: below Kraken min notional (0.5), insufficient cash to meet it
+2025-09-16 23:47:01,175 - TradeExecutor - INFO - 💰 Current balance: $2.09
+2025-09-16 23:47:05,167 - TradeExecutor - WARNING - 🚫 Trade skipped: below Kraken min notional (0.5), insufficient cash to meet it
+2025-09-16 23:47:08,352 - TradeExecutor - INFO - 💰 Current balance: $2.09
+2025-09-16 23:47:12,181 - TradeExecutor - WARNING - 🚫 Trade skipped: below Kraken min notional (0.5), insufficient cash to meet it
+2025-09-16 23:47:15,193 - TradeExecutor - INFO - 💰 Current balance: $2.09
+2025-09-16 23:47:19,193 - TradeExecutor - WARNING - 🚫 Trade skipped: below Kraken min notional (0.5), insufficient cash to meet it
+2025-09-16 23:56:38,546 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 23:56:38,546 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 23:57:55,973 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 23:57:55,973 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 23:58:15,977 - TradeExecutor - INFO - 💰 Need $50.00, have $2.09, liquidating $47.91
+2025-09-16 23:58:23,328 - TradeExecutor - INFO - ✅ Liquidated 130.098852 XRP → $8.00
+2025-09-16 23:58:23,328 - TradeExecutor - INFO - ✅ Liquidated XRP ($392.58)
+2025-09-16 23:59:02,266 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-16 23:59:02,267 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-16 23:59:15,952 - TradeExecutor - INFO - 💰 Current balance: $10.10
+2025-09-16 23:59:20,033 - TradeExecutor - INFO - ✅ Safe trade executed: SOL/USD | Amount: 0.025764 | Price: $235.1700 | Notional: $6.06
+2025-09-16 23:59:27,986 - TradeExecutor - INFO - 💰 Current balance: $4.04
+2025-09-16 23:59:32,237 - TradeExecutor - INFO - [order-error] XRP/USD buy -> kraken {"error":["EGeneral:Invalid arguments:volume minimum not met"]}
+2025-09-16 23:59:32,237 - TradeExecutor - ERROR - ❌ Safe order placement failed: kraken {"error":["EGeneral:Invalid arguments:volume minimum not met"]}
+2025-09-17 00:03:35,518 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:03:35,520 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:03:55,566 - TradeExecutor - INFO - 💰 Need $50.00, have $4.04, liquidating $45.95
+2025-09-17 00:04:02,707 - TradeExecutor - INFO - ✅ Liquidated 127.434372 XRP → $8.00
+2025-09-17 00:04:02,707 - TradeExecutor - INFO - ✅ Liquidated XRP ($384.39)
+2025-09-17 00:11:39,349 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:11:39,351 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:11:43,682 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:11:43,682 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:12:07,866 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:12:07,866 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:12:12,030 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:12:12,030 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:12:16,184 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:12:16,184 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:12:20,434 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:12:20,435 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:12:24,601 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:12:24,601 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:12:28,752 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:12:28,752 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:12:33,013 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:12:33,014 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:14:43,137 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:14:43,137 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:14:47,528 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:14:47,529 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:15:11,645 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:15:11,646 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:15:15,819 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:15:15,819 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:15:19,990 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:15:19,990 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:15:24,153 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:15:24,153 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:15:28,332 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:15:28,332 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:15:32,495 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:15:32,495 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:17:25,514 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:17:25,514 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:17:29,925 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:17:29,925 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:17:54,387 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:17:54,387 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:17:58,548 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:17:58,548 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:18:02,719 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:18:02,720 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:18:06,905 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:18:06,906 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:18:11,085 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:18:11,086 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:18:15,243 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:18:15,244 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:19:04,680 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:19:04,680 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:19:09,106 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:19:09,106 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:19:33,336 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:19:33,336 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:19:37,509 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:19:37,509 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:19:41,683 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:19:41,683 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:19:45,869 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:19:45,870 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:19:50,136 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:19:50,136 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:19:54,316 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:19:54,316 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:20:24,566 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:20:24,566 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:20:28,907 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:20:28,907 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:20:53,341 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:20:53,342 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:20:57,508 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:20:57,509 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:21:01,687 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:21:01,687 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:21:05,874 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:21:05,875 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:21:10,099 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:21:10,099 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:21:14,273 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:21:14,273 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:21:38,567 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:21:38,568 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:25:24,148 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:25:24,148 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:25:38,397 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:25:38,397 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:26:24,225 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:26:24,225 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:26:28,557 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:26:28,558 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:26:52,841 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:26:52,841 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:26:57,011 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:26:57,012 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:27:01,178 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:27:01,178 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:27:05,362 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:27:05,362 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:27:09,593 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:27:09,593 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:27:13,744 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:27:13,744 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:27:38,278 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:27:38,279 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:27:57,414 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:27:57,415 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:28:01,565 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:28:01,566 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:28:59,965 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:28:59,966 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 00:29:04,128 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 00:29:04,129 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 02:22:26,782 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 02:22:26,784 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 02:22:41,910 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 02:22:41,910 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 02:57:52,128 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 02:57:52,129 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 02:57:56,268 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 02:57:56,269 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 03:08:04,133 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 03:08:04,133 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 03:08:08,351 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 03:08:08,352 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 03:29:50,358 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 03:29:50,358 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 03:29:54,509 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 03:29:54,510 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 03:33:37,512 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 03:33:37,512 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 03:33:41,680 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 03:33:41,681 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 03:33:58,907 - TradeExecutor - INFO - 💰 Current balance: $12.05
+2025-09-17 03:34:02,969 - TradeExecutor - INFO - ✅ Safe trade executed: DOGE/USD | Amount: 26.765696 | Price: $0.2702 | Notional: $7.23
+2025-09-17 03:35:09,680 - TradeExecutor - INFO - 💰 Need $10.00, have $4.82, liquidating $5.18
+2025-09-17 03:35:17,068 - TradeExecutor - INFO - ✅ Liquidated 124.768850 XRP → $8.00
+2025-09-17 03:35:17,068 - TradeExecutor - INFO - ✅ Liquidated XRP ($379.17)
+2025-09-17 03:35:32,119 - TradeExecutor - INFO - 💰 Current balance: $12.83
+2025-09-17 03:35:36,393 - TradeExecutor - INFO - ✅ Safe trade executed: ANON/USD | Amount: 3.779510 | Price: $2.0371 | Notional: $7.70
+2025-09-17 03:36:57,387 - TradeExecutor - INFO - 💰 Need $10.00, have $4.99, liquidating $5.01
+2025-09-17 03:37:04,555 - TradeExecutor - INFO - ✅ Liquidated 122.123177 XRP → $8.00
+2025-09-17 03:37:04,556 - TradeExecutor - INFO - ✅ Liquidated XRP ($371.12)
+2025-09-17 03:37:20,597 - TradeExecutor - INFO - 💰 Current balance: $13.00
+2025-09-17 03:37:24,868 - TradeExecutor - INFO - [order-error] AVNT/USD buy -> kraken {"error":["EGeneral:Invalid arguments:volume minimum not met"]}
+2025-09-17 03:37:24,868 - TradeExecutor - ERROR - ❌ Safe order placement failed: kraken {"error":["EGeneral:Invalid arguments:volume minimum not met"]}
+2025-09-17 03:38:33,101 - TradeExecutor - INFO - 💰 Current balance: $13.00
+2025-09-17 03:38:37,252 - TradeExecutor - INFO - ✅ Safe trade executed: CCD/USD | Amount: 1046.846000 | Price: $0.0074 | Notional: $7.80
+2025-09-17 03:39:56,146 - TradeExecutor - INFO - 💰 Need $10.00, have $5.21, liquidating $4.79
+2025-09-17 03:40:03,138 - TradeExecutor - INFO - ✅ Liquidated 119.477416 XRP → $8.00
+2025-09-17 03:40:03,139 - TradeExecutor - INFO - ✅ Liquidated XRP ($362.99)
+2025-09-17 03:40:19,312 - TradeExecutor - INFO - 💰 Current balance: $13.21
+2025-09-17 03:40:23,406 - TradeExecutor - INFO - ✅ Safe trade executed: CQT/USD | Amount: 4407.404319 | Price: $0.0018 | Notional: $7.93
+2025-09-17 03:41:50,327 - TradeExecutor - INFO - 💰 Need $10.00, have $5.12, liquidating $4.88
+2025-09-17 03:41:57,485 - TradeExecutor - INFO - ✅ Liquidated 116.831012 XRP → $8.00
+2025-09-17 03:41:57,486 - TradeExecutor - INFO - ✅ Liquidated XRP ($354.97)
+2025-09-17 03:42:14,555 - TradeExecutor - INFO - 💰 Current balance: $13.12
+2025-09-17 03:42:18,836 - TradeExecutor - INFO - ✅ Safe trade executed: DYM/USD | Amount: 32.538800 | Price: $0.2420 | Notional: $7.87
+2025-09-17 03:46:43,895 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 03:46:43,896 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 03:46:48,065 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 03:46:48,066 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 03:47:27,397 - TradeExecutor - INFO - 💰 Need $10.00, have $5.22, liquidating $4.78
+2025-09-17 03:47:34,562 - TradeExecutor - INFO - ✅ Liquidated 114.185025 XRP → $8.00
+2025-09-17 03:47:34,562 - TradeExecutor - INFO - ✅ Liquidated XRP ($346.93)
+2025-09-17 03:49:06,589 - TradeExecutor - INFO - 💰 Current balance: $13.22
+2025-09-17 03:49:10,648 - TradeExecutor - INFO - [order-error] AVNT/USD buy -> kraken {"error":["EGeneral:Invalid arguments:volume minimum not met"]}
+2025-09-17 03:49:10,648 - TradeExecutor - ERROR - ❌ Safe order placement failed: kraken {"error":["EGeneral:Invalid arguments:volume minimum not met"]}
+2025-09-17 03:50:26,650 - TradeExecutor - INFO - 💰 Current balance: $13.22
+2025-09-17 03:50:30,933 - TradeExecutor - INFO - ✅ Safe trade executed: CQT/USD | Amount: 4314.101623 | Price: $0.0018 | Notional: $7.93
+2025-09-17 03:51:58,300 - TradeExecutor - INFO - 💰 Need $10.00, have $5.38, liquidating $4.62
+2025-09-17 03:52:05,261 - TradeExecutor - INFO - ✅ Liquidated 111.538768 XRP → $8.00
+2025-09-17 03:52:05,261 - TradeExecutor - INFO - ✅ Liquidated XRP ($338.92)
+2025-09-17 03:52:22,467 - TradeExecutor - INFO - 💰 Current balance: $13.39
+2025-09-17 03:52:26,459 - TradeExecutor - INFO - ✅ Safe trade executed: DYM/USD | Amount: 33.029870 | Price: $0.2422 | Notional: $8.00
+2025-09-17 03:53:50,941 - TradeExecutor - INFO - 💰 Need $10.00, have $5.38, liquidating $4.62
+2025-09-17 03:53:57,904 - TradeExecutor - INFO - ✅ Liquidated 108.892747 XRP → $8.00
+2025-09-17 03:53:57,905 - TradeExecutor - INFO - ✅ Liquidated XRP ($330.76)
+2025-09-17 03:54:14,921 - TradeExecutor - INFO - 💰 Current balance: $13.39
+2025-09-17 03:54:19,306 - TradeExecutor - INFO - [order-error] ESX/USD buy -> kraken {"error":["EAccount:Invalid permissions:ESX trading restricted for US:PA."]}
+2025-09-17 03:54:19,307 - TradeExecutor - ERROR - ❌ Safe order placement failed: kraken {"error":["EAccount:Invalid permissions:ESX trading restricted for US:PA."]}
+2025-09-17 03:55:46,501 - TradeExecutor - INFO - 💰 Current balance: $13.39
+2025-09-17 03:55:50,648 - TradeExecutor - INFO - [order-error] NODL/USD buy -> kraken {"error":["EAccount:Invalid permissions:NODL trading restricted for US:PA."]}
+2025-09-17 03:55:50,649 - TradeExecutor - ERROR - ❌ Safe order placement failed: kraken {"error":["EAccount:Invalid permissions:NODL trading restricted for US:PA."]}
+2025-09-17 03:57:04,110 - TradeExecutor - INFO - 💰 Current balance: $13.39
+2025-09-17 03:57:08,406 - TradeExecutor - INFO - ✅ Safe trade executed: PENGU/USD | Amount: 236.270700 | Price: $0.0339 | Notional: $8.00
+2025-09-17 03:58:39,904 - TradeExecutor - INFO - 💰 Need $10.00, have $5.40, liquidating $4.60
+2025-09-17 03:58:46,976 - TradeExecutor - INFO - ✅ Liquidated 106.245767 XRP → $8.00
+2025-09-17 03:58:46,977 - TradeExecutor - INFO - ✅ Liquidated XRP ($322.72)
+2025-09-17 03:59:04,097 - TradeExecutor - INFO - 💰 Current balance: $13.41
+2025-09-17 03:59:08,156 - TradeExecutor - INFO - [order-error] STBL/USD buy -> kraken {"error":["EAccount:Invalid permissions:STBL trading restricted for US:PA."]}
+2025-09-17 03:59:08,156 - TradeExecutor - ERROR - ❌ Safe order placement failed: kraken {"error":["EAccount:Invalid permissions:STBL trading restricted for US:PA."]}
+2025-09-17 04:00:21,645 - TradeExecutor - INFO - 💰 Current balance: $13.41
+2025-09-17 04:00:26,208 - TradeExecutor - INFO - ✅ Safe trade executed: TOSHI/USD | Amount: 8541.902000 | Price: $0.0009 | Notional: $8.00
+2025-09-17 04:01:56,588 - TradeExecutor - INFO - 💰 Need $10.00, have $5.40, liquidating $4.60
+2025-09-17 04:02:03,786 - TradeExecutor - INFO - ✅ Liquidated 103.598787 XRP → $8.00
+2025-09-17 04:02:03,786 - TradeExecutor - INFO - ✅ Liquidated XRP ($313.71)
+2025-09-17 04:02:21,820 - TradeExecutor - INFO - 💰 Current balance: $13.41
+2025-09-17 04:02:26,140 - TradeExecutor - INFO - [order-error] U/USD buy -> kraken {"error":["EAccount:Invalid permissions:U trading restricted for US:PA."]}
+2025-09-17 04:02:26,140 - TradeExecutor - ERROR - ❌ Safe order placement failed: kraken {"error":["EAccount:Invalid permissions:U trading restricted for US:PA."]}
+2025-09-17 04:03:44,625 - TradeExecutor - INFO - 💰 Current balance: $13.41
+2025-09-17 04:03:48,681 - TradeExecutor - INFO - ✅ Safe trade executed: XRP/USD | Amount: 2.629758 | Price: $3.0421 | Notional: $8.00
+2025-09-17 04:05:19,289 - TradeExecutor - INFO - 💰 Need $10.00, have $5.42, liquidating $4.58
+2025-09-17 04:05:26,641 - TradeExecutor - INFO - ✅ Liquidated 103.573401 XRP → $8.00
+2025-09-17 04:05:26,642 - TradeExecutor - INFO - ✅ Liquidated XRP ($313.51)
+2025-09-17 04:05:44,492 - TradeExecutor - INFO - 💰 Current balance: $13.42
+2025-09-17 04:05:48,759 - TradeExecutor - INFO - [order-error] XRT/USD buy -> kraken {"error":["EAccount:Invalid permissions:XRT trading restricted for US:PA."]}
+2025-09-17 04:05:48,759 - TradeExecutor - ERROR - ❌ Safe order placement failed: kraken {"error":["EAccount:Invalid permissions:XRT trading restricted for US:PA."]}
+2025-09-17 04:07:07,496 - TradeExecutor - INFO - 💰 Current balance: $13.42
+2025-09-17 04:07:11,840 - TradeExecutor - INFO - ✅ Safe trade executed: ADA/USD | Amount: 9.073458 | Price: $0.8817 | Notional: $8.00
+2025-09-17 04:08:45,056 - TradeExecutor - INFO - 💰 Need $10.00, have $5.43, liquidating $4.57
+2025-09-17 04:08:52,671 - TradeExecutor - INFO - ✅ Liquidated 100.916775 XRP → $8.00
+2025-09-17 04:08:52,672 - TradeExecutor - INFO - ✅ Liquidated XRP ($305.17)
+2025-09-17 04:09:10,592 - TradeExecutor - INFO - 💰 Current balance: $13.44
+2025-09-17 04:09:14,642 - TradeExecutor - INFO - ✅ Safe trade executed: AVAX/USD | Amount: 0.264810 | Price: $30.2103 | Notional: $8.00
+2025-09-17 04:10:58,231 - TradeExecutor - INFO - 💰 Need $10.00, have $5.44, liquidating $4.56
+2025-09-17 04:11:05,392 - TradeExecutor - INFO - ✅ Liquidated 98.257987 XRP → $8.00
+2025-09-17 04:11:05,393 - TradeExecutor - INFO - ✅ Liquidated XRP ($297.13)
+2025-09-17 04:11:24,491 - TradeExecutor - INFO - 💰 Current balance: $13.45
+2025-09-17 04:11:28,729 - TradeExecutor - INFO - ✅ Safe trade executed: DOGE/USD | Amount: 29.792301 | Price: $0.2685 | Notional: $8.00
+2025-09-17 04:14:08,616 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 04:14:08,617 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 04:14:12,829 - TradeExecutor - INFO - ✅ Exchange connection established: kraken
+2025-09-17 04:14:12,830 - TradeExecutor - INFO - 💰 Account balance loaded successfully
+2025-09-17 04:14:58,104 - TradeExecutor - INFO - 💰 Need $10.00, have $5.46, liquidating $4.54
+2025-09-17 04:15:05,204 - TradeExecutor - INFO - ✅ Liquidated 95.599199 XRP → $8.00
+2025-09-17 04:15:05,204 - TradeExecutor - INFO - ✅ Liquidated XRP ($288.93)
+2025-09-17 04:16:40,211 - TradeExecutor - INFO - 💰 Current balance: $13.46
+2025-09-17 04:16:44,475 - TradeExecutor - INFO - ✅ Safe trade executed: ADA/USD | Amount: 9.075672 | Price: $0.8815 | Notional: $8.00
+2025-09-17 04:18:23,652 - TradeExecutor - INFO - 💰 Need $10.00, have $5.47, liquidating $4.53
+2025-09-17 04:18:30,944 - TradeExecutor - INFO - ✅ Liquidated 92.938889 XRP → $8.00
+2025-09-17 04:18:30,945 - TradeExecutor - INFO - ✅ Liquidated XRP ($280.84)
+2025-09-17 04:18:50,035 - TradeExecutor - INFO - 💰 Current balance: $13.48
+2025-09-17 04:18:54,165 - TradeExecutor - INFO - ✅ Safe trade executed: AVAX/USD | Amount: 0.264987 | Price: $30.1902 | Notional: $8.00
+2025-09-17 04:20:30,827 - TradeExecutor - INFO - 💰 Need $10.00, have $5.48, liquidating $4.52
+2025-09-17 04:20:37,978 - TradeExecutor - INFO - ✅ Liquidated 90.278174 XRP → $8.00
+2025-09-17 04:20:37,978 - TradeExecutor - INFO - ✅ Liquidated XRP ($272.64)
+2025-09-17 04:20:57,085 - TradeExecutor - INFO - 💰 Current balance: $13.49
+2025-09-17 04:21:01,233 - TradeExecutor - INFO - [order-error] AVNT/USD buy -> kraken {"error":["EGeneral:Invalid arguments:volume minimum not met"]}
+2025-09-17 04:21:01,233 - TradeExecutor - ERROR - ❌ Safe order placement failed: kraken {"error":["EGeneral:Invalid arguments:volume minimum not met"]}
+2025-09-17 04:22:30,035 - TradeExecutor - INFO - 💰 Current balance: $13.49
+2025-09-17 04:22:33,872 - TradeExecutor - INFO - ✅ Safe trade executed: DOGE/USD | Amount: 29.829578 | Price: $0.2682 | Notional: $8.00
+2025-09-17 04:24:10,562 - TradeExecutor - INFO - 💰 Need $10.00, have $5.49, liquidating $4.51
+2025-09-17 04:24:17,889 - TradeExecutor - INFO - ✅ Liquidated 87.615874 XRP → $8.00
+2025-09-17 04:24:17,889 - TradeExecutor - INFO - ✅ Liquidated XRP ($264.60)
+2025-09-17 04:24:36,986 - TradeExecutor - INFO - 💰 Current balance: $13.50
+2025-09-17 04:24:41,209 - TradeExecutor - INFO - ✅ Safe trade executed: DOT/USD | Amount: 1.893482 | Price: $4.2250 | Notional: $8.00
+2025-09-17 04:26:17,659 - TradeExecutor - INFO - 💰 Need $10.00, have $5.52, liquidating $4.48
+2025-09-17 04:26:24,886 - TradeExecutor - INFO - ✅ Liquidated 84.953564 XRP → $8.00
+2025-09-17 04:26:24,887 - TradeExecutor - INFO - ✅ Liquidated XRP ($256.58)
+2025-09-17 04:26:43,995 - TradeExecutor - INFO - 💰 Current balance: $13.52
+2025-09-17 04:26:48,344 - TradeExecutor - INFO - ✅ Safe trade executed: DYM/USD | Amount: 33.446210 | Price: $0.2392 | Notional: $8.00
+2025-09-17 04:28:25,280 - TradeExecutor - INFO - 💰 Need $10.00, have $5.52, liquidating $4.48
+2025-09-17 04:28:32,668 - TradeExecutor - INFO - ✅ Liquidated 82.291423 XRP → $8.00
+2025-09-17 04:28:32,668 - TradeExecutor - INFO - ✅ Liquidated XRP ($248.52)
+2025-09-17 04:28:51,601 - TradeExecutor - INFO - 💰 Current balance: $13.53
+2025-09-17 04:28:55,767 - TradeExecutor - INFO - [order-error] ETH/USD buy -> kraken {"error":["EGeneral:Invalid arguments:volume minimum not met"]}
+2025-09-17 04:28:55,768 - TradeExecutor - ERROR - ❌ Safe order placement failed: kraken {"error":["EGeneral:Invalid arguments:volume minimum not met"]}
+2025-09-17 04:30:19,709 - TradeExecutor - INFO - 💰 Current balance: $13.53
+2025-09-17 04:30:24,026 - TradeExecutor - INFO - ✅ Safe trade executed: H/USD | Amount: 150.675730 | Price: $0.0531 | Notional: $8.00
+2025-09-17 04:32:06,381 - TradeExecutor - INFO - 💰 Need $10.00, have $5.50, liquidating $4.50
+2025-09-17 04:32:13,635 - TradeExecutor - INFO - ✅ Liquidated 79.629104 XRP → $8.00
+2025-09-17 04:32:13,635 - TradeExecutor - INFO - ✅ Liquidated XRP ($240.54)
+2025-09-17 04:32:33,770 - TradeExecutor - INFO - 💰 Current balance: $13.51
+2025-09-17 04:32:37,803 - TradeExecutor - INFO - ✅ Safe trade executed: LINK/USD | Amount: 0.340229 | Price: $23.5136 | Notional: $8.00
+2025-09-17 04:34:29,623 - TradeExecutor - INFO - 💰 Need $10.00, have $5.52, liquidating $4.48
+2025-09-17 04:34:36,822 - TradeExecutor - INFO - ✅ Liquidated 76.967421 XRP → $8.00
+2025-09-17 04:34:36,822 - TradeExecutor - INFO - ✅ Liquidated XRP ($232.44)
+2025-09-17 04:34:57,945 - TradeExecutor - INFO - 💰 Current balance: $13.53
+2025-09-17 04:35:02,113 - TradeExecutor - INFO - ✅ Safe trade executed: MOODENG/USD | Amount: 44.644970 | Price: $0.1792 | Notional: $8.00
+2025-09-17 04:37:06,169 - TradeExecutor - INFO - 💰 Need $10.00, have $5.52, liquidating $4.48
+2025-09-17 04:37:13,363 - TradeExecutor - INFO - ✅ Liquidated 74.305111 XRP → $8.00
+2025-09-17 04:37:13,363 - TradeExecutor - INFO - ✅ Liquidated XRP ($224.32)
+2025-09-17 04:37:35,585 - TradeExecutor - INFO - 💰 Current balance: $13.54
+2025-09-17 04:37:39,512 - TradeExecutor - INFO - ✅ Safe trade executed: SOL/USD | Amount: 0.033829 | Price: $236.4865 | Notional: $8.00
+2025-09-17 04:39:34,754 - TradeExecutor - INFO - 💰 Need $10.00, have $5.54, liquidating $4.46
+2025-09-17 04:39:41,947 - TradeExecutor - INFO - ✅ Liquidated 71.641885 XRP → $8.00
+2025-09-17 04:39:41,947 - TradeExecutor - INFO - ✅ Liquidated XRP ($216.65)
+2025-09-17 04:40:04,079 - TradeExecutor - INFO - 💰 Current balance: $13.55
+2025-09-17 04:40:08,674 - TradeExecutor - INFO - ✅ Safe trade executed: TOSHI/USD | Amount: 9109.863000 | Price: $0.0009 | Notional: $8.00
+2025-09-17 04:42:03,206 - TradeExecutor - INFO - 💰 Need $10.00, have $5.55, liquidating $4.45
+2025-09-17 04:42:10,428 - TradeExecutor - INFO - ✅ Liquidated 68.983088 XRP → $8.00
+2025-09-17 04:42:10,429 - TradeExecutor - INFO - ✅ Liquidated XRP ($208.33)
+2025-09-17 04:42:32,511 - TradeExecutor - INFO - 💰 Current balance: $13.56
+2025-09-17 04:42:36,903 - TradeExecutor - INFO - [order-error] U/USD buy -> kraken {"error":["EAccount:Invalid permissions:U trading restricted for US:PA."]}
+2025-09-17 04:42:36,903 - TradeExecutor - ERROR - ❌ Safe order placement failed: kraken {"error":["EAccount:Invalid permissions:U trading restricted for US:PA."]}
+2025-09-17 04:44:15,513 - TradeExecutor - INFO - 💰 Current balance: $13.56
+2025-09-17 04:44:19,761 - TradeExecutor - INFO - ✅ Safe trade executed: XRP/USD | Amount: 2.638440 | Price: $3.0321 | Notional: $8.00
+2025-09-17 04:46:14,280 - TradeExecutor - INFO - 💰 Need $10.00, have $5.56, liquidating $4.44
+2025-09-17 04:46:21,516 - TradeExecutor - INFO - ✅ Liquidated 68.958742 XRP → $8.00
+2025-09-17 04:46:21,517 - TradeExecutor - INFO - ✅ Liquidated XRP ($208.34)
+2025-09-17 04:46:43,630 - TradeExecutor - INFO - 💰 Current balance: $13.57
+2025-09-17 04:46:47,937 - TradeExecutor - INFO - [order-error] XRT/USD buy -> kraken {"error":["EAccount:Invalid permissions:XRT trading restricted for US:PA."]}
+2025-09-17 04:46:47,937 - TradeExecutor - ERROR - ❌ Safe order placement failed: kraken {"error":["EAccount:Invalid permissions:XRT trading restricted for US:PA."]}
+2025-09-17 04:49:15,729 - TradeExecutor - INFO - 💰 Current balance: $13.57
+2025-09-17 04:49:19,899 - TradeExecutor - INFO - [order-error] Q/USD buy -> kraken {"error":["EAccount:Invalid permissions:Q trading restricted for US:PA."]}
+2025-09-17 04:49:19,899 - TradeExecutor - ERROR - ❌ Safe order placement failed: kraken {"error":["EAccount:Invalid permissions:Q trading restricted for US:PA."]}
+2025-09-17 05:02:15,045 - TradeExecutor - INFO - 💰 Current balance: $13.57
+2025-09-17 05:02:19,357 - TradeExecutor - INFO - ✅ Safe trade executed: H/USD | Amount: 150.990110 | Price: $0.0530 | Notional: $8.00
+2025-09-17 05:18:48,314 - TradeExecutor - INFO - 💰 Need $10.00, have $5.53, liquidating $4.47
+2025-09-17 05:18:55,511 - TradeExecutor - INFO - ✅ Liquidated 66.297385 XRP → $8.00
+2025-09-17 05:18:55,512 - TradeExecutor - INFO - ✅ Liquidated XRP ($200.22)
+2025-09-17 05:19:17,739 - TradeExecutor - INFO - 💰 Current balance: $13.53
+2025-09-17 05:19:22,038 - TradeExecutor - INFO - ✅ Safe trade executed: H/USD | Amount: 150.504800 | Price: $0.0532 | Notional: $8.00
+2025-09-17 05:21:30,787 - TradeExecutor - INFO - 💰 Need $10.00, have $5.50, liquidating $4.50
+2025-09-17 05:21:38,026 - TradeExecutor - INFO - ✅ Liquidated 63.635066 XRP → $8.00
+2025-09-17 05:21:38,027 - TradeExecutor - INFO - ✅ Liquidated XRP ($192.01)
+2025-09-17 05:22:00,147 - TradeExecutor - INFO - 💰 Current balance: $13.51
+2025-09-17 05:22:04,241 - TradeExecutor - INFO - [order-error] Q/USD buy -> kraken {"error":["EAccount:Invalid permissions:Q trading restricted for US:PA."]}
+2025-09-17 05:22:04,241 - TradeExecutor - ERROR - ❌ Safe order placement failed: kraken {"error":["EAccount:Invalid permissions:Q trading restricted for US:PA."]}
+2025-09-17 05:25:19,939 - TradeExecutor - INFO - 💰 Current balance: $13.51
+2025-09-17 05:25:24,223 - TradeExecutor - INFO - [order-error] ESX/USD buy -> kraken {"error":["EAccount:Invalid permissions:ESX trading restricted for US:PA."]}
+2025-09-17 05:25:24,223 - TradeExecutor - ERROR - ❌ Safe order placement failed: kraken {"error":["EAccount:Invalid permissions:ESX trading restricted for US:PA."]}
+2025-09-17 05:42:03,453 - TradeExecutor - INFO - 💰 Current balance: $13.51
+2025-09-17 05:42:07,702 - TradeExecutor - INFO - [order-error] ROOK/USD buy -> kraken {"error":["EAccount:Invalid permissions:ROOK trading restricted for US:PA."]}
+2025-09-17 05:42:07,703 - TradeExecutor - ERROR - ❌ Safe order placement failed: kraken {"error":["EAccount:Invalid permissions:ROOK trading restricted for US:PA."]}
+2025-09-17 05:47:20,326 - TradeExecutor - INFO - 💰 Current balance: $13.51
+2025-09-17 05:47:24,533 - TradeExecutor - INFO - ✅ Safe trade executed: DOGE/USD | Amount: 29.728769 | Price: $0.2691 | Notional: $8.00
+2025-09-17 05:49:46,696 - TradeExecutor - INFO - 💰 Need $10.00, have $5.52, liquidating $4.48
+2025-09-17 05:49:53,734 - TradeExecutor - INFO - ✅ Liquidated 60.970119 XRP → $8.00
+2025-09-17 05:49:53,734 - TradeExecutor - INFO - ✅ Liquidated XRP ($184.03)
+2025-09-17 05:50:15,851 - TradeExecutor - INFO - 💰 Current balance: $13.53
+2025-09-17 05:50:20,050 - TradeExecutor - INFO - [order-error] Q/USD buy -> kraken {"error":["EAccount:Invalid permissions:Q trading restricted for US:PA."]}
+2025-09-17 05:50:20,051 - TradeExecutor - ERROR - ❌ Safe order placement failed: kraken {"error":["EAccount:Invalid permissions:Q trading restricted for US:PA."]}
+2025-09-17 06:05:53,218 - TradeExecutor - INFO - 💰 Current balance: $13.53
+2025-09-17 06:05:57,379 - TradeExecutor - INFO - [order-error] AVNT/USD buy -> kraken {"error":["EGeneral:Invalid arguments:volume minimum not met"]}
+2025-09-17 06:05:57,379 - TradeExecutor - ERROR - ❌ Safe order placement failed: kraken {"error":["EGeneral:Invalid arguments:volume minimum not met"]}
+2025-09-17 06:07:51,996 - TradeExecutor - INFO - 💰 Current balance: $13.53
+2025-09-17 06:07:56,333 - TradeExecutor - INFO - ✅ Safe trade executed: GHIBLI/USD | Amount: 4812.695890 | Price: $0.0017 | Notional: $8.00
+2025-09-17 06:09:59,909 - TradeExecutor - INFO - 💰 Need $10.00, have $5.49, liquidating $4.51
+2025-09-17 06:10:07,378 - TradeExecutor - INFO - ✅ Liquidated 58.306301 XRP → $8.00
+2025-09-17 06:10:07,379 - TradeExecutor - INFO - ✅ Liquidated XRP ($176.04)
+2025-09-17 06:10:30,727 - TradeExecutor - INFO - 💰 Current balance: $13.50
+2025-09-17 06:10:34,873 - TradeExecutor - INFO - ✅ Safe trade executed: MERL/USD | Amount: 44.670020 | Price: $0.1791 | Notional: $8.00
+2025-09-17 06:16:51,029 - TradeExecutor - INFO - 💰 Need $10.00, have $5.48, liquidating $4.52
+2025-09-17 06:16:58,167 - TradeExecutor - INFO - ✅ Liquidated 55.643286 XRP → $8.00
+2025-09-17 06:16:58,167 - TradeExecutor - INFO - ✅ Liquidated XRP ($168.04)
+2025-09-17 06:17:22,588 - TradeExecutor - INFO - 💰 Current balance: $13.49
+2025-09-17 06:17:26,813 - TradeExecutor - INFO - [order-error] METH/USD buy -> kraken {"error":["EAccount:Invalid permissions:METH trading restricted for US:PA."]}
+2025-09-17 06:17:26,814 - TradeExecutor - ERROR - ❌ Safe order placement failed: kraken {"error":["EAccount:Invalid permissions:METH trading restricted for US:PA."]}
+2025-09-17 06:20:52,812 - TradeExecutor - INFO - 💰 Current balance: $13.49
+2025-09-17 06:20:56,970 - TradeExecutor - INFO - [order-error] CLOUD/USD buy -> kraken {"error":["EAccount:Invalid permissions:CLOUD trading restricted for US:PA."]}
+2025-09-17 06:20:56,970 - TradeExecutor - ERROR - ❌ Safe order placement failed: kraken {"error":["EAccount:Invalid permissions:CLOUD trading restricted for US:PA."]}
+2025-09-17 06:24:43,061 - TradeExecutor - INFO - 💰 Current balance: $13.49
+2025-09-17 06:24:47,416 - TradeExecutor - INFO - [order-error] AVNT/USD buy -> kraken {"error":["EGeneral:Invalid arguments:volume minimum not met"]}
+2025-09-17 06:24:47,416 - TradeExecutor - ERROR - ❌ Safe order placement failed: kraken {"error":["EGeneral:Invalid arguments:volume minimum not met"]}
+2025-09-17 06:29:26,404 - TradeExecutor - INFO - 💰 Current balance: $13.49
+2025-09-17 06:29:30,799 - TradeExecutor - INFO - ✅ Safe trade executed: TOSHI/USD | Amount: 8487.257000 | Price: $0.0009 | Notional: $8.00
+2025-09-17 06:43:57,531 - TradeExecutor - INFO - 💰 Need $10.00, have $5.49, liquidating $4.51
+2025-09-17 06:44:04,764 - TradeExecutor - INFO - ✅ Liquidated 52.980880 XRP → $8.00
+2025-09-17 06:44:04,765 - TradeExecutor - INFO - ✅ Liquidated XRP ($159.58)
+2025-09-17 06:44:28,929 - TradeExecutor - INFO - 💰 Current balance: $13.50
+2025-09-17 06:44:33,212 - TradeExecutor - INFO - [order-error] Q/USD buy -> kraken {"error":["EAccount:Invalid permissions:Q trading restricted for US:PA."]}
+2025-09-17 06:44:33,213 - TradeExecutor - ERROR - ❌ Safe order placement failed: kraken {"error":["EAccount:Invalid permissions:Q trading restricted for US:PA."]}
+2025-09-17 06:47:45,653 - TradeExecutor - INFO - 💰 Current balance: $13.50
+2025-09-17 06:47:49,784 - TradeExecutor - INFO - ✅ Safe trade executed: CCD/USD | Amount: 909.529000 | Price: $0.0088 | Notional: $8.00
+2025-09-17 06:58:34,396 - TradeExecutor - INFO - 💰 Need $10.00, have $5.54, liquidating $4.46
+2025-09-17 06:58:41,552 - TradeExecutor - INFO - ✅ Liquidated 50.311481 XRP → $8.00
+2025-09-17 06:58:41,553 - TradeExecutor - INFO - ✅ Liquidated XRP ($151.60)
+2025-09-17 06:59:05,692 - TradeExecutor - INFO - 💰 Current balance: $13.55
+2025-09-17 06:59:10,069 - TradeExecutor - INFO - ✅ Safe trade executed: H/USD | Amount: 151.478570 | Price: $0.0528 | Notional: $8.00
+2025-09-17 07:01:39,306 - TradeExecutor - INFO - 💰 Need $10.00, have $5.49, liquidating $4.51
+2025-09-17 07:01:46,675 - TradeExecutor - INFO - ✅ Liquidated 47.643863 XRP → $8.00
+2025-09-17 07:01:46,675 - TradeExecutor - INFO - ✅ Liquidated XRP ($143.60)
+2025-09-17 07:02:10,593 - TradeExecutor - INFO - 💰 Current balance: $13.50
+2025-09-17 07:02:14,647 - TradeExecutor - INFO - ✅ Safe trade executed: TOSHI/USD | Amount: 8378.274000 | Price: $0.0010 | Notional: $8.00
+2025-09-17 07:05:27,390 - TradeExecutor - INFO - 💰 Need $10.00, have $5.51, liquidating $4.49
+2025-09-17 07:05:34,686 - TradeExecutor - INFO - ✅ Liquidated 44.976245 XRP → $8.00
+2025-09-17 07:05:34,687 - TradeExecutor - INFO - ✅ Liquidated XRP ($135.57)
+2025-09-17 07:05:58,723 - TradeExecutor - INFO - 💰 Current balance: $13.51
+2025-09-17 07:06:02,793 - TradeExecutor - INFO - ✅ Safe trade executed: ANON/USD | Amount: 4.109550 | Price: $1.9467 | Notional: $8.00
+2025-09-17 07:13:02,913 - TradeExecutor - INFO - 💰 Need $10.00, have $5.27, liquidating $4.73
+2025-09-17 07:13:10,166 - TradeExecutor - INFO - ✅ Liquidated 42.308946 XRP → $8.00
+2025-09-17 07:13:10,166 - TradeExecutor - INFO - ✅ Liquidated XRP ($127.55)
+2025-09-17 07:13:34,227 - TradeExecutor - INFO - 💰 Current balance: $13.28
+2025-09-17 07:13:38,428 - TradeExecutor - INFO - [order-error] Q/USD buy -> kraken {"error":["EAccount:Invalid permissions:Q trading restricted for US:PA."]}
+2025-09-17 07:13:38,428 - TradeExecutor - ERROR - ❌ Safe order placement failed: kraken {"error":["EAccount:Invalid permissions:Q trading restricted for US:PA."]}
+2025-09-17 07:30:33,696 - TradeExecutor - WARNING - Could not get USD value for DOGE: kraken GET https://api.kraken.com/0/public/Ticker?pair=XDGUSD
+2025-09-17 08:04:49,093 - TradeExecutor - ERROR - Error fetching portfolio value: kraken POST https://api.kraken.com/0/private/BalanceEx
+2025-09-17 08:06:28,995 - TradeExecutor - INFO - 💰 Current balance: $13.28
+2025-09-17 08:06:33,120 - TradeExecutor - INFO - [order-error] PSTAKE/USD buy -> kraken {"error":["EAccount:Invalid permissions:PSTAKE trading restricted for US:PA."]}
+2025-09-17 08:06:33,121 - TradeExecutor - ERROR - ❌ Safe order placement failed: kraken {"error":["EAccount:Invalid permissions:PSTAKE trading restricted for US:PA."]}
+2025-09-17 08:08:26,543 - TradeExecutor - INFO - 💰 Current balance: $13.28
+2025-09-17 08:08:31,105 - TradeExecutor - INFO - [order-error] STBL/USD buy -> kraken {"error":["EAccount:Invalid permissions:STBL trading restricted for US:PA."]}
+2025-09-17 08:08:31,105 - TradeExecutor - ERROR - ❌ Safe order placement failed: kraken {"error":["EAccount:Invalid permissions:STBL trading restricted for US:PA."]}
+2025-09-17 08:12:05,736 - TradeExecutor - INFO - 💰 Current balance: $13.28
+2025-09-17 08:12:09,940 - TradeExecutor - INFO - ✅ Safe trade executed: MOODENG/USD | Amount: 44.445850 | Price: $0.1792 | Notional: $7.97
+2025-09-17 08:15:47,329 - TradeExecutor - INFO - 💰 Need $10.00, have $5.32, liquidating $4.68
+2025-09-17 08:15:54,527 - TradeExecutor - INFO - ✅ Liquidated 39.641876 XRP → $8.00
+2025-09-17 08:15:54,528 - TradeExecutor - INFO - ✅ Liquidated XRP ($119.63)
+2025-09-17 08:16:18,658 - TradeExecutor - INFO - 💰 Current balance: $13.32
+2025-09-17 08:16:22,816 - TradeExecutor - INFO - [order-error] AVNT/USD buy -> kraken {"error":["EGeneral:Invalid arguments:volume minimum not met"]}
+2025-09-17 08:16:22,816 - TradeExecutor - ERROR - ❌ Safe order placement failed: kraken {"error":["EGeneral:Invalid arguments:volume minimum not met"]}
+2025-09-17 08:18:29,645 - TradeExecutor - INFO - 💰 Current balance: $13.32
+2025-09-17 08:18:33,846 - TradeExecutor - INFO - ✅ Safe trade executed: H/USD | Amount: 149.155210 | Price: $0.0536 | Notional: $7.99
+2025-09-17 08:24:30,689 - TradeExecutor - INFO - 💰 Need $10.00, have $5.33, liquidating $4.67
+2025-09-17 08:24:37,894 - TradeExecutor - INFO - ✅ Liquidated 36.977573 XRP → $8.00
+2025-09-17 08:24:37,894 - TradeExecutor - INFO - ✅ Liquidated XRP ($111.80)
+2025-09-17 08:25:02,061 - TradeExecutor - INFO - 💰 Current balance: $13.34
+2025-09-17 08:25:06,370 - TradeExecutor - INFO - [order-error] CLOUD/USD buy -> kraken {"error":["EAccount:Invalid permissions:CLOUD trading restricted for US:PA."]}
+2025-09-17 08:25:06,371 - TradeExecutor - ERROR - ❌ Safe order placement failed: kraken {"error":["EAccount:Invalid permissions:CLOUD trading restricted for US:PA."]}
+2025-09-17 08:27:17,283 - TradeExecutor - INFO - 💰 Current balance: $13.34
+2025-09-17 08:27:21,495 - TradeExecutor - INFO - ✅ Safe trade executed: MOODENG/USD | Amount: 44.527590 | Price: $0.1797 | Notional: $8.00
+2025-09-17 08:30:58,578 - TradeExecutor - INFO - 💰 Need $10.00, have $5.33, liquidating $4.67
+2025-09-17 08:31:05,668 - TradeExecutor - INFO - ✅ Liquidated 34.318328 XRP → $8.00
+2025-09-17 08:31:05,668 - TradeExecutor - INFO - ✅ Liquidated XRP ($103.78)
+2025-09-17 08:31:29,922 - TradeExecutor - INFO - 💰 Current balance: $13.34
+2025-09-17 08:31:34,016 - TradeExecutor - INFO - [order-error] AVNT/USD buy -> kraken {"error":["EGeneral:Invalid arguments:volume minimum not met"]}
+2025-09-17 08:31:34,016 - TradeExecutor - ERROR - ❌ Safe order placement failed: kraken {"error":["EGeneral:Invalid arguments:volume minimum not met"]}

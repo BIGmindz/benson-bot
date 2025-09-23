@@ -1,0 +1,65 @@
+cooldown_minutes: 2
+csv_log: benson_signals.csv
+exchange: kraken
+paper_mode: false
+live_trading:
+  enabled: true
+  max_position_size: 5.0
+  buy_score_threshold: 0.15
+  sell_score_threshold: -0.15
+  max_positions: 3
+  position_size_pct: 50.0
+  min_balance: 5.0
+  daily_loss_limit: 20.0
+  stop_loss_pct: 1.0
+  take_profit_pct: 6.0
+  high_confidence_boost: 1.65
+  enable_safety_checks: true
+paper_trading:
+  max_position_size: 18.0
+  max_positions: 6
+  position_size_pct: 18.0
+  starting_balance: 100.0
+  stop_loss_pct: 4.0
+  take_profit_pct: 8.0
+poll_seconds: 30
+rsi:
+  buy_threshold: 50
+  period: 14
+  sell_threshold: 55
+supply_chain_signals:
+  enabled: true
+  region: US
+  sensitivity: 1.0
+symbols:
+- ADA/USD
+- ANON/USD
+- ATOM/USD
+- AVAX/USD
+- AVNT/USD
+- CCD/USD
+- CLOUD/USD
+- CQT/USD
+- DOGE/USD
+- DOT/USD
+- DYM/USD
+- ESX/USD
+- ETH/USD
+- GHIBLI/USD
+- H/USD
+- LINK/USD
+- MERL/USD
+- METH/USD
+- MOODENG/USD
+- NODL/USD
+- PENGU/USD
+- PSTAKE/USD
+- Q/USD
+- ROOK/USD
+- SOL/USD
+- STBL/USD
+- TOSHI/USD
+- U/USD
+- XRP/USD
+- XRT/USD
+timeframe: 5m

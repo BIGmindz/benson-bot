@@ -1,0 +1,17 @@
+symbols:
+- BTC/USD
+- ETH/USD
+- SOL/USD
+- DOGE/USD
+- AVAX/USD
+- PENGU/USD
+- XRP/USD
+- ADA/USD
+- DOT/USD
+- LINK/USD
+validation_summary:
+  available: 22
+  converted: 14
+  total_checked: 40
+  unavailable: 4
+validation_timestamp: '2025-09-16T13:45:48.817449'
